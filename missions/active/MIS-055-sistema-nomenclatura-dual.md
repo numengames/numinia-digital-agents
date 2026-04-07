@@ -54,12 +54,21 @@ Controla el vocabulario y la identidad semántica del sistema.
 - **5** = Idioma mixto. Metáforas suaves sin lore explícito.
 - **10** = Numinia completo. Gremios, Oráculos, misiones, el Velo.
 
-### 🎮 Gamification Dial (1–10)
+### 🎮 Gamification Dial (1–10) — 5 umbrales reales
 Controla los mecánicos de juego, progresión y recompensa.
 
-- **1** = Sin gamificación. Solo el sistema operativo.
-- **5** = Gamificación suave. Puntos, logros, visibilidad de progreso.
-- **10** = RPG completo. Rangos, Prism Cells, sellos, aventuras.
+La gamificación tiene saltos cualitativos, no curva suave. Se definen 5 umbrales con nombre; los niveles intermedios son blends sin nombre propio.
+
+| Nivel | Nombre | Lo que cambia |
+|---|---|---|
+| **1** | None | Solo el OS. Sin mecánicas de ningún tipo. |
+| **3** | Visibility | Progreso visible. Dashboards, completion %, streaks. La gente ve el estado del sistema. |
+| **5** | Achievement | Logros, badges, hitos reconocidos. El sistema celebra. |
+| **7** | Progression | Rangos, trayectoria, reputación acumulada. El sistema recuerda y recompensa la historia. |
+| **10** | Full Economy | Tokens, Prism Cells, recompensas reales. El sistema tiene peso económico. |
+
+> Cara externa: 5 umbrales con nombre (más comprensible para el cliente).
+> Internamente: mapeado a escala 1-10 para configuración técnica granular.
 
 > **Numinia** = Narrative 10 · Gamification en diseño (objetivo: 10)
 > **Corp estándar** = Narrative 1 · Gamification 1–3
