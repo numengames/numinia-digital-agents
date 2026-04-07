@@ -3,9 +3,9 @@ id: "STANDARDS"
 title: "Standards — Narrative Work OS"
 type: meta
 status: active
-version: "1.1.0"
+version: "1.2.0"
 created: "2026-04-07T12:56:00Z"
-updated: "2026-04-07T18:00:00Z"
+updated: "2026-04-07T19:50:00Z"
 author: "nimrod"
 owner: "oracle"
 tags: [standards, conventions, meta, nwos]
@@ -52,12 +52,12 @@ updated: "07/04/2026"                   # Non-standard format
 
 ### 2A. Display IDs (human-readable)
 
-**Format:** `{TYPE}-{NNNNN}` — 5 digits with zero-padding.
+**Format:** `{TYPE}-{NNN}` — 3 digits with zero-padding.
 
 ```yaml
 # Missions
-id: "MIS-00037"     # ✅ — correct lexicographic order up to 99,999
-id: "MIS-037"       # ❌ — breaks lexicographic sort after MIS-999
+id: "MIS-037"     # ✅ — correct format (3 digits, max 999)
+id: "MIS-00037"   # ❌ — old format, deprecated
 
 # Decisions
 id: "DEC-00001"
@@ -73,7 +73,7 @@ id: "P-006"            # protocols use short number — max ~50
 
 | Prefix | Type | Example |
 |--------|------|---------|
-| `MIS-` | Mission | MIS-00037 |
+| `MIS-` | Mission | MIS-037 |
 | `DEC-` | Decision | DEC-00001 |
 | `ADR-` | Technical ADR | ADR-001 |
 | `RPT-` | Report | RPT-2026-04-07 |
@@ -114,7 +114,7 @@ Translations live in the web presentation layer (MIS-061 — pablofm.com/sistema
 
 **Future languages (not immediate):** 日本語, 한국어, 中文, Português — handled by web layer.
 
-**Related decision:** DEC-00X — English as official NWOS repo language (MIS-056)
+**Related decision:** DEC-006 — English as official NWOS repo language (MIS-056)
 
 ---
 
@@ -143,10 +143,25 @@ guilds/
 
 ```
 missions/
-├── backlog/   # Not started
-├── active/    # In progress
-└── done/      # Completed
+├── queue/    # To Do — defined, ready to start
+├── active/   # In Progress — being executed
+├── review/   # In Review — awaiting Oracle validation
+├── done/     # Done + Cancelled — immutable
+└── freeze/   # Freeze — intentionally paused
 ```
+
+**Mission states:**
+
+| State | Folder | Who sets it |
+|-------|--------|-------------|
+| `todo` | `queue/` | Oracle / Procyon |
+| `in-progress` | `active/` | Executor agent |
+| `in-review` | `review/` | Executor agent (after completing criteria) |
+| `done` | `done/` | Oracle (after validation) |
+| `freeze` | `freeze/` | Oracle (intentional pause) |
+| `cancelled` | `done/` | Oracle (with status: cancelled in frontmatter) |
+
+**Sub-missions:** `MIS-NNN.N` format. Max depth: 2 levels (mission → sub-mission only).
 
 ### 4C. Decisions
 
@@ -187,7 +202,11 @@ guild: "{Sentinels|Alchemists|Exegetes|Procurators}"
 tipo: "{biological|digital|hybrid}"
 priority: "{critical|high|medium|low}"
 effort: "{XS|S|M|L|XL}"
-phase: "{backlog|active|done|cancelled|blocked}"
+status: "{todo|in-progress|in-review|done|freeze|cancelled}"
+in_review_at: "YYYY-MM-DDTHH:MM:SSZ"   # set when → in-review
+freeze_reason: ""                        # required if status = freeze
+parent_mission: null                     # MIS-NNN if sub-mission
+sub_missions: []                         # list if parent mission
 human_approval_score: {1-10}
 started: "YYYY-MM-DDTHH:MM:SSZ"    # null if not started
 completed: "YYYY-MM-DDTHH:MM:SSZ"  # null if not completed

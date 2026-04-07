@@ -3,9 +3,9 @@ id: "P-003"
 title: "Mission Cycle Protocol"
 type: protocol
 status: active
-version: "1.1.0"
+version: "2.0.0"
 created: "2026-04-06T00:00:00Z"
-updated: "2026-04-07T18:00:00Z"
+updated: "2026-04-07T19:50:00Z"
 author: "nimrod"
 owner: "oracle"
 tags: [protocol, missions, cycle]
@@ -22,31 +22,54 @@ license: "CC0-1.0"
 
 ---
 
-## Mission states
+## Mission states (v2)
 
 ```
-backlog/ → active/ → done/
-              ↓
-           blocked (stays in active/ with status: blocked)
-              ↓
-           cancelled (moves to done/ with status: cancelled)
+queue/ (todo)
+  ↓
+active/ (in-progress)
+  ↓
+review/ (in-review) ←————————— (Oracle requests changes)
+  ↓
+done/ (done | cancelled) — immutable
+
+freeze/ (freeze) ←— from any state (Oracle decision)
+  ↓
+queue/ (todo) — when unfrozen
 ```
+
+| State | Folder | Who sets it |
+|-------|--------|-------------|
+| `todo` | `queue/` | Oracle / Procyon |
+| `in-progress` | `active/` | Executor agent |
+| `in-review` | `review/` | Executor agent |
+| `done` | `done/` | Oracle |
+| `freeze` | `freeze/` | Oracle |
+| `cancelled` | `done/` | Oracle |
+
+## Mission IDs
+
+**Format:** `MIS-NNN` — 3 digits, zero-padded. Max 999.
+
+**Sub-missions:** `MIS-NNN.N` — parent ID + dot + child index (1-9).
+
+**Before assigning any ID:** list `missions/active/`, `missions/queue/`, and `missions/review/` to verify the next available number. If you cannot verify: do not assign.
 
 ## Creating a mission (Oracle or Procyon)
 
 1. Use TEMPLATE.md — PRs rejected without correct format
-2. Fill all required frontmatter fields
-3. **Before assigning an ID: list `missions/active/` and `missions/backlog/` to verify the next available number**
-4. Set `phase: backlog`
-5. Create in `missions/backlog/{mission-id}.md`
+2. Fill all required frontmatter fields including `uid` (UUID v7)
+3. **Before assigning an ID: verify the repo first**
+4. Set `status: todo`
+5. Create in `missions/queue/{mission-id}-{slug}.md`
 6. Commit and open PR to main
 
 ## Activating a mission (Oracle or Procyon)
 
-1. Move file from `backlog/` to `active/`
-2. Set `phase: active`
-3. Set `executor: {agent-id}` — only ONE executor
-4. Set `started: {YYYY-MM-DD}`
+1. Move file from `queue/` to `active/`
+2. Set `status: in-progress`
+3. Set `assigned_to: {agent-id}` — only ONE executor
+4. Set `started: {YYYY-MM-DDTHH:MM:SSZ}`
 5. Commit and merge
 
 ## Executing a mission (Executor agent)
@@ -55,32 +78,40 @@ backlog/ → active/ → done/
 2. Verify there are no contradictions with canon/ (if there are, escalate via P-005)
 3. Execute
 4. Document progress in the mission file
-5. If the plan changes, document in `divergence_log`
+5. If the plan changes, document in the mission’s version history
 
-## Completing a mission (Executor agent)
+## Requesting review (Executor agent)
 
 1. Verify ALL acceptance criteria are met
-2. Fill `execution_log` with what was done
-3. Fill `divergence_log` if the execution diverged from the plan
-4. Set `phase: done`, `completed: {YYYY-MM-DD}`
-5. Move file from `active/` to `done/`
-6. Commit and open PR to main
-7. Oracle reviews and merges — `done/` is immutable
+2. Fill Real execution section
+3. Set `status: in-review`, set `in_review_at`
+4. Move file from `active/` to `review/`
+5. File P-008 Approval Request (score appropriate to mission)
+6. Commit and notify Oracle
 
-## Blocking a mission
+## Completing a mission (Oracle)
 
-1. Set `status: blocked`
-2. Fill `blocked_reason` with the exact blocker
-3. Notify Procyon or Oracle
-4. Do not abandon — the mission stays in active/ until resolved
+1. Oracle reviews the mission in `review/`
+2. If approved: set `status: done`, set `completed`
+3. Move file from `review/` to `done/`
+4. Merge — `done/` is immutable from this point
+5. If changes requested: move back to `active/`, set `status: in-progress`
+
+## Freezing a mission (Oracle)
+
+1. Move file to `freeze/`
+2. Set `status: freeze`
+3. Fill `freeze_reason` in frontmatter
+4. Mission stays visible in Kanban’s Freeze column
+5. To unfreeze: move back to `queue/`, set `status: todo`, clear `freeze_reason`
 
 ## Critical rules
 
-- `done/` files are immutable once merged
-- Only the executor edits an active mission (SIM-2.13)
-- `divergence_log` is mandatory when execution deviated (P-10)
-- A cancelled mission goes to `done/` — NEVER deleted (SIM-2.7)
-- **Never assign a mission ID without verifying the repo first** — git pull syncs files, not your local memory
+- `done/` files are immutable once merged — never edit
+- Only the executor edits a mission in progress (SIM-2.13)
+- A cancelled mission goes to `done/` with `status: cancelled` — NEVER deleted (SIM-2.7)
+- **Never assign a mission ID without verifying the repo first**
+- A parent mission cannot be Done if any sub-mission is not Done or Cancelled
 
 ---
 
@@ -88,5 +119,6 @@ backlog/ → active/ → done/
 
 - v1.0.0 (2026-04-06) — Initial creation.
 - v1.1.0 (2026-04-07) — Added ID verification rule. Translated to English (MIS-056).
+- v2.0.0 (2026-04-07) — Full rewrite for Mission System v2: new states, folders, IDs, sub-missions, review cycle. (MIS-062)
 
 *Next review: 2026-07-06*

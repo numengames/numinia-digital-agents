@@ -18,7 +18,7 @@ guild: "Sentinels"
 tipo: "digital"
 priority: "high"
 effort: "S"
-phase: "active"
+status: "in-progress"
 started: "2026-04-06T00:00:00Z"
 completed: null
 ---
