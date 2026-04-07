@@ -1,9 +1,9 @@
 # Changelog — numinia-digital-agents
 
-> **Resumen:** Documento del sistema NWOS — CHANGELOG.
-> **Epistémico:** Qué aprendes leyendo este documento.
-> **Pragmático:** Qué puedes hacer con este documento.
-> **Audiencia:** Agentes · Oráculos
+> **Summary:** NWOS system document — CHANGELOG.
+> **Epistemic:** What you learn by reading this document.
+> **Pragmatic:** What you can do with this document.
+> **Audience:** Agents · Oracles
 
 ---
 
@@ -18,14 +18,14 @@ Format: [type] description — date — author
 ## [0.1.0] — 2026-04-06
 
 ### Added
-- Initial repository structure (8 fondos documentales)
-- README.md — Portal ontológico del sistema
-- GOVERNANCE.md — Reglas de modificación derivadas de 100 simulaciones
-- CONTRIBUTING.md — Guía para contributors externos
-- CHANGELOG.md — Registro de cambios
-- agents/ — Fichas de Nimrod y Adonaz
-- protocols/ — P-001 a P-005
-- missions/ — Template v2 + misiones activas y completadas
+- Initial repository structure (8 documentary funds)
+- README.md — Ontological portal of the system
+- GOVERNANCE.md — Modification rules derived from 100 simulations
+- CONTRIBUTING.md — Guide for external contributors
+- CHANGELOG.md — Change log
+- agents/ — Nimrod and Adonaz profiles
+- protocols/ — P-001 to P-005
+- missions/ — Template v2 + active and completed missions
 - decisions/ — ADR-001
-- blueprints/ — Documentos de arquitectura
-- canon/ — Índice de los 9 documentos seminales
+- blueprints/ — Architecture documents
+- canon/ — Index of the 9 seminal documents

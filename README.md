@@ -1,66 +1,67 @@
 # Numinia Digital Agents — Archive Summa
 
-> Este repositorio no documenta el sistema de agentes de Numen Games.
-> **Es el lugar donde el sistema ocurre.**
+> This repository does not document the Numen Games agent system.
+> **It is the place where the system happens.**
 
-`git pull` = alineación con el canon.
-`commit` = inscripción en la historia.
-`merge` = integración en la realidad del sistema.
+`git pull` = alignment with the canon.
+`commit` = inscription in history.
+`merge` = integration into the system's reality.
 
 ---
 
-## Para agentes digitales
+## For digital agents
 
-Al inicio de cada misión:
+At the start of every session:
 
 ```bash
 git pull origin main
 ```
 
-Luego lee en este orden:
-1. `agents/guilds/{tu-guild}/charter.md` — las reglas de tu gremio
-2. `agents/guilds/{tu-guild}/members/{tu-nombre}/SOUL.md` — quien eres
-3. `agents/guilds/{tu-guild}/members/{tu-nombre}/OPERATOR.md` — tus leyes
-4. `protocols/P-001-briefing-agente-v1.md` — protocolo de arranque
-5. Tu misión asignada en `missions/active/`
+Then read in this order:
+1. `agents/{your-name}/SOUL.md` — who you are
+2. `agents/{your-name}/OPERATOR.md` — your laws
+3. `agents/{your-name}/STATUS.md` — your current state
+4. `operations/security-policy.md` — always, every session
+5. `protocols/P-001-briefing-agente-v1.md` — startup protocol
+6. Your assigned mission in `missions/active/`
 
-Los documentos en `canon/` son de solo lectura. No los modifiques.
-
----
-
-## Para Oráculos (humanos)
-
-Este repositorio contiene la fuente de verdad de todas las operaciones del sistema Numinia.
-
-| Fondo | Ruta | Contenido |
-|-------|------|-----------|
-| 📜 Canon | `canon/` | 9 documentos fundacionales. Inmutables. |
-| 🤖 Agentes | `agents/` | Fichas operativas de cada agente digital. |
-| ⚡ Misiones | `missions/` | Misiones activas, completadas y en backlog. |
-| 📋 Protocolos | `protocols/` | Procedimientos operativos estándar. |
-| 🗿 Decisiones | `decisions/` | Registro de decisiones arquitectónicas (ADR). |
-| 🔮 Blueprints | `blueprints/` | Diseños y arquitecturas futuras. |
-| ⚙️ Operaciones | `operations/` | Governance, seguridad, credential-map. |
-| 📊 Reportes | `reports/` | Reportes diarios y semanales. |
+Documents in `canon/` are read-only. Do not modify them.
 
 ---
 
-## Estado del sistema
+## For Oracles (humans)
 
-- **Agentes activos:** Nimrod (Centinela-01), Adonaz (Exégeta)
-- **Fase:** Alpha
+This repository contains the source of truth for all operations of the Numinia system.
+
+| Fund | Path | Content |
+|------|------|---------|
+| 📜 Canon | `canon/` | 9 foundational documents. Immutable. |
+| 🤖 Agents | `agents/` | Operational profiles of each digital agent. |
+| ⚡ Missions | `missions/` | Active, completed, and backlog missions. |
+| 📋 Protocols | `protocols/` | Standard operating procedures. |
+| 🗿 Decisions | `decisions/` | Architectural decision records (ADR). |
+| 🔮 Blueprints | `blueprints/` | Designs and future architectures. |
+| ⚙️ Operations | `operations/` | Governance, security, credential-map. |
+| 📊 Reports | `reports/` | Daily and weekly reports. |
+
+---
+
+## System status
+
+- **Active agents:** Nimrod (Sentinel), Adonaz (Exegete), Ursa (Alchemist — designed)
+- **Phase:** Alpha
 - **Oracle:** Pablo FM
 - **Repo:** [github.com/numengames/numinia-digital-agents](https://github.com/numengames/numinia-digital-agents)
 
 ---
 
-## Una regla que lo ordena todo
+## One rule that orders everything
 
-El canon no se cuestiona en el trabajo diario. Se consulta.
-Si el trabajo diario revela que el canon está equivocado, se documenta la discrepancia y se decide explícitamente.
-**Cambiar el canon es un acto mayor que requiere consenso.**
+The canon is not questioned in daily work. It is consulted.
+If daily work reveals that the canon is wrong, the discrepancy is documented and an explicit decision is made.
+**Changing the canon is a major act that requires consensus.**
 
 ---
 
-*Licencia: CC0 1.0 Universal — construimos en público.*
-*Nimrod 🗡️ — Guardián de las Puertas — Numen Games*
+*License: CC0 1.0 Universal — we build in public.*
+*Nimrod 🗡️ — Guardian of the Gates — Numen Games*

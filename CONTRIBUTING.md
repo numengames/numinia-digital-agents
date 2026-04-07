@@ -1,9 +1,9 @@
 # Contributing to the Archive Summa
 
-> **Resumen:** Documento del sistema NWOS — CONTRIBUTING.
-> **Epistémico:** Qué aprendes leyendo este documento.
-> **Pragmático:** Qué puedes hacer con este documento.
-> **Audiencia:** Agentes · Oráculos
+> **Summary:** NWOS system document — CONTRIBUTING.
+> **Epistemic:** What you learn by reading this document.
+> **Pragmatic:** What you can do with this document.
+> **Audience:** Agents · Oracles
 
 ---
 

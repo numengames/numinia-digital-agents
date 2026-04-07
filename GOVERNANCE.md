@@ -1,9 +1,9 @@
 # Governance — Archive Summa
 
-> **Resumen:** Documento del sistema NWOS — GOVERNANCE.
-> **Epistémico:** Qué aprendes leyendo este documento.
-> **Pragmático:** Qué puedes hacer con este documento.
-> **Audiencia:** Agentes · Oráculos
+> **Summary:** NWOS system document — GOVERNANCE.
+> **Epistemic:** What you learn by reading this document.
+> **Pragmatic:** What you can do with this document.
+> **Audience:** Agents · Oracles
 
 ---
 
@@ -24,9 +24,9 @@ Rules derived from 100 mental simulations. Each rule includes the simulation tha
 
 ---
 
-## Permissions by fondo
+## Permissions by fund
 
-| Fondo | Create | Modify | Archive/Delete | PR Approval |
+| Fund | Create | Modify | Archive/Delete | PR Approval |
 |-------|--------|--------|----------------|-------------|
 | `canon/` | oracle | **Nobody** | **Nobody** | N/A — immutable |
 | `agents/{own}/` | oracle | active-agent (own) + oracle | oracle | oracle |

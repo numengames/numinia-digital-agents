@@ -3,9 +3,9 @@ id: "STANDARDS"
 title: "Standards — Narrative Work OS"
 type: meta
 status: active
-version: "1.0.0"
+version: "1.1.0"
 created: "2026-04-07T12:56:00Z"
-updated: "2026-04-07T12:56:00Z"
+updated: "2026-04-07T18:00:00Z"
 author: "nimrod"
 owner: "oracle"
 tags: [standards, conventions, meta, nwos]
@@ -14,173 +14,159 @@ license: "CC0-1.0"
 
 # STANDARDS — Narrative Work OS
 
-> **Resumen:** Fuente de verdad de todas las convenciones técnicas del sistema NWOS.
-> **Epistémico:** Qué estándar usar para timestamps, IDs, idiomas, frontmatter, commits, frameworks y documentos.
-> **Pragmático:** Antes de crear cualquier documento o tomar una decisión de convención, consultar este archivo.
-> **Audiencia:** Agentes · Oráculos
+> **Summary:** Source of truth for all technical conventions of the NWOS system.
+> **Epistemic:** Which standard to use for timestamps, IDs, languages, frontmatter, commits, frameworks and documents.
+> **Pragmatic:** Before creating any document or making a convention decision, consult this file.
+> **Audience:** Agents · Oracles
 
-*Este documento es la fuente de verdad de todas las convenciones técnicas del sistema NWOS.*
+*This document is the source of truth for all technical conventions of the NWOS system.*
 
-**Regla de oro:** Antes de usar un nuevo estándar, documéntalo aquí. Antes de cambiar uno existente, crea una decisión ADR que lo justifique.
+**Golden rule:** Before using a new standard, document it here. Before changing an existing one, create an ADR decision that justifies it.
 
 ---
 
 ## 1. Timestamps
 
-**Estándar:** ISO 8601 completo con timezone explícito.
+**Standard:** Full ISO 8601 with explicit timezone.
 
 ```yaml
-# ✅ Correcto
-created: "2026-04-07T12:56:00Z"        # UTC (recomendado para campos de sistema)
-updated: "2026-04-07T14:23:00+02:00"   # Con timezone local (para campos visibles al humano)
+# ✅ Correct
+created: "2026-04-07T12:56:00Z"        # UTC (recommended for system fields)
+updated: "2026-04-07T14:23:00+02:00"   # With local timezone (for human-visible fields)
 
-# ❌ Incorrecto
-created: "2026-04-07T00:00:00Z"                   # Fecha sin hora — ambiguo
-updated: "07/04/2026"                   # Formato no estándar
+# ❌ Incorrect
+created: "2026-04-07T00:00:00Z"        # Date without time — ambiguous
+updated: "07/04/2026"                   # Non-standard format
 ```
 
-**Política:**
-- Campos internos del sistema (git, logs, frontmatter): **UTC (`Z`)**
-- Campos visibles al usuario (reportes, UI): **UTC+2 Madrid en horario de verano, UTC+1 en invierno**
-- Nunca omitir la hora en campos `created` y `updated`
+**Policy:**
+- Internal system fields (git, logs, frontmatter): **UTC (`Z`)**
+- User-visible fields (reports, UI): **UTC+2 Madrid in summer, UTC+1 in winter**
+- Never omit time in `created` and `updated` fields
 
-**Referencia:** [RFC 3339](https://www.rfc-editor.org/rfc/rfc3339) / [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html)
+**Reference:** [RFC 3339](https://www.rfc-editor.org/rfc/rfc3339) / [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html)
 
 ---
 
-## 2. Identificadores
+## 2. Identifiers
 
-### 2A. Display IDs (legibles por humanos)
+### 2A. Display IDs (human-readable)
 
-**Formato:** `{TIPO}-{NNNNN}` — 5 dígitos con zero-padding.
+**Format:** `{TYPE}-{NNNNN}` — 5 digits with zero-padding.
 
 ```yaml
-# Misiones
-id: "MIS-00037"     # ✅ — orden lexicográfico correcto hasta 99.999
-id: "MIS-037"       # ❌ — rompe sort lexicográfico después de MIS-999
+# Missions
+id: "MIS-00037"     # ✅ — correct lexicographic order up to 99,999
+id: "MIS-037"       # ❌ — breaks lexicographic sort after MIS-999
 
-# Decisiones
+# Decisions
 id: "DEC-00001"
 
-# Reportes
-id: "RPT-2026-04-07"   # reportes usan fecha, no número secuencial
+# Reports
+id: "RPT-2026-04-07"   # reports use date, not sequential number
 
-# Protocolos
-id: "P-006"            # protocolos usan número corto — max ~50
+# Protocols
+id: "P-006"            # protocols use short number — max ~50
 ```
 
-**Prefijos registrados:**
+**Registered prefixes:**
 
-| Prefijo | Tipo | Ejemplo |
-|---------|------|---------|
-| `MIS-` | Misión | MIS-00037 |
-| `DEC-` | Decisión | DEC-00001 |
-| `ADR-` | ADR técnico | ADR-001 |
-| `RPT-` | Reporte | RPT-2026-04-07 |
-| `P-` | Protocolo | P-006 |
+| Prefix | Type | Example |
+|--------|------|---------|
+| `MIS-` | Mission | MIS-00037 |
+| `DEC-` | Decision | DEC-00001 |
+| `ADR-` | Technical ADR | ADR-001 |
+| `RPT-` | Report | RPT-2026-04-07 |
+| `P-` | Protocol | P-006 |
 | `S-` | Seminal | S-003 |
-| `BP-` | Blueprint/Plano | BP-cao |
+| `BP-` | Blueprint | BP-cao |
 | `APR-` | Approval Request | APR-20260407-001 |
 
-### 2B. Canonical IDs (sistema interno)
+### 2B. Canonical IDs (internal system)
 
-**Formato:** UUID v7 (RFC 9562) — time-ordered, sortable, collision-free.
+**Format:** UUID v7 (RFC 9562) — time-ordered, sortable, collision-free.
 
 ```yaml
-# Frontmatter de cualquier documento
+# Frontmatter of any document
 uid: "018e8f30-0000-7000-8000-000000000001"   # UUID v7
 ```
 
-**Cuándo usar:**
-- APIs futuras que consuman el Archive
-- Cuando múltiples instancias NWOS necesiten interoperar
-- Cross-references en el Knowledge Graph
+**When to use:**
+- Future APIs consuming the Archive
+- When multiple NWOS instances need to interoperate
+- Cross-references in the Knowledge Graph
 
-**Implementación:** El `uid` es generado una vez al crear el documento y nunca cambia, aunque el `id` display cambie.
-
-**Referencia:** [RFC 9562 — UUID v7](https://www.rfc-editor.org/rfc/rfc9562)
+**Reference:** [RFC 9562 — UUID v7](https://www.rfc-editor.org/rfc/rfc9562)
 
 ---
 
-## 3. Idiomas
+## 3. Languages
 
-**Política:** Todo documento nuevo en el sistema debe tener versión en **español (ES)** e **inglés (EN)**.
+**Policy:** English is the official language of this repository. All documents are written in English.
 
-```
-# Convención de naming
-documento.md          # Versión primaria (ES para docs operativos internos)
-documento.en.md       # Versión EN explícita
+Translations live in the web presentation layer (MIS-061 — pablofm.com/sistema), not in the repo.
 
-# O estructura de carpetas cuando haya muchos docs
-es/documento.md
-en/documento.md
-```
+**Language standard going forward:**
+- All new documents in the repo: **English**
+- All new missions: **English**
+- All new protocols: **English**
+- Agent communication with their Oracle follows the Oracle's preferred language — but repo artifacts are English
 
-**Prioridad de idioma por contexto:**
+**Future languages (not immediate):** 日本語, 한국어, 中文, Português — handled by web layer.
 
-| Contexto | Idioma primario | Idioma secundario |
-|----------|----------------|-------------------|
-| Operaciones internas (SOUL, OPERATOR, logs) | ES | EN |
-| Documentación pública (README, web) | EN | ES |
-| Seminales/Canon | EN (original) | ES (pendiente) |
-| Misiones | ES | EN al cerrar |
-| Reportes diarios | ES | — |
-
-**Idiomas futuros (no inmediatos):** 日本語, 한국어, 中文, Português.
-
-**Misión relacionada:** MIS-00056 (i18n ES+EN)
+**Related decision:** DEC-00X — English as official NWOS repo language (MIS-056)
 
 ---
 
-## 4. Estructura de archivos
+## 4. File structure
 
-### 4A. Agentes
+### 4A. Agents
 
 ```
 agents/
-├── {nombre-agente}/
-│   ├── SOUL.md       # Identidad, valores, voz
-│   ├── OPERATOR.md   # Leyes operativas
-│   ├── STATUS.md     # Estado actual, métricas, pendientes
-│   └── MEMORY.md     # Memoria curada a largo plazo
-└── _template/        # Template base
+├── {agent-name}/
+│   ├── SOUL.md       # Identity, values, voice
+│   ├── OPERATOR.md   # Operational laws
+│   ├── STATUS.md     # Current state, metrics, pending items
+│   └── MEMORY.md     # Curated long-term memory
+└── _template/        # Base template
 
 guilds/
-├── {nombre-guild}/
-│   ├── charter.md    # Misión y dominio del gremio
-│   └── roster.md     # Referencias a agentes (no archivos)
+├── {guild-name}/
+│   ├── charter.md    # Guild mission and domain
+│   └── roster.md     # Agent references (not files)
 ```
 
-**Regla:** Los archivos del agente viven en `agents/{nombre}/`. Los gremios no contienen agentes — los referencian.
+**Rule:** Agent files live in `agents/{name}/`. Guilds do not contain agents — they reference them.
 
-### 4B. Misiones
+### 4B. Missions
 
 ```
 missions/
-├── backlog/   # No empezadas
-├── active/    # En curso
-└── done/      # Completadas
+├── backlog/   # Not started
+├── active/    # In progress
+└── done/      # Completed
 ```
 
-### 4C. Decisiones
+### 4C. Decisions
 
 ```
 decisions/
-├── ADR-001-*.md   # Decisiones técnicas de arquitectura
-└── DEC-00001-*.md # Decisiones estratégicas/operativas
+├── ADR-001-*.md   # Technical architecture decisions
+└── DEC-00001-*.md # Strategic/operational decisions
 ```
 
 ---
 
 ## 5. Frontmatter
 
-**Schema mínimo requerido** para cualquier documento:
+**Minimum required schema** for any document:
 
 ```yaml
 ---
-id: "{TIPO}-{ID}"
-uid: "{UUID-v7}"                    # pendiente de implementar en todos
-title: "{Título del documento}"
+id: "{TYPE}-{ID}"
+uid: "{UUID-v7}"                    # pending implementation in all docs
+title: "{Document title}"
 type: "{mission|decision|report|protocol|blueprint|seminal|meta|agent}"
 status: "{active|draft|done|archived|deprecated}"
 version: "1.0.0"                    # semver
@@ -193,50 +179,50 @@ license: "CC0-1.0"
 ---
 ```
 
-**Schema extendido para misiones:**
+**Extended schema for missions:**
 
 ```yaml
-area: "{Producto|Infraestructura|CAO|Ventas|Contenido|Financiación|Documentación|Operaciones}"
-guild: "{Centinelas|Alquimistas|Exegetas|Procuradores}"
-tipo: "{biológico|digital|híbrido}"
+area: "{Product|Infrastructure|CAO|Sales|Content|Funding|Documentation|Operations}"
+guild: "{Sentinels|Alchemists|Exegetes|Procurators}"
+tipo: "{biological|digital|hybrid}"
 priority: "{critical|high|medium|low}"
 effort: "{XS|S|M|L|XL}"
 phase: "{backlog|active|done|cancelled|blocked}"
 human_approval_score: {1-10}
-started: "YYYY-MM-DDTHH:MM:SSZ"    # null si no empezada
-completed: "YYYY-MM-DDTHH:MM:SSZ"  # null si no completada
+started: "YYYY-MM-DDTHH:MM:SSZ"    # null if not started
+completed: "YYYY-MM-DDTHH:MM:SSZ"  # null if not completed
 ```
 
 ---
 
-## 6. Commits de git
+## 6. Git commits
 
-**Formato:** Conventional Commits adaptado al NWOS.
+**Format:** Conventional Commits adapted to NWOS.
 
 ```
-{tipo}({scope}): {descripción en ≤72 chars}
+{type}({scope}): {description in ≤72 chars}
 
-{cuerpo opcional — lista de cambios}
+{optional body — list of changes}
 
-{footer opcional — references, breaking changes}
+{optional footer — references, breaking changes}
 ```
 
-**Tipos registrados:**
+**Registered types:**
 
-| Tipo | Uso |
+| Type | Use |
 |------|-----|
-| `feat` | Nueva feature, nuevo documento, nueva misión |
-| `fix` | Corrección de error |
-| `docs` | Documentación pura |
-| `refactor` | Reestructuración sin cambio funcional |
-| `session` | Cierre de sesión (P-006) |
-| `qa` | Cambios derivados de QA |
-| `standards` | Adopción o cambio de estándar |
-| `canon` | Modificación de documentos canónicos (requiere Oracle) |
+| `feat` | New feature, new document, new mission |
+| `fix` | Bug fix |
+| `docs` | Pure documentation |
+| `refactor` | Restructuring without functional change |
+| `session` | Session close (P-006) |
+| `qa` | Changes from QA |
+| `standards` | Standard adoption or change |
+| `canon` | Canonical document modification (requires Oracle) |
 
-**Scopes comunes:** `nimrod`, `missions`, `decisions`, `canon`, `guilds`, `protocols`, `web`
+**Common scopes:** `nimrod`, `missions`, `decisions`, `canon`, `guilds`, `protocols`, `web`
 
-**Ejemplos:**
+**Examples:**
 ```bash
 feat(missions): add MIS-00037 Archive Summa
 fix(nimrod): resolve duplicate agents/guilds/sentinels bug
@@ -247,43 +233,43 @@ canon(index): update to 10 seminal documents
 
 ---
 
-## 7. Frameworks y metodologías adoptadas
+## 7. Frameworks and methodologies adopted
 
 ### 7A. BDD — Behavior-Driven Development
 
-**Herramienta:** Cucumber + Gherkin  
-**Alcance:** Tests de aceptación de misiones digitales y features web  
-**Idioma de los escenarios:** Español  
-**Ubicación:** `/tests/features/*.feature` por repo
+**Tool:** Cucumber + Gherkin
+**Scope:** Acceptance tests for digital missions and web features
+**Scenario language:** Spanish (internal) / English (public)
+**Location:** `/tests/features/*.feature` per repo
 
 ```gherkin
-# Ejemplo en español
-Característica: Sistema de misiones
-  Escenario: Cerrar una misión con Ejecución Real
-    Dado que existe la misión "MIS-00037" en estado "active"
-    Cuando el agente completa los criterios de aceptación
-    Y documenta la sección "Ejecución Real"
-    Entonces el estado de la misión cambia a "done"
-    Y el commit incluye la fecha de cierre
+# Example
+Feature: Mission system
+  Scenario: Close a mission with Real Execution
+    Given the mission "MIS-00037" exists with status "active"
+    When the agent completes all acceptance criteria
+    And documents the "Real Execution" section
+    Then the mission status changes to "done"
+    And the commit includes the closing date
 ```
 
-**Convención:** Cada misión digital de complejidad M+ debe tener al menos 3 escenarios Cucumber antes de empezar.
+**Convention:** Every digital mission of complexity M+ must have at least 3 Cucumber scenarios before starting.
 
 ### 7B. ADR — Architecture Decision Records
 
-**Formato:** Propio del NWOS (ver `decisions/ADR-001`)  
-**Cuándo crear:** Ante cualquier decisión técnica que afecte la arquitectura  
-**Numeración:** `ADR-NNN` para decisiones técnicas puras, `DEC-NNNNN` para decisiones estratégicas
+**Format:** NWOS own format (see `decisions/ADR-001`)
+**When to create:** For any technical decision affecting architecture
+**Numbering:** `ADR-NNN` for pure technical decisions, `DEC-NNNNN` for strategic decisions
 
 ### 7C. Wardley Mapping
 
-**Uso:** Análisis estratégico de posicionamiento de componentes  
-**Documento de referencia:** `blueprints/WARDLEY-MAP.md`  
-**Cadencia:** Revisar y actualizar cada trimestre
+**Use:** Strategic positioning analysis of system components
+**Reference document:** `blueprints/WARDLEY-MAP.md`
+**Cadence:** Review and update every quarter
 
 ### 7D. DORA Metrics
 
-**KPIs de ingeniería a implementar (MIS-00049):**
+**Engineering KPIs to implement (MIS-00049):**
 - Deployment Frequency
 - Lead Time for Changes
 - Change Failure Rate
@@ -291,152 +277,152 @@ Característica: Sistema de misiones
 
 ### 7E. Conventional Commits
 
-**Ver sección 6 de este documento.**
+**See section 6 of this document.**
 
 ### 7G. Active Inference & Free Energy Principle
 
-**Marco teórico:** Karl Friston, Active Inference Institute  
-**Aplicación en NWOS:** El ciclo BOOT/EXECUTE/COMMIT es un ciclo de inferencia activa.
+**Theoretical framework:** Karl Friston, Active Inference Institute
+**Application in NWOS:** The BOOT/EXECUTE/COMMIT cycle is an active inference cycle.
 
-| Fase NWOS | Fase Active Inference | Descripción |
-|-----------|----------------------|-------------|
-| BOOT | Carga del modelo generativo | El agente carga sus priors (SOUL.md, OPERATOR.md, MEMORY.md) |
-| EXECUTE | Reducción de energía libre | El agente actúa o percibe para minimizar sorpresa |
-| COMMIT | Actualización del modelo | El agente actualiza sus beliefs con la experiencia nueva |
+| NWOS Phase | Active Inference Phase | Description |
+|------------|----------------------|-------------|
+| BOOT | Loading the generative model | Agent loads its priors (SOUL.md, OPERATOR.md, MEMORY.md) |
+| EXECUTE | Free energy reduction | Agent acts or perceives to minimize surprise |
+| COMMIT | Model update | Agent updates its beliefs with new experience |
 
-**Campos opcionales en misiones y decisiones:**
+**Optional fields in missions and decisions:**
 
 ```yaml
-# Pensamiento Bayesiano / Active Inference
-hypothesis: "descripción de la hipótesis que esta acción valida"
-confidence_before: 7   # 1-10 — confianza antes de ejecutar
-confidence_after: null  # rellenar al cerrar — cómo actualizó nuestra creencia
-free_energy_reduced: null  # qué sorpresa/incertidumbre se redujo
+# Bayesian Thinking / Active Inference
+hypothesis: "description of the hypothesis this action validates"
+confidence_before: 7   # 1-10 — confidence before executing
+confidence_after: null  # fill when closing — how it updated our belief
+free_energy_reduced: null  # what surprise/uncertainty was reduced
 ```
 
-**Referencia:** Active Inference Institute (partner de Numen Games)  
-**Nota:** El Active Inference Institute es un posible usuario del NWOS — ya colaboramos en el diseño de su Discord.
+**Reference:** Active Inference Institute (Numen Games partner)
 
 ### 7H. OODA Loop (Observe → Orient → Decide → Act)
 
-**Autor:** John Boyd (originally for aerial combat, now universal)  
-**Aplicación en NWOS:**
+**Author:** John Boyd (originally for aerial combat, now universal)
+**Application in NWOS:**
 
-| OODA | NWOS | Descripción |
+| OODA | NWOS | Description |
 |------|------|-------------|
-| Observe | BOOT | Leer el Archive, cargar contexto |
-| Orient | Inicio EXECUTE | Entender la misión, leer briefing |
-| Decide | EXECUTE | Elegir cómo abordar |
-| Act | EXECUTE + COMMIT | Ejecutar y persistir el conocimiento |
+| Observe | BOOT | Read the Archive, load context |
+| Orient | Start EXECUTE | Understand the mission, read briefing |
+| Decide | EXECUTE | Choose how to approach |
+| Act | EXECUTE + COMMIT | Execute and persist knowledge |
 
-El valor del OODA sobre BOOT/EXECUTE/COMMIT es el **re-loop explícito**: después de ACT vuelves a OBSERVE. El COMMIT deja el sistema en un estado que el próximo BOOT observa. El ciclo es continuo, no lineal.
+The value of OODA over BOOT/EXECUTE/COMMIT is the **explicit re-loop**: after ACT you return to OBSERVE. The COMMIT leaves the system in a state that the next BOOT observes. The cycle is continuous, not linear.
 
 ### 7I. Build-Measure-Learn (Lean Startup)
 
-**Aplicación en NWOS:** Misiones de producto y experimentos.  
-**Campo opcional:**
+**Application in NWOS:** Product missions and experiments.
+**Optional field:**
 
 ```yaml
-generates_mission: "MIS-00059"  # misión que nace de lo aprendido en esta
+generates_mission: "MIS-00059"  # mission born from what was learned in this one
 ```
 
-El valor epistémico de la misión es el "Measure". La Ejección Real es el "Learn". El `generates_mission` cierra el loop: el aprendizaje genera la siguiente hipótesis.
+The epistemic value of the mission is the "Measure". The Real Execution is the "Learn". The `generates_mission` closes the loop: the learning generates the next hypothesis.
 
 ### 7F. Semantic Versioning (SemVer)
 
-**Formato:** `MAJOR.MINOR.PATCH`  
-**Aplicación:** Versión de todos los documentos del sistema  
-- MAJOR: cambio incompatible (ej: refactor de arquitectura)
-- MINOR: nueva funcionalidad sin romper existente
-- PATCH: corrección o actualización menor
+**Format:** `MAJOR.MINOR.PATCH`
+**Application:** Version of all system documents
+- MAJOR: incompatible change (e.g.: architecture refactor)
+- MINOR: new functionality without breaking existing
+- PATCH: fix or minor update
 
-**Referencia:** [semver.org](https://semver.org)
+**Reference:** [semver.org](https://semver.org)
 
-### ⚠️ Política de autorización por nivel de versión
+### ⚠️ Authorization policy by version level
 
-| Nivel | Ejemplo | Puede ejecutar | Requiere |
-|-------|---------|---------------|----------|
-| PATCH | 1.0.0 → 1.0.1 | Agente digital | Solo |
-| MINOR | 1.0.0 → 1.1.0 | Agente digital | Solo |
-| **MAJOR** | **1.0.0 → 2.0.0** | **Agente biológico (Oráculo)** | **Aprobación explícita obligatoria** |
+| Level | Example | Can execute | Requires |
+|-------|---------|-------------|----------|
+| PATCH | 1.0.0 → 1.0.1 | Digital agent | Alone |
+| MINOR | 1.0.0 → 1.1.0 | Digital agent | Alone |
+| **MAJOR** | **1.0.0 → 2.0.0** | **Biological agent (Oracle)** | **Mandatory explicit approval** |
 
-**Regla:** El primer dígito de cualquier versión (MAJOR) nunca puede incrementarse sin autorización explícita de un Oráculo (agente biológico). Aprobación score 9/10.
+**Rule:** The first digit of any version (MAJOR) can never be incremented without explicit authorization from an Oracle (biological agent). Approval score 9/10.
 
-*Establecido por Pablo FM — 2026-04-07*
+*Established by Pablo FM — 2026-04-07*
 
 ---
 
-## 8. Convención de documentos — Estructura estándar
+## 8. Document convention — Standard structure
 
-Todo documento del NWOS debe comenzar con una **tarjeta de contexto** inmediatamente después del frontmatter. Esto permite al lector humano decidir en 3 segundos si el documento le merece atención, y al agente identificar el propósito del archivo sin leer el cuerpo completo.
+Every NWOS document must begin with a **context card** immediately after the frontmatter. This allows the human reader to decide in 3 seconds whether the document deserves attention, and the agent to identify the file's purpose without reading the full body.
 
-### Opción C — Estándar completo (todos los documentos)
+### Full standard (all documents)
 
 ```markdown
 ---
-[frontmatter YAML]
+[YAML frontmatter]
 ---
 
-# Título del documento
+# Document title
 
-> **Resumen:** Una frase que describe QUÉ ES este documento.
-> **Epistémico:** Qué aprendes o qué pregunta responde leerlo.
-> **Pragmático:** Qué puedes hacer con este documento una vez leído.
-> **Audiencia:** Agentes · Oráculos · Externos  *(marcar los relevantes)*
+> **Summary:** One sentence describing WHAT this document is.
+> **Epistemic:** What you learn or what question it answers by reading it.
+> **Pragmatic:** What you can do with this document once read.
+> **Audience:** Agents · Oracles · External  *(mark relevant ones)*
 
 ---
 
-[Cuerpo del documento]
+[Document body]
 ```
 
-### Variante mínima (templates, índices, documentos muy cortos)
+### Minimum variant (templates, indexes, very short documents)
 
 ```markdown
-> **Epistémico:** Qué aprendes.
-> **Pragmático:** Qué puedes hacer.
+> **Epistemic:** What you learn.
+> **Pragmatic:** What you can do.
 ```
 
-### Reglas
+### Rules
 
-1. La tarjeta de contexto va **siempre después del `# Título`**, antes del cuerpo
-2. El **Resumen** es una frase, no un párrafo
-3. **Epistémico** y **Pragmático** son obligatorios en todos los documentos operativos
-4. **Audiencia** es opcional pero recomendado en documentos públicos o multi-audiencia
-5. Documentos nuevos deben incluir la tarjeta desde su creación
-6. Documentos existentes se actualizan progresivamente (no retroactivo masivo)
+1. The context card goes **always after `# Title`**, before the body
+2. **Summary** is one sentence, not a paragraph
+3. **Epistemic** and **Pragmatic** are mandatory in all operational documents
+4. **Audience** is optional but recommended in public or multi-audience documents
+5. New documents must include the card from creation
+6. Existing documents are updated progressively (not massive retroactive)
 
-### Alineación con Active Inference
+### Alignment with Active Inference
 
-La tarjeta de contexto es una **reducción de energía libre** para el lector:
-- **Resumen** = prior sobre el contenido
-- **Epistémico** = qué sorpresa se reduce al leerlo
-- **Pragmático** = qué acción habilita la lectura
-
----
-
-## 9. Escala de aprobación humana (Human-in-the-Loop)
-
-| Score | Categoría | Descripción | Tiempo de respuesta |
-|-------|-----------|-------------|---------------------|
-| 1-2 | Rutina | Sin riesgo, reversible al instante | No requiere aprobación |
-| 3-4 | Operativo | Impacto limitado, reversible | 24h |
-| 5-6 | Táctico | Impacto moderado, parcialmente reversible | 24h |
-| 7-8 | Estratégico | Afecta múltiples sistemas o agentes | 12h |
-| 9 | Sistémico | Modifica canon, OPERATOR, seguridad | Inmediato |
-| 10 | Fundacional | Irreversible, reputación, dinero real | Inmediato + reunión |
-
-**Template de solicitud:** ver `protocols/APPROVAL-REQUEST-template.md`
+The context card is a **free energy reduction** for the reader:
+- **Summary** = prior about the content
+- **Epistemic** = what surprise is reduced by reading it
+- **Pragmatic** = what action is enabled by reading
 
 ---
 
-## Historial de cambios
+## 9. Human approval scale (Human-in-the-Loop)
 
-| Versión | Fecha | Cambio |
-|---------|-------|--------|
-| 1.0.0 | 2026-04-07T12:56:00Z | Creación inicial — timestamps ISO 8601, UUID v7, arquitectura agentes, idiomas, frontmatter, commits, frameworks (BDD/Cucumber, ADR, Wardley, DORA, SemVer) |
-| 1.1.0 | 2026-04-07T14:07:00Z | §7G Active Inference & Free Energy Principle (partner: AII) + §7H OODA + §7I Build-Measure-Learn + §8 Convención de documentos Opción C (tarjeta de contexto: Resumen + Epistémico + Pragmático + Audiencia) |
+| Score | Category | Description | Response time |
+|-------|----------|-------------|---------------|
+| 1-2 | Routine | No risk, instantly reversible | No approval required |
+| 3-4 | Operational | Limited impact, reversible | 24h |
+| 5-6 | Tactical | Moderate impact, partially reversible | 24h |
+| 7-8 | Strategic | Affects multiple systems or agents | 12h |
+| 9 | Systemic | Modifies canon, OPERATOR, security | Immediate |
+| 10 | Foundational | Irreversible, reputation, real money | Immediate + meeting |
+
+**Request template:** see `protocols/APPROVAL-REQUEST-template.md`
 
 ---
 
-*Nimrod 🗡️ + Alquimista-01 + Exégeta-01 + Procurador-01 — 2026-04-07*  
-*"Un estándar no documentado no es un estándar — es una costumbre."*
+## Change history
+
+| Version | Date | Change |
+|---------|------|--------|
+| 1.0.0 | 2026-04-07T12:56:00Z | Initial creation — ISO 8601 timestamps, UUID v7, agent architecture, languages, frontmatter, commits, frameworks (BDD/Cucumber, ADR, Wardley, DORA, SemVer) |
+| 1.1.0 | 2026-04-07T14:07:00Z | §7G Active Inference & Free Energy Principle + §7H OODA + §7I Build-Measure-Learn + §8 Document convention (context card) |
+| 1.2.0 | 2026-04-07T18:00:00Z | Translated to English (MIS-056). Language policy updated: English-only repo. |
+
+---
+
+*Nimrod 🗡️ + team — 2026-04-07*
+*"An undocumented standard is not a standard — it is a habit."*
