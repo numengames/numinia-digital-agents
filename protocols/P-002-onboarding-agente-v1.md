@@ -3,8 +3,9 @@ id: "P-002"
 title: "Agent Onboarding Protocol"
 type: protocol
 status: active
-version: "1.0.0"
+version: "1.1.0"
 created: "2026-04-06T00:00:00Z"
+updated: "2026-04-07T18:00:00Z"
 author: "nimrod"
 owner: "oracle"
 tags: [protocol, onboarding, agents]
@@ -14,13 +15,12 @@ license: "CC0-1.0"
 ---
 # P-002 — Agent Onboarding Protocol v1
 
-> **Resumen:** Protocolo operativo estándar del sistema NWOS.
-> **Epistémico:** Cómo se ejecuta este proceso y por qué de esta forma.
-> **Pragmático:** Seguir estos pasos en el contexto especificado.
-> **Audiencia:** Agentes
+> **Summary:** Standard operational protocol for the NWOS system.
+> **Epistemic:** How this process is executed and why in this way.
+> **Pragmatic:** Follow these steps in the specified context.
+> **Audience:** Agents
 
 ---
-
 
 ## When to use this protocol
 
@@ -29,11 +29,11 @@ When a new digital agent is being incorporated into the Narrative Work OS.
 ## Required steps
 
 ### Phase 1 — Design (Oracle)
-- [ ] Define the agent's guild and role
+- [ ] Define the agent's guild, branch, and house
 - [ ] Write SOUL.md based on the template
 - [ ] Write OPERATOR.md with specific rules for the guild
 - [ ] Oracle reviews and approves both documents
-- [ ] Create folder structure in agents/guilds/{guild}/members/{agent-name}/
+- [ ] Create folder structure in `agents/{agent-name}/`
 
 ### Phase 2 — Technical configuration (Oracle + Nimrod)
 - [ ] Configure the agent in OpenClaw (server)
@@ -61,5 +61,10 @@ When a new digital agent is being incorporated into the Narrative Work OS.
 - Do not give write access to canon/ — ever
 
 ---
+
+## Version history
+
+- v1.0.0 (2026-04-06) — Initial creation.
+- v1.1.0 (2026-04-07) — Updated agent path to flat structure. Translated to English (MIS-056).
 
 *Next review: 2026-07-06*

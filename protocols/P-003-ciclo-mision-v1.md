@@ -3,8 +3,9 @@ id: "P-003"
 title: "Mission Cycle Protocol"
 type: protocol
 status: active
-version: "1.0.0"
+version: "1.1.0"
 created: "2026-04-06T00:00:00Z"
+updated: "2026-04-07T18:00:00Z"
 author: "nimrod"
 owner: "oracle"
 tags: [protocol, missions, cycle]
@@ -14,13 +15,12 @@ license: "CC0-1.0"
 ---
 # P-003 — Mission Cycle Protocol v1
 
-> **Resumen:** Protocolo operativo estándar del sistema NWOS.
-> **Epistémico:** Cómo se ejecuta este proceso y por qué de esta forma.
-> **Pragmático:** Seguir estos pasos en el contexto especificado.
-> **Audiencia:** Agentes
+> **Summary:** Standard operational protocol for the NWOS system.
+> **Epistemic:** How this process is executed and why in this way.
+> **Pragmatic:** Follow these steps in the specified context.
+> **Audience:** Agents
 
 ---
-
 
 ## Mission states
 
@@ -36,9 +36,10 @@ backlog/ → active/ → done/
 
 1. Use TEMPLATE.md — PRs rejected without correct format
 2. Fill all required frontmatter fields
-3. Set `phase: backlog`
-4. Create in `missions/backlog/{mission-id}.md`
-5. Commit and open PR to main
+3. **Before assigning an ID: list `missions/active/` and `missions/backlog/` to verify the next available number**
+4. Set `phase: backlog`
+5. Create in `missions/backlog/{mission-id}.md`
+6. Commit and open PR to main
 
 ## Activating a mission (Oracle or Procyon)
 
@@ -79,7 +80,13 @@ backlog/ → active/ → done/
 - Only the executor edits an active mission (SIM-2.13)
 - `divergence_log` is mandatory when execution deviated (P-10)
 - A cancelled mission goes to `done/` — NEVER deleted (SIM-2.7)
+- **Never assign a mission ID without verifying the repo first** — git pull syncs files, not your local memory
 
 ---
+
+## Version history
+
+- v1.0.0 (2026-04-06) — Initial creation.
+- v1.1.0 (2026-04-07) — Added ID verification rule. Translated to English (MIS-056).
 
 *Next review: 2026-07-06*

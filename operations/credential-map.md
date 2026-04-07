@@ -3,8 +3,9 @@ id: "ops-credential-map"
 title: "Credential Map"
 type: protocol
 status: active
-version: "1.0.0"
+version: "1.1.0"
 created: "2026-04-06T00:00:00Z"
+updated: "2026-04-07T18:00:00Z"
 author: "nimrod"
 owner: "oracle"
 tags: [operations, security, credentials]
@@ -12,13 +13,12 @@ license: "CC0-1.0"
 ---
 # Credential Map
 
-> **Resumen:** Protocolo operativo estándar del sistema NWOS.
-> **Epistémico:** Cómo se ejecuta este proceso y por qué de esta forma.
-> **Pragmático:** Seguir estos pasos en el contexto especificado.
-> **Audiencia:** Agentes
+> **Summary:** Structure of credentials without real values.
+> **Epistemic:** Where credentials live — not what they are.
+> **Pragmatic:** Reference map for configuring new agents or services.
+> **Audience:** Agents
 
 ---
-
 
 Structure of credentials without real values. This document shows WHERE things live, not WHAT they are.
 
@@ -57,3 +57,10 @@ Structure of credentials without real values. This document shows WHERE things l
 ---
 
 *Real values are NEVER documented here. This is structure only.*
+
+---
+
+## Version history
+
+- v1.0.0 (2026-04-06) — Initial creation.
+- v1.1.0 (2026-04-07) — Translated to English (MIS-056).

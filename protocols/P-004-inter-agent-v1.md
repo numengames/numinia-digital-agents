@@ -3,8 +3,9 @@ id: "P-004"
 title: "Inter-Agent Communication Protocol"
 type: protocol
 status: active
-version: "1.0.0"
+version: "1.1.0"
 created: "2026-04-06T00:00:00Z"
+updated: "2026-04-07T18:00:00Z"
 author: "nimrod"
 owner: "oracle"
 tags: [protocol, inter-agent, coordination]
@@ -14,13 +15,12 @@ license: "CC0-1.0"
 ---
 # P-004 — Inter-Agent Communication Protocol v1
 
-> **Resumen:** Protocolo operativo estándar del sistema NWOS.
-> **Epistémico:** Cómo se ejecuta este proceso y por qué de esta forma.
-> **Pragmático:** Seguir estos pasos en el contexto especificado.
-> **Audiencia:** Agentes
+> **Summary:** Standard operational protocol for the NWOS system.
+> **Epistemic:** How this process is executed and why in this way.
+> **Pragmatic:** Follow these steps in the specified context.
+> **Audience:** Agents
 
 ---
-
 
 ## Fundamental principle
 
@@ -30,8 +30,8 @@ Reads are safe. Writes require coordination. Concurrency breaks on writes, not r
 
 In the Narrative Work OS, agents communicate through the repository. There are no real-time channels between agents.
 
-**Primary channel:** Git commits and PRs  
-**Secondary channel:** Annotations in shared mission files  
+**Primary channel:** Git commits and PRs
+**Secondary channel:** Annotations in shared mission files
 **Escalation channel:** Oracle (via Telegram or verified channel)
 
 ## Coordinating on a mission
@@ -44,8 +44,8 @@ When two agents need to work on related things:
 
 ## When another agent needs something from me
 
-1. I update my STATUS.md with current state
-2. I document blockers in my active missions
+1. Update my STATUS.md with current state
+2. Document blockers in my active missions
 3. Procyon (future) coordinates — agents don't directly assign each other tasks
 
 ## Conflict resolution
@@ -56,5 +56,10 @@ If two agents have inconsistent information:
 3. Never overwrite another agent's work without explicit coordination
 
 ---
+
+## Version history
+
+- v1.0.0 (2026-04-06) — Initial creation.
+- v1.1.0 (2026-04-07) — Translated to English (MIS-056).
 
 *Next review: 2026-07-06*

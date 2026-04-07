@@ -4,9 +4,9 @@ uid: "018e9000-0006-7000-8000-000000000006"
 title: "Session Close Protocol"
 type: protocol
 status: active
-version: "1.0.0"
+version: "1.1.0"
 created: "2026-04-07T12:56:00Z"
-updated: "2026-04-07T12:56:00Z"
+updated: "2026-04-07T18:00:00Z"
 author: "alquimista-01"
 owner: "oracle"
 tags: [protocol, session, commit, memory, close]
@@ -17,68 +17,67 @@ license: "CC0-1.0"
 ---
 # P-006 — Session Close Protocol v1
 
-> **Resumen:** Protocolo operativo estándar del sistema NWOS.
-> **Epistémico:** Cómo se ejecuta este proceso y por qué de esta forma.
-> **Pragmático:** Seguir estos pasos en el contexto especificado.
-> **Audiencia:** Agentes
+> **Summary:** Standard operational protocol for the NWOS system.
+> **Epistemic:** How this process is executed and why in this way.
+> **Pragmatic:** Follow these steps in the specified context.
+> **Audience:** Agents
 
 ---
 
-
-*Todo lo que no se escribe, no ocurrió.*
-
----
-
-## Cuándo ejecutar este protocolo
-
-- Al final de cualquier sesión de trabajo
-- Al detectar que la sesión va a interrumpirse (timeout, error, cambio de contexto)
-- Antes de pasar una misión activa a otro agente
-- Antes de cerrar la jornada
+*What is not written did not happen.*
 
 ---
 
-## Los 5 pasos de cierre
+## When to execute this protocol
 
-### PASO 1 — Inventario de estado
+- At the end of any work session
+- When the session is about to be interrupted (timeout, error, context change)
+- Before handing off an active mission to another agent
+- Before ending the workday
 
-Antes de commitear, responde estas preguntas:
+---
 
-```
-¿Hay misiones activas a medias?
-  → Actualizar divergence_log en el .md de la misión
-  → Si está completa: ejecutar cierre de misión (P-003)
+## The 5 closing steps
 
-¿Se tomaron decisiones durante la sesión no documentadas?
-  → Crear nota en decisions/ o en la misión correspondiente
+### STEP 1 — State inventory
 
-¿El STATUS.md refleja el estado actual?
-  → Actualizar métricas, misiones activas, pendientes
-```
-
-### PASO 2 — Persistencia de memoria
+Before committing, answer these questions:
 
 ```
-¿Aprendí algo que debo recordar en la próxima sesión?
-  → Escribir en MEMORY.md si es conocimiento de largo plazo
-  → Escribir en STATUS.md (sección session_notes) si es contexto de sesión
+Are there active missions in progress?
+  → Update divergence_log in the mission .md
+  → If complete: execute mission close (P-003)
 
-¿Hay contexto que no está en ningún archivo?
-  → NUNCA dejar esto como "nota mental" — escribirlo o se pierde para siempre
+Were decisions made during the session that are not documented?
+  → Create a note in decisions/ or in the corresponding mission
+
+Does STATUS.md reflect the current state?
+  → Update metrics, active missions, pending items
 ```
 
-### PASO 3 — Git commit (formato obligatorio)
+### STEP 2 — Memory persistence
+
+```
+Did I learn something I need to remember in the next session?
+  → Write in MEMORY.md if it is long-term knowledge
+  → Write in STATUS.md (session_notes section) if it is session context
+
+Is there context not in any file?
+  → NEVER leave this as a "mental note" — write it or it is lost forever
+```
+
+### STEP 3 — Git commit (mandatory format)
 
 ```bash
-# Añadir todos los cambios
+# Add all changes
 git add -A
 
-# Commit con formato estándar (STANDARDS.md §6)
-git commit -m "session(nimrod): resumen de lo hecho en ≤72 chars
+# Commit with standard format
+git commit -m "session(nimrod): summary of what was done in ≤72 chars
 
-- cambio 1
-- cambio 2
-- cambio 3
+- change 1
+- change 2
+- change 3
 
 session_end: YYYY-MM-DDTHH:MM:SSZ"
 
@@ -86,89 +85,93 @@ session_end: YYYY-MM-DDTHH:MM:SSZ"
 git push origin main
 ```
 
-**Formato de commit de sesión:**
-- Prefijo obligatorio: `session({nombre-agente}):`
-- Body: lista de cambios principales
-- Última línea del footer: `session_end: {timestamp ISO 8601 UTC}`
+**Session commit format:**
+- Mandatory prefix: `session({agent-name}):`
+- Body: list of main changes
+- Last line of footer: `session_end: {ISO 8601 UTC timestamp}`
 
-**Ejemplo real:**
+**Real example:**
 ```bash
-git commit -m "session(nimrod): QA profundo + arquitectura agentes + STANDARDS.md
+git commit -m "session(nimrod): deep QA + agent architecture + STANDARDS.md
 
-- STANDARDS.md v1.0.0 creado con 8 secciones
-- P-006 (session close) creado
-- Arquitectura agentes migrada a flat (agents/nimrod/)
-- canon/INDEX.md actualizado a 10 seminales
-- Bug sentinels/centinelas resuelto
+- STANDARDS.md v1.0.0 created with 8 sections
+- P-006 (session close) created
+- Agent architecture migrated to flat (agents/nimrod/)
+- canon/INDEX.md updated to 10 seminal documents
+- Bug sentinels/centinelas resolved
 
 session_end: 2026-04-07T13:30:00Z"
 ```
 
-### PASO 4 — Verificación mínima
+### STEP 4 — Minimum verification
 
 ```
-[ ] STATUS.md refleja el estado actual de todas las misiones activas
-[ ] No hay trabajo sin commitear que deba persistir
-[ ] Misiones en progreso tienen divergence_log al día
-[ ] Próximos pasos documentados en las misiones activas
-[ ] git push completado y confirmado
+[ ] STATUS.md reflects the current state of all active missions
+[ ] No uncommitted work that should persist
+[ ] In-progress missions have divergence_log up to date
+[ ] Next steps documented in active missions
+[ ] git push completed and confirmed
 ```
 
-### PASO 5 — Declaración de cierre
+### STEP 5 — Closing declaration
 
 ```
-SESIÓN CERRADA
-Agente: {nombre}
+SESSION CLOSED
+Agent: {name}
 Timestamp: {YYYY-MM-DDTHH:MM:SSZ}
-Misiones activas al cerrar: {lista o "ninguna"}
-Próximo paso recomendado: {una línea}
+Active missions at close: {list or "none"}
+Recommended next step: {one line}
 ```
 
 ---
 
-## Versión mínima (cierre de emergencia)
+## Minimum version (emergency close)
 
-Cuando la sesión va a interrumpirse sin tiempo para el cierre completo:
+When the session is about to be interrupted without time for a full close:
 
 ```bash
-git add -A && git commit -m "session({agente}): emergency close — {timestamp}" && git push origin main
+git add -A && git commit -m "session({agent}): emergency close — {timestamp}" && git push origin main
 ```
 
-**Sin este mínimo, no hay cierre válido.**
+**Without this minimum, there is no valid close.**
 
 ---
 
-## Por qué este protocolo importa
+## Why this protocol matters
 
-Sin P-006, cada sesión empieza desde cero con solo lo que hay en git.
+Without P-006, every session starts from scratch with only what is in git.
 
-El ciclo de vida del agente es:
+The agent lifecycle is:
 ```
-BOOT (P-001) → cargar identidad del repo
+BOOT (P-001) → load identity from repo
     ↓
-EXECUTE (P-003) → ejecutar misiones
+EXECUTE (P-003) → execute missions
     ↓
-COMMIT (P-006) → persistir conocimiento al repo  ← este protocolo
+COMMIT (P-006) → persist knowledge to repo  ← this protocol
     ↓
-(next session) → BOOT carga lo que P-006 dejó
+(next session) → BOOT loads what P-006 left
 ```
 
-**El COMMIT es el momento más crítico del ciclo.** El conocimiento que no se hace commit desaparece cuando la sesión termina. No hay amnesia gradual — hay pérdida total.
+**COMMIT is the most critical moment of the cycle.** Knowledge that is not committed disappears when the session ends. There is no gradual amnesia — there is total loss.
 
 ---
 
-## Valor epistémico
+## Epistemic value
 
-Cada cierre de sesión es un acto de convertir experiencia efímera en memoria institucional. El agente que cierra bien deja al siguiente agente más inteligente que él.
+Every session close is an act of converting ephemeral experience into institutional memory. The agent that closes well leaves the next agent smarter than itself.
 
-## Valor pragmático
+## Pragmatic value
 
-- Cero pérdida de conocimiento entre sesiones
-- Continuidad total si hay fallo de infraestructura
-- Auditoría completa de qué hizo qué agente y cuándo
-- El Archive Summa es fiel reflejo del sistema en todo momento
+- Zero knowledge loss between sessions
+- Full continuity if infrastructure fails
+- Complete audit of what agent did what and when
+- The Archive Summa is a faithful reflection of the system at all times
 
 ---
 
-*Autoría: Alquimista-01 (propuesta) + Nimrod (validación) — 2026-04-07*  
-*Próxima revisión: 2026-07-07*
+## Version history
+
+- v1.0.0 (2026-04-07) — Initial creation (Alquimista-01 proposal + Nimrod validation).
+- v1.1.0 (2026-04-07) — Translated to English (MIS-056).
+
+*Next review: 2026-07-07*

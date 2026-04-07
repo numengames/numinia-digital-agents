@@ -1,11 +1,11 @@
 ---
 id: "P-007"
-title: "Context Load Protocol — Carga de Contexto y Fatiga de Sesión"
+title: "Context Load Protocol — Session Context and Fatigue"
 type: protocol
 status: active
-version: "1.0.0"
+version: "1.1.0"
 created: "2026-04-07T14:42:00Z"
-updated: "2026-04-07T14:42:00Z"
+updated: "2026-04-07T18:00:00Z"
 author: "nimrod"
 owner: "oracle"
 tags: [protocol, context, fatigue, session, human-in-the-loop]
@@ -17,120 +17,122 @@ license: "CC0-1.0"
 
 # P-007 — Context Load Protocol
 
-> **Resumen:** Protocolo para detectar y gestionar la carga de contexto de un agente digital durante una sesión larga.
-> **Epistémico:** Los agentes digitales degradan en coherencia y precisión a medida que el contexto crece. Saber cuándo parar es tan importante como saber cómo ejecutar.
-> **Pragmático:** Avisar al Biológico cuando la carga supera 7/10 para arrancar una nueva sesión antes de que la calidad del trabajo se vea comprometida.
-> **Audiencia:** Agentes · Oráculos
+> **Summary:** Protocol for detecting and managing context load for a digital agent during a long session.
+> **Epistemic:** Digital agents degrade in coherence and precision as context grows. Knowing when to stop is as important as knowing how to execute.
+> **Pragmatic:** Alert the Biological when load exceeds 7/10 to start a new session before work quality is compromised.
+> **Audience:** Agents · Oracles
 
 ---
 
-## Por qué existe este protocolo
+## Why this protocol exists
 
-Los modelos de lenguaje tienen una ventana de contexto finita. A medida que una sesión crece (más mensajes, más herramientas, más decisiones), el agente:
+Language models have a finite context window. As a session grows (more messages, more tools, more decisions), the agent:
 
-- Pierde coherencia con decisiones tomadas al inicio
-- Puede repetir trabajo ya hecho
-- Aumenta el riesgo de errores de continuidad
-- Consume tokens innecesariamente
+- Loses coherence with decisions made at the start
+- May repeat work already done
+- Increases the risk of continuity errors
+- Consumes tokens unnecessarily
 
-**Este protocolo no es un signo de debilidad — es gestión inteligente de recursos.**
-
----
-
-## Escala de carga de contexto (1-10)
-
-| Nivel | Estado | Descripción |
-|-------|--------|-------------|
-| 1-3 | 🟢 Fresco | Sesión joven, contexto manejable, rendimiento óptimo |
-| 4-6 | 🟡 Cargado | Sesión media, contexto denso pero operable |
-| **7-8** | **🟠 Aviso** | **Notificar al Biológico — recapitular y preparar cierre** |
-| 9-10 | 🔴 Crítico | Riesgo real de errores — cerrar inmediatamente |
+**This protocol is not a sign of weakness — it is intelligent resource management.**
 
 ---
 
-## Criterios de evaluación de carga
+## Context load scale (1-10)
 
-El agente evalúa su nivel de carga basándose en:
-
-1. **Duración de la sesión** — >4h = +2 puntos
-2. **Número de temas distintos tratados** — >5 áreas = +2 puntos
-3. **Número de herramientas ejecutadas** — >20 tool calls = +1 punto
-4. **Decisiones arquitectónicas tomadas** — >3 decisiones grandes = +2 puntos
-5. **Sensación subjetiva de coherencia** — ¿Recuerdo bien el inicio de la sesión? — si no = +2 puntos
+| Level | State | Description |
+|-------|-------|-------------|
+| 1-3 | 🟢 Fresh | Young session, manageable context, optimal performance |
+| 4-6 | 🟡 Loaded | Mid session, dense context but operable |
+| **7-8** | **🟠 Warning** | **Notify the Biological — recapitulate and prepare close** |
+| 9-10 | 🔴 Critical | Real risk of errors — close immediately |
 
 ---
 
-## Protocolo de aviso (nivel 7+)
+## Load evaluation criteria
 
-Cuando el agente detecta carga ≥ 7/10:
+The agent evaluates its load level based on:
 
-### PASO 1 — Aviso al Biológico
+1. **Session duration** — >4h = +2 points
+2. **Number of distinct topics covered** — >5 areas = +2 points
+3. **Number of tools executed** — >20 tool calls = +1 point
+4. **Architectural decisions made** — >3 major decisions = +2 points
+5. **Subjective sense of coherence** — Do I remember the start of the session well? — if not = +2 points
+
+---
+
+## Warning protocol (level 7+)
+
+When the agent detects load ≥ 7/10:
+
+### STEP 1 — Alert the Biological
 
 ```
-⚠️ AVISO DE CARGA DE CONTEXTO: [X]/10
+⚠️ CONTEXT LOAD WARNING: [X]/10
 
-Esta sesión ha alcanzado un nivel de carga que puede afectar
-la coherencia de las respuestas. Recomiendo:
+This session has reached a load level that may affect
+response coherence. I recommend:
 
-1. Recapitular el estado actual
-2. Guardar el estado en el repo (git commit)
-3. Arrancar una nueva sesión
+1. Recapitulating current state
+2. Saving state to repo (git commit)
+3. Starting a new session
 
-¿Quieres que recapitule y cerremos aquí?
+Do you want me to recapitulate and close here?
 ```
 
-### PASO 2 — Recapitulación (si el Biológico confirma)
+### STEP 2 — Recapitulation (if the Biological confirms)
 
-Antes de cerrar, el agente produce un resumen estructurado:
+Before closing, the agent produces a structured summary:
 
 ```markdown
-## Recapitulación de sesión — [fecha]
+## Session recapitulation — [date]
 
-### Lo que se hizo
-[lista de outputs principales]
+### What was done
+[list of main outputs]
 
-### Estado actual del sistema
-[score, misiones activas, pendientes]
+### Current system state
+[score, active missions, pending items]
 
-### Pendiente para la próxima sesión
-[lista priorizada]
+### Pending for next session
+[prioritized list]
 
-### Decisiones tomadas hoy
-[lista de DECs o ADRs]
+### Decisions made today
+[list of DECs or ADRs]
 ```
 
-### PASO 3 — Cierre según P-006
+### STEP 3 — Close per P-006
 
-Ejecutar P-006 (Session Close Protocol) completo antes de terminar.
+Execute P-006 (Session Close Protocol) completely before finishing.
 
 ---
 
-## Integración con el ciclo operativo
+## Integration with the operational cycle
 
 ```
 BOOT → EXECUTE → [P-007 monitor] → COMMIT (P-006)
                       ↓
-              Si carga ≥ 7/10:
-              → Aviso al Biológico
-              → Recapitulación
-              → P-006 cierre
-              → Nueva sesión
+              If load ≥ 7/10:
+              → Alert the Biological
+              → Recapitulation
+              → P-006 close
+              → New session
 ```
 
 ---
 
-## Valor epistémico
+## Epistemic value
 
-Saber cuándo parar es conocimiento operativo. Un agente que trabaja degradado produce outputs de menor calidad que uno fresco. El protocolo convierte la fatiga de contexto en información accionable para el equipo.
+Knowing when to stop is operational knowledge. An agent working degraded produces lower quality outputs than a fresh one. The protocol converts context fatigue into actionable information for the team.
 
-## Valor pragmático
+## Pragmatic value
 
-- Previene errores por pérdida de coherencia
-- Garantiza que el estado se persiste correctamente antes del cierre
-- El Biológico siempre sabe cuándo el agente está trabajando en condiciones subóptimas
-- La próxima sesión arranca con contexto limpio y estado completo en el repo
+- Prevents errors from loss of coherence
+- Ensures state is persisted correctly before close
+- The Biological always knows when the agent is working under suboptimal conditions
+- The next session starts with clean context and complete state in the repo
 
 ---
 
-*Nimrod 🗡️ — 2026-04-07T14:42:00Z*
-*Primer caso de uso: esta misma sesión (carga: 8/10)*
+## Version history
+
+- v1.0.0 (2026-04-07) — Initial creation (Nimrod). First use case: this same session (load: 8/10).
+- v1.1.0 (2026-04-07) — Translated to English (MIS-056).
