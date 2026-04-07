@@ -352,6 +352,18 @@ El valor epistémico de la misión es el "Measure". La Ejección Real es el "Lea
 
 **Referencia:** [semver.org](https://semver.org)
 
+### ⚠️ Política de autorización por nivel de versión
+
+| Nivel | Ejemplo | Puede ejecutar | Requiere |
+|-------|---------|---------------|----------|
+| PATCH | 1.0.0 → 1.0.1 | Agente digital | Solo |
+| MINOR | 1.0.0 → 1.1.0 | Agente digital | Solo |
+| **MAJOR** | **1.0.0 → 2.0.0** | **Agente biológico (Oráculo)** | **Aprobación explícita obligatoria** |
+
+**Regla:** El primer dígito de cualquier versión (MAJOR) nunca puede incrementarse sin autorización explícita de un Oráculo (agente biológico). Aprobación score 9/10.
+
+*Establecido por Pablo FM — 2026-04-07*
+
 ---
 
 ## 8. Convención de documentos — Estructura estándar
