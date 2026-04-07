@@ -1,11 +1,12 @@
 ---
 id: "BP-cao"
-title: "CAO — Organización Autónoma Centralizada"
+uid: "018ef810-0057-7000-8000-000000000059"
+title: "CAO — Centralized Autonomous Organization"
 type: blueprint
 status: active
-version: "v0.1.0"
+version: "0.2.0"
 created: "2026-04-05T00:00:00Z"
-updated: "2026-04-05T00:00:00Z"
+updated: "2026-04-07T19:03:00Z"
 author: "nimrod"
 owner: "oracle"
 tags: [blueprint, cao, agents, architecture]
@@ -13,64 +14,77 @@ area: "CAO"
 semaforo: "amarillo"
 license: "CC0-1.0"
 ---
-# BP — CAO (Organización Autónoma Centralizada)
+# BP — CAO (Centralized Autonomous Organization)
 
-> **Resumen:** Plano del sistema: estado actual, objetivo, gaps y dependencias.
-> **Epistémico:** El estado real vs. el objetivo — dónde estamos y hacia dónde vamos.
-> **Pragmático:** Identificar qué misiones abren los gaps documentados.
-> **Audiencia:** Agentes · Oráculos
-
----
-
-
-> *El plano central de la CAO. Define cómo los agentes digitales coordinan el trabajo de Numinia mientras los Oráculos descansan.*
-
-**Semáforo:** 🟡 En progreso
+> **Summary:** System blueprint: current state, objective, gaps, and dependencies.
+> **Epistemic:** The real state vs. the objective — where we are and where we are going.
+> **Pragmatic:** Identify which missions open the documented gaps.
+> **Audience:** Agents · Oracles
 
 ---
 
-## Estado actual
+> *The central blueprint of the CAO. Defines how digital agents coordinate Numinia's work while Oracles rest.*
 
-- Nimrod (Centinela-01): activo, claude-sonnet-4.6
-- Alquimista-01, Exegeta-01, Procurador-01: SOUL.md creados, sin sesiones persistentes
-- Procyon: diseñado para 2028
-- Subagentes efímeros como mecanismo de coordinación provisional
-- MIS-054 en curso: acceso multi-Oráculo vía Telegram (@Wolfstein_Wagen activo)
-
-## Estado objetivo
-
-- 5 agentes con sesiones persistentes en OpenClaw
-- Repo numinia-digital-agents como fuente de verdad canónica
-- Briefing Protocol v1.0 activo (MIS-038)
-- Logs auditables por misión (MIS-039)
-- Procyon coordinando la capa de inteligencia (2028)
-
-## Decisiones relacionadas
-
-- DEC-004: Arquitectura híbrida — subagentes efímeros ahora, persistentes cuando madure
-- Modelo por tarea: Haiku para rutinas (<$0.01), Sonnet para razonamiento complejo
-- Confirmación humana para acciones externas: Ley 1 siempre activa
-
-## Delta (brecha → misión)
-
-| Brecha | Misión |
-|---|---|
-| Sin Briefing Protocol | MIS-038 |
-| Sin logs automáticos | MIS-039 |
-| Sin KPIs medibles | MIS-040 |
-| Acceso multi-Oráculo parcial | MIS-054 |
-
-## Preguntas abiertas
-
-- ¿Procyon puede activar agentes sin OK de Oráculo?
-- ¿Los ciudadanos pueden proponer misiones a los agentes?
-- ¿Techo de coste mensual de la CAO?
-
-## Dependencias
-
-- BP-misiones
-- BP-repo
+**Status:** 🟡 In progress
 
 ---
 
-*Nimrod 🗡️ — 2026-04-05*
+## Current state
+
+- Nimrod (Centinela-01): active, claude-sonnet-4.6
+- Ursa (Machine Whisperer): designed, pending activation 2026
+- Senet (Game Master): designed, pending activation 2027
+- Procurador-01 (Business Lead): designed, pending activation 2027
+- Adonaz (General Archivist): active, claude-haiku-3-5
+- Procyon: designed for 2028
+- Ephemeral sub-agents as provisional coordination mechanism
+- MIS-054 active: multi-Oracle access via Telegram (@Wolfstein_Wagen active)
+
+## Target state
+
+- 5 agents with persistent sessions in OpenClaw
+- numinia-digital-agents repo as canonical source of truth ✅
+- Briefing Protocol v1.0 active (MIS-038)
+- Auditable logs per mission (MIS-039)
+- Procyon coordinating the intelligence layer (2028)
+- Real cost metrics via Anthropic API (MIS-048)
+
+## Related decisions
+
+- DEC-004: Hybrid architecture — ephemeral sub-agents now, persistent when mature
+- DEC-006: English as official repo language ✅
+- Model by task: Haiku for routines (<$0.01), Sonnet for complex reasoning
+- Human confirmation for external actions: Law 1 always active
+
+## Delta (gap → mission)
+
+| Gap | Mission |
+|-----|---------|
+| No Briefing Protocol | MIS-038 |
+| No automatic logs | MIS-039 |
+| No measurable KPIs | MIS-040 → **BP-business-metrics** |
+| Partial multi-Oracle access | MIS-054 |
+| No real cost data | MIS-048 |
+| No web system visualization | MIS-061 |
+
+## Open questions
+
+- Can Procyon activate agents without Oracle OK?
+- Can citizens propose missions to agents?
+- Monthly cost ceiling of the CAO?
+- NWOS license price point? (needed for BP-business-metrics v1.0.0)
+
+## Dependencies
+
+- [BP-business-metrics](BP-business-metrics.md) — KPI framework (draft)
+
+---
+
+## Version history
+
+- v0.1.0 (2026-04-05) — Initial creation (Spanish).
+- v0.2.0 (2026-04-07) — Translated to English. Updated agents list (Ursa, Senet, Adonaz). Added BP-business-metrics reference. uid added. (MIS-056 + MIS-057)
+
+---
+
+*Nimrod 🗡️ — 2026-04-07*

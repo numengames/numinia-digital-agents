@@ -1,15 +1,17 @@
 ---
 id: "BP-business-metrics"
+uid: "018ef810-0057-7000-8000-000000000057"
 title: "Business Metrics Framework — NWOS CAO"
 type: blueprint
 status: draft
 version: "0.1.0"
 created: "2026-04-07T18:53:00Z"
-updated: "2026-04-07T18:53:00Z"
+updated: "2026-04-07T19:03:00Z"
 author: "nimrod"
 owner: "oracle"
 tags: [metrics, business, kpi, roi, cao, framework]
 area: "CAO / Business"
+related_missions: ["MIS-057", "MIS-048"]
 license: "CC0-1.0"
 ---
 # BP — Business Metrics Framework v0.1.0
@@ -45,7 +47,7 @@ The goal is not to justify the system — it already works. The goal is to **opt
 | Monthly CAO cost | Total API + infra cost per month | ~$80-100 to date | TBD |
 | Cost per equivalent human-hour | CAO cost / equivalent human hours | ~€0.5-1/h estimated | TBD |
 
-> ⚠️ **Open question:** Need Anthropic API key with usage permissions (MIS-048 blocker) to get real cost data instead of estimates.
+> ⚠️ **Blocked by MIS-048:** Need Anthropic API key with usage permissions to get real cost data instead of estimates.
 
 ### Category 2 — Output metrics
 
@@ -141,6 +143,7 @@ ROI of 80-133x is remarkable but unverifiable without real cost data. This frame
 ## Version history
 
 - v0.1.0 (2026-04-07) — Foundation layer. Cost estimates, output metrics, DORA structure, ROI model. Open questions marked for Pablo. (MIS-057)
+- v0.1.1 (2026-04-07) — uid added, renamed from BP-business-metrics-v0.1.0.md, MIS-048 blocker explicit. Adonaz QA fixes applied.
 
 ---
 
