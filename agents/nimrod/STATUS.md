@@ -20,8 +20,8 @@ license: "CC0-1.0"
 
 | Métrica | Valor |
 |---------|-------|
-| Días activo | 6 |
-| PRs mergeados | 39 |
+| Días activo | 6 (sesión extendida 2026-04-07) |
+| PRs mergeados | 40 (PR #40 /continuidad) |
 | Misiones completadas | 4 (MIS-016, MIS-037, MIS-051, MIS-053) |
 | Misiones activas | 3 (MIS-052, MIS-054, MIS-055) |
 | Documentos creados | 80+ |
