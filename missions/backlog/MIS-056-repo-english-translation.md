@@ -3,9 +3,9 @@ id: "MIS-00056"
 title: "Repo Translation to English — NWOS Canon in English Only"
 type: mission
 status: backlog
-version: "2.0.0"
+version: "2.1.0"
 created: "2026-04-07T00:00:00Z"
-updated: "2026-04-07T18:00:00Z"
+updated: "2026-04-07T18:45:00Z"
 author: "pablo-fm"
 owner: "oracle"
 tags: [documentation, i18n, english, nwos, repo]
@@ -83,10 +83,10 @@ As an organization building in public and targeting international adoption, we w
 - [x] All `.md` files in `operations/` translated to English
 - [x] README.md verified and updated in English
 - [x] STANDARDS.md, GOVERNANCE.md, CONTRIBUTING.md, CHANGELOG.md translated
-- [ ] `blueprints/` translated to English
-- [ ] `reports/` translated to English
-- [ ] Spanish stylistic phrases in SOUL.md files: decision logged per agent (keep or translate)
-- [ ] DEC-00X created: "English as the official language of the NWOS repo"
+- [x] `blueprints/` translated to English (folder is empty — no files)
+- [x] `reports/` translated to English (RPT-2026-04-04 through 07-tarde → v1.1.0)
+- [x] Spanish stylistic phrases in SOUL.md files: preserved as character artifacts (DEC-006)
+- [x] DEC-006 created: "English as the official language of the NWOS repo"
 
 ---
 

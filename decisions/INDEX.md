@@ -3,9 +3,9 @@ id: "decisions-index"
 title: "Decisions — Index"
 type: adr
 status: active
-version: "1.1.0"
+version: "1.2.0"
 created: "2026-04-06T00:00:00Z"
-updated: "2026-04-07T18:00:00Z"
+updated: "2026-04-07T18:45:00Z"
 author: "nimrod"
 owner: "oracle"
 tags: [decisions, index, adr]
@@ -36,6 +36,7 @@ Architectural Decision Records (ADR) of the Narrative Work OS. These records are
 | DEC-003 | Arbitrum as Numinia blockchain | ⚠️ Provisional | 2026-04-05 |
 | DEC-004 | Hybrid CAO architecture | ✅ Active | 2026-04-05 |
 | DEC-005 | pablofm.com as public CAO portal | ✅ Active | 2026-04-03 |
+| DEC-006 | English as official NWOS repo language | ✅ Active | 2026-04-07 |
 
 ## How to create an ADR
 
