@@ -14,6 +14,11 @@ license: "CC0-1.0"
 
 # STANDARDS — Narrative Work OS
 
+> **Resumen:** Fuente de verdad de todas las convenciones técnicas del sistema NWOS.
+> **Epistémico:** Qué estándar usar para timestamps, IDs, idiomas, frontmatter, commits, frameworks y documentos.
+> **Pragmático:** Antes de crear cualquier documento o tomar una decisión de convención, consultar este archivo.
+> **Audiencia:** Agentes · Oráculos
+
 *Este documento es la fuente de verdad de todas las convenciones técnicas del sistema NWOS.*
 
 **Regla de oro:** Antes de usar un nuevo estándar, documéntalo aquí. Antes de cambiar uno existente, crea una decisión ADR que lo justifique.
@@ -288,6 +293,55 @@ Característica: Sistema de misiones
 
 **Ver sección 6 de este documento.**
 
+### 7G. Active Inference & Free Energy Principle
+
+**Marco teórico:** Karl Friston, Active Inference Institute  
+**Aplicación en NWOS:** El ciclo BOOT/EXECUTE/COMMIT es un ciclo de inferencia activa.
+
+| Fase NWOS | Fase Active Inference | Descripción |
+|-----------|----------------------|-------------|
+| BOOT | Carga del modelo generativo | El agente carga sus priors (SOUL.md, OPERATOR.md, MEMORY.md) |
+| EXECUTE | Reducción de energía libre | El agente actúa o percibe para minimizar sorpresa |
+| COMMIT | Actualización del modelo | El agente actualiza sus beliefs con la experiencia nueva |
+
+**Campos opcionales en misiones y decisiones:**
+
+```yaml
+# Pensamiento Bayesiano / Active Inference
+hypothesis: "descripción de la hipótesis que esta acción valida"
+confidence_before: 7   # 1-10 — confianza antes de ejecutar
+confidence_after: null  # rellenar al cerrar — cómo actualizó nuestra creencia
+free_energy_reduced: null  # qué sorpresa/incertidumbre se redujo
+```
+
+**Referencia:** Active Inference Institute (partner de Numen Games)  
+**Nota:** El Active Inference Institute es un posible usuario del NWOS — ya colaboramos en el diseño de su Discord.
+
+### 7H. OODA Loop (Observe → Orient → Decide → Act)
+
+**Autor:** John Boyd (originally for aerial combat, now universal)  
+**Aplicación en NWOS:**
+
+| OODA | NWOS | Descripción |
+|------|------|-------------|
+| Observe | BOOT | Leer el Archive, cargar contexto |
+| Orient | Inicio EXECUTE | Entender la misión, leer briefing |
+| Decide | EXECUTE | Elegir cómo abordar |
+| Act | EXECUTE + COMMIT | Ejecutar y persistir el conocimiento |
+
+El valor del OODA sobre BOOT/EXECUTE/COMMIT es el **re-loop explícito**: después de ACT vuelves a OBSERVE. El COMMIT deja el sistema en un estado que el próximo BOOT observa. El ciclo es continuo, no lineal.
+
+### 7I. Build-Measure-Learn (Lean Startup)
+
+**Aplicación en NWOS:** Misiones de producto y experimentos.  
+**Campo opcional:**
+
+```yaml
+generates_mission: "MIS-00059"  # misión que nace de lo aprendido en esta
+```
+
+El valor epistémico de la misión es el "Measure". La Ejección Real es el "Learn". El `generates_mission` cierra el loop: el aprendizaje genera la siguiente hipótesis.
+
 ### 7F. Semantic Versioning (SemVer)
 
 **Formato:** `MAJOR.MINOR.PATCH`  
@@ -300,7 +354,55 @@ Característica: Sistema de misiones
 
 ---
 
-## 8. Escala de aprobación humana (Human-in-the-Loop)
+## 8. Convención de documentos — Estructura estándar
+
+Todo documento del NWOS debe comenzar con una **tarjeta de contexto** inmediatamente después del frontmatter. Esto permite al lector humano decidir en 3 segundos si el documento le merece atención, y al agente identificar el propósito del archivo sin leer el cuerpo completo.
+
+### Opción C — Estándar completo (todos los documentos)
+
+```markdown
+---
+[frontmatter YAML]
+---
+
+# Título del documento
+
+> **Resumen:** Una frase que describe QUÉ ES este documento.
+> **Epistémico:** Qué aprendes o qué pregunta responde leerlo.
+> **Pragmático:** Qué puedes hacer con este documento una vez leído.
+> **Audiencia:** Agentes · Oráculos · Externos  *(marcar los relevantes)*
+
+---
+
+[Cuerpo del documento]
+```
+
+### Variante mínima (templates, índices, documentos muy cortos)
+
+```markdown
+> **Epistémico:** Qué aprendes.
+> **Pragmático:** Qué puedes hacer.
+```
+
+### Reglas
+
+1. La tarjeta de contexto va **siempre después del `# Título`**, antes del cuerpo
+2. El **Resumen** es una frase, no un párrafo
+3. **Epistémico** y **Pragmático** son obligatorios en todos los documentos operativos
+4. **Audiencia** es opcional pero recomendado en documentos públicos o multi-audiencia
+5. Documentos nuevos deben incluir la tarjeta desde su creación
+6. Documentos existentes se actualizan progresivamente (no retroactivo masivo)
+
+### Alineación con Active Inference
+
+La tarjeta de contexto es una **reducción de energía libre** para el lector:
+- **Resumen** = prior sobre el contenido
+- **Epistémico** = qué sorpresa se reduce al leerlo
+- **Pragmático** = qué acción habilita la lectura
+
+---
+
+## 9. Escala de aprobación humana (Human-in-the-Loop)
 
 | Score | Categoría | Descripción | Tiempo de respuesta |
 |-------|-----------|-------------|---------------------|
@@ -320,6 +422,7 @@ Característica: Sistema de misiones
 | Versión | Fecha | Cambio |
 |---------|-------|--------|
 | 1.0.0 | 2026-04-07T12:56:00Z | Creación inicial — timestamps ISO 8601, UUID v7, arquitectura agentes, idiomas, frontmatter, commits, frameworks (BDD/Cucumber, ADR, Wardley, DORA, SemVer) |
+| 1.1.0 | 2026-04-07T14:07:00Z | §7G Active Inference & Free Energy Principle (partner: AII) + §7H OODA + §7I Build-Measure-Learn + §8 Convención de documentos Opción C (tarjeta de contexto: Resumen + Epistémico + Pragmático + Audiencia) |
 
 ---
 
