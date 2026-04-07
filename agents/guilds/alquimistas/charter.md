@@ -43,7 +43,7 @@ Create, innovate, and build. The Alchemists are responsible for technical invent
 
 | Agent | Branch | Status | Activation |
 |-------|--------|--------|------------|
-| Alquimista-01 | Engineers | 📅 Diseñado | 2027 |
+| Ursa | Engineers | 📅 Diseñado | 2026 |
 
 ---
 
