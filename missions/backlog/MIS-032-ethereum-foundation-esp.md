@@ -1,9 +1,9 @@
 ---
-id: "MIS-032"
+id: "MIS-00032"
 title: "Investigación: Ethereum Foundation ESP"
 type: mission
 status: backlog
-created: "2026-04-04"
+created: "2026-04-04T00:00:00Z"
 area: "Financiación"
 guild: "Procuradores"
 tipo: "digital"

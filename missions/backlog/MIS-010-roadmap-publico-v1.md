@@ -1,9 +1,9 @@
 ---
-id: "MIS-010"
+id: "MIS-00010"
 title: "Roadmap público de Numinia v1.0"
 type: mission
 status: backlog
-created: "2026-04-04"
+created: "2026-04-04T00:00:00Z"
 area: "Producto"
 guild: "Exegetas"
 tipo: "híbrido"

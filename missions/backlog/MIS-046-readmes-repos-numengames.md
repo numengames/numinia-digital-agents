@@ -1,9 +1,9 @@
 ---
-id: "MIS-046"
+id: "MIS-00046"
 title: "READMEs de repos numengames org"
 type: mission
 status: backlog
-created: "2026-04-04"
+created: "2026-04-04T00:00:00Z"
 area: "Documentación"
 guild: "Exegetas"
 tipo: "digital"

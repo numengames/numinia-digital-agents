@@ -1,9 +1,9 @@
 ---
-id: "MIS-041"
+id: "MIS-00041"
 title: "Protocolo de onboarding para nuevos agentes"
 type: mission
 status: backlog
-created: "2026-04-04"
+created: "2026-04-04T00:00:00Z"
 area: "CAO"
 guild: "Centinelas"
 tipo: "digital"

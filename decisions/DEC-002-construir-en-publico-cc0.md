@@ -4,8 +4,8 @@ title: "Construir en público con licencia CC0"
 type: decision
 status: active
 version: "1.0.0"
-created: "2026-04-02"
-updated: "2026-04-02"
+created: "2026-04-02T00:00:00Z"
+updated: "2026-04-02T00:00:00Z"
 author: "pablo-fm"
 owner: "oracle"
 tags: [decisions, strategy, culture, open-source, cc0]

@@ -212,8 +212,8 @@ title: "Adoptar GitHub como Archivo Summa"
 type: adr          # seminal | agent | world | mission | adr | protocol | report | blueprint
 status: active     # draft | active | archived | superseded
 version: "1.0.0"
-created: "2026-04-06"
-updated: "2026-04-06"
+created: "2026-04-06T00:00:00Z"
+updated: "2026-04-06T00:00:00Z"
 author: "pablo-fm"
 owner: "oracle"    # oracle | nimrod | adonaz | system
 tags: [governance, github, infrastructure]
@@ -234,7 +234,7 @@ executor: "nimrod"   # único executor en misiones activas
 requires_oracle_approval: false
 blocked_reason: null
 depends_on: []
-started: "2026-04-06"
+started: "2026-04-06T00:00:00Z"
 completed: null
 divergence_log: null  # rellenar al cerrar si hubo divergencia del plan
 ---

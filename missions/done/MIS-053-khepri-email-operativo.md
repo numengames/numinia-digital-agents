@@ -1,11 +1,11 @@
 ---
-id: "MIS-053"
+id: "MIS-00053"
 title: "Khepri — Email de Numen Games operativo"
 type: mission
 status: done
 version: "1.0.0"
-created: "2026-04-05"
-updated: "2026-04-05"
+created: "2026-04-05T00:00:00Z"
+updated: "2026-04-05T00:00:00Z"
 author: "pablo-fm"
 owner: "oracle"
 tags: [cao, email, identity, sentinels, khepri]
@@ -19,8 +19,8 @@ tipo: "digital"
 priority: "high"
 effort: "S"
 phase: "done"
-started: "2026-04-05"
-completed: "2026-04-05"
+started: "2026-04-05T00:00:00Z"
+completed: "2026-04-05T00:00:00Z"
 ---
 
 # MIS-053 — Khepri — Email de Numen Games operativo

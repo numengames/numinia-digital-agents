@@ -1,9 +1,9 @@
 ---
-id: "MIS-030"
+id: "MIS-00030"
 title: "Hilo semanal \"Detrás de Numen\""
 type: mission
 status: backlog
-created: "2026-04-04"
+created: "2026-04-04T00:00:00Z"
 area: "Contenido"
 guild: "Exegetas"
 tipo: "digital"

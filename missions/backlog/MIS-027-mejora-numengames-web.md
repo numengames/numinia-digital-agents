@@ -1,9 +1,9 @@
 ---
-id: "MIS-027"
+id: "MIS-00027"
 title: "Mejora de numengames.com"
 type: mission
 status: backlog
-created: "2026-04-04"
+created: "2026-04-04T00:00:00Z"
 area: "Contenido"
 guild: "Alquimistas"
 tipo: "digital"

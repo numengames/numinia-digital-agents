@@ -1,9 +1,9 @@
 ---
-id: "MIS-013"
+id: "MIS-00013"
 title: "Sistema de monitoreo y alertas"
 type: mission
 status: backlog
-created: "2026-04-04"
+created: "2026-04-04T00:00:00Z"
 area: "Infraestructura"
 guild: "Centinelas"
 tipo: "digital"

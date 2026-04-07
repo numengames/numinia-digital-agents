@@ -1,9 +1,9 @@
 ---
-id: "MIS-003"
+id: "MIS-00003"
 title: "Prototipo navegable de Numinia"
 type: mission
 status: backlog
-created: "2026-04-04"
+created: "2026-04-04T00:00:00Z"
 area: "Producto"
 guild: "Alquimistas"
 tipo: "híbrido"

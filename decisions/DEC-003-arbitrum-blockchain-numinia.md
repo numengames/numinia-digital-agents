@@ -4,8 +4,8 @@ title: "Arbitrum como blockchain de Numinia"
 type: decision
 status: provisional
 version: "1.0.0"
-created: "2026-04-05"
-updated: "2026-04-05"
+created: "2026-04-05T00:00:00Z"
+updated: "2026-04-05T00:00:00Z"
 author: "pablo-fm"
 owner: "oracle"
 tags: [decisions, product, tech, blockchain, arbitrum]

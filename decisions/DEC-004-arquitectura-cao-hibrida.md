@@ -4,8 +4,8 @@ title: "Arquitectura CAO híbrida"
 type: decision
 status: active
 version: "1.0.0"
-created: "2026-04-05"
-updated: "2026-04-05"
+created: "2026-04-05T00:00:00Z"
+updated: "2026-04-05T00:00:00Z"
 author: "pablo-fm"
 owner: "oracle"
 tags: [decisions, cao, agents, architecture]

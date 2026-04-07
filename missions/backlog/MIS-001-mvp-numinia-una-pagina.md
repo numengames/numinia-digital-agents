@@ -1,11 +1,11 @@
 ---
-id: "MIS-001"
+id: "MIS-00001"
 title: "Definir el MVP de Numinia en una página"
 type: mission
 status: backlog
 version: "1.0.0"
-created: "2026-04-04"
-updated: "2026-04-04"
+created: "2026-04-04T00:00:00Z"
+updated: "2026-04-04T00:00:00Z"
 author: "pablo-fm"
 owner: "oracle"
 tags: [product, mvp, alchemists]

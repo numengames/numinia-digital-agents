@@ -1,9 +1,9 @@
 ---
-id: "MIS-033"
+id: "MIS-00033"
 title: "Identificar 10 sponsors Web3/Gaming"
 type: mission
 status: backlog
-created: "2026-04-04"
+created: "2026-04-04T00:00:00Z"
 area: "Financiación"
 guild: "Procuradores"
 tipo: "híbrido"

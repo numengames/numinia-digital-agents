@@ -1,9 +1,9 @@
 ---
-id: "MIS-024"
+id: "MIS-00024"
 title: "Sistema de seguimiento post-call"
 type: mission
 status: backlog
-created: "2026-04-04"
+created: "2026-04-04T00:00:00Z"
 area: "Ventas"
 guild: "Centinelas"
 tipo: "digital"

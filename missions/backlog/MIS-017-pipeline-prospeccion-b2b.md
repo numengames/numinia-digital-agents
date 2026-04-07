@@ -1,9 +1,9 @@
 ---
-id: "MIS-017"
+id: "MIS-00017"
 title: "Pipeline de Prospección B2B (50 leads)"
 type: mission
 status: backlog
-created: "2026-04-04"
+created: "2026-04-04T00:00:00Z"
 area: "Ventas"
 guild: "Procuradores"
 tipo: "híbrido"

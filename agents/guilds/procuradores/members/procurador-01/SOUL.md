@@ -2,8 +2,8 @@
 agent: procurador-01
 title: "SOUL — Procurador-01"
 version: "0.1.0"
-created: "2026-04-05"
-updated: "2026-04-07"
+created: "2026-04-05T00:00:00Z"
+updated: "2026-04-07T00:00:00Z"
 status: designed
 guild: procuradores
 branch: syndics

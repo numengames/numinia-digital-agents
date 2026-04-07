@@ -1,9 +1,9 @@
 ---
-id: "MIS-045"
+id: "MIS-00045"
 title: "Documentar arquitectura de la CAO"
 type: mission
 status: backlog
-created: "2026-04-04"
+created: "2026-04-04T00:00:00Z"
 area: "Documentación"
 guild: "Centinelas"
 tipo: "digital"

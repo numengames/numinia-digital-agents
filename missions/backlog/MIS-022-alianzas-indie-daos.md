@@ -1,9 +1,9 @@
 ---
-id: "MIS-022"
+id: "MIS-00022"
 title: "Alianzas con estudios indie y DAOs"
 type: mission
 status: backlog
-created: "2026-04-04"
+created: "2026-04-04T00:00:00Z"
 area: "Ventas"
 guild: "Procuradores"
 tipo: "biológico"

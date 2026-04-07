@@ -1,9 +1,9 @@
 ---
-id: "MIS-011"
+id: "MIS-00011"
 title: "Auditoría técnica de numengames.com"
 type: mission
 status: backlog
-created: "2026-04-04"
+created: "2026-04-04T00:00:00Z"
 area: "Infraestructura"
 guild: "Centinelas"
 tipo: "híbrido"

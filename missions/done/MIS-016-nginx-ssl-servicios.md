@@ -1,11 +1,11 @@
 ---
-id: "MIS-016"
+id: "MIS-00016"
 title: "Nginx + SSL para todos los servicios del servidor"
 type: mission
 status: done
 version: "1.0.0"
-created: "2026-04-03"
-updated: "2026-04-05"
+created: "2026-04-03T00:00:00Z"
+updated: "2026-04-05T00:00:00Z"
 author: "pablo-fm"
 owner: "oracle"
 tags: [infrastructure, ssl, ops, sentinels]
@@ -19,8 +19,8 @@ tipo: "digital"
 priority: "critical"
 effort: "M"
 phase: "done"
-started: "2026-04-04"
-completed: "2026-04-05"
+started: "2026-04-04T00:00:00Z"
+completed: "2026-04-05T00:00:00Z"
 ---
 
 # MIS-016 — Nginx + SSL para todos los servicios del servidor

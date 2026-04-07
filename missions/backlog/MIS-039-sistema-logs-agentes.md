@@ -1,9 +1,9 @@
 ---
-id: "MIS-039"
+id: "MIS-00039"
 title: "Sistema de logs de agentes"
 type: mission
 status: backlog
-created: "2026-04-04"
+created: "2026-04-04T00:00:00Z"
 area: "CAO"
 guild: "Centinelas"
 tipo: "digital"

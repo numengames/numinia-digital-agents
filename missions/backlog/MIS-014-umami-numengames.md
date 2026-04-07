@@ -1,9 +1,9 @@
 ---
-id: "MIS-014"
+id: "MIS-00014"
 title: "Instalar Umami en numengames.com"
 type: mission
 status: backlog
-created: "2026-04-04"
+created: "2026-04-04T00:00:00Z"
 area: "Infraestructura"
 guild: "Centinelas"
 tipo: "digital"

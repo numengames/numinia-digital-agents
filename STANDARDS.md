@@ -30,7 +30,7 @@ created: "2026-04-07T12:56:00Z"        # UTC (recomendado para campos de sistema
 updated: "2026-04-07T14:23:00+02:00"   # Con timezone local (para campos visibles al humano)
 
 # ❌ Incorrecto
-created: "2026-04-07"                   # Fecha sin hora — ambiguo
+created: "2026-04-07T00:00:00Z"                   # Fecha sin hora — ambiguo
 updated: "07/04/2026"                   # Formato no estándar
 ```
 

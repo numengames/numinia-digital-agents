@@ -4,8 +4,8 @@ title: "pablofm.com como portal público de la CAO"
 type: decision
 status: active
 version: "1.0.0"
-created: "2026-04-03"
-updated: "2026-04-03"
+created: "2026-04-03T00:00:00Z"
+updated: "2026-04-03T00:00:00Z"
 author: "pablo-fm"
 owner: "oracle"
 tags: [decisions, product, communication, web]

@@ -1,11 +1,11 @@
 ---
-id: "MIS-056"
+id: "MIS-00056"
 title: "i18n — Documentación y sistema bilingüe ES + EN"
 type: mission
 status: backlog
 version: "1.0.0"
-created: "2026-04-07"
-updated: "2026-04-07"
+created: "2026-04-07T00:00:00Z"
+updated: "2026-04-07T00:00:00Z"
 author: "pablo-fm"
 owner: "oracle"
 tags: [documentation, i18n, spanish, english, nwos]

@@ -1,9 +1,9 @@
 ---
-id: "MIS-031"
+id: "MIS-00031"
 title: "Revisión final del Grant Arbitrum"
 type: mission
 status: backlog
-created: "2026-04-04"
+created: "2026-04-04T00:00:00Z"
 area: "Financiación"
 guild: "Procuradores"
 tipo: "digital"

@@ -1,9 +1,9 @@
 ---
-id: "MIS-012"
+id: "MIS-00012"
 title: "Configurar pipeline CI/CD numengames.com"
 type: mission
 status: backlog
-created: "2026-04-04"
+created: "2026-04-04T00:00:00Z"
 area: "Infraestructura"
 guild: "Centinelas"
 tipo: "digital"

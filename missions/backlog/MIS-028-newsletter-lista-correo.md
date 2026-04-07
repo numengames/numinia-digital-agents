@@ -1,9 +1,9 @@
 ---
-id: "MIS-028"
+id: "MIS-00028"
 title: "Newsletter / Lista de correo fundacional"
 type: mission
 status: backlog
-created: "2026-04-04"
+created: "2026-04-04T00:00:00Z"
 area: "Contenido"
 guild: "Procuradores"
 tipo: "híbrido"

@@ -1,9 +1,9 @@
 ---
-id: "MIS-048"
+id: "MIS-00048"
 title: "Sistema de costes por agente"
 type: mission
 status: backlog
-created: "2026-04-04"
+created: "2026-04-04T00:00:00Z"
 area: "Operaciones"
 guild: "Centinelas"
 tipo: "digital"

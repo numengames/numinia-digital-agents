@@ -1,11 +1,11 @@
 ---
-id: "MIS-051"
+id: "MIS-00051"
 title: "Integración Gmail, Calendar y Drive con gog"
 type: mission
 status: done
 version: "1.0.0"
-created: "2026-04-05"
-updated: "2026-04-06"
+created: "2026-04-05T00:00:00Z"
+updated: "2026-04-06T00:00:00Z"
 author: "pablo-fm"
 owner: "oracle"
 tags: [cao, gog, gmail, calendar, drive, sentinels]
@@ -19,8 +19,8 @@ tipo: "digital"
 priority: "critical"
 effort: "M"
 phase: "done"
-started: "2026-04-05"
-completed: "2026-04-05"
+started: "2026-04-05T00:00:00Z"
+completed: "2026-04-05T00:00:00Z"
 ---
 
 # MIS-051 — Integración Gmail, Calendar y Drive con gog

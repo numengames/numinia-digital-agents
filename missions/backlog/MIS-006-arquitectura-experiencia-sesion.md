@@ -1,9 +1,9 @@
 ---
-id: "MIS-006"
+id: "MIS-00006"
 title: "Arquitectura de experiencia: sesión Numinia"
 type: mission
 status: backlog
-created: "2026-04-04"
+created: "2026-04-04T00:00:00Z"
 area: "Producto"
 guild: "Exegetas"
 tipo: "biológico"

@@ -2,8 +2,8 @@
 agent: adonaz
 title: "SOUL — Adonaz"
 version: "0.1.0"
-created: "2026-04-06"
-updated: "2026-04-06"
+created: "2026-04-06T00:00:00Z"
+updated: "2026-04-06T00:00:00Z"
 status: active
 guild: exegetas
 role: "General Archivist"

@@ -2,7 +2,7 @@
 agent: nimrod
 title: "STATUS — Nimrod"
 version: "1.0.0"
-updated: "2026-04-07"
+updated: "2026-04-07T00:00:00Z"
 status: active
 guild: centinelas
 license: "CC0-1.0"

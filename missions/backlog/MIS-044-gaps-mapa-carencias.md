@@ -1,9 +1,9 @@
 ---
-id: "MIS-044"
+id: "MIS-00044"
 title: "GAPS.md — Mapa de carencias de Numen Games"
 type: mission
 status: backlog
-created: "2026-04-04"
+created: "2026-04-04T00:00:00Z"
 area: "Documentación"
 guild: "Procuradores"
 tipo: "híbrido"

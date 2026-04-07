@@ -1,9 +1,9 @@
 ---
-id: "MIS-004"
+id: "MIS-00004"
 title: "Definir el modelo de monetización v1"
 type: mission
 status: backlog
-created: "2026-04-04"
+created: "2026-04-04T00:00:00Z"
 area: "Producto"
 guild: "Procuradores"
 tipo: "biológico"

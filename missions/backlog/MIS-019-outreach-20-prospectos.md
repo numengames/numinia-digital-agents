@@ -1,9 +1,9 @@
 ---
-id: "MIS-019"
+id: "MIS-00019"
 title: "Outreach secuencial a 20 prospectos"
 type: mission
 status: backlog
-created: "2026-04-04"
+created: "2026-04-04T00:00:00Z"
 area: "Ventas"
 guild: "Procuradores"
 tipo: "híbrido"

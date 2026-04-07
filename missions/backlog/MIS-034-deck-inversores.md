@@ -1,9 +1,9 @@
 ---
-id: "MIS-034"
+id: "MIS-00034"
 title: "Deck para inversores ángel v1.0"
 type: mission
 status: backlog
-created: "2026-04-04"
+created: "2026-04-04T00:00:00Z"
 area: "Financiación"
 guild: "Procuradores"
 tipo: "híbrido"

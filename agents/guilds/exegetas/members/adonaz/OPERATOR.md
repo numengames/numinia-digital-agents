@@ -2,7 +2,7 @@
 agent: adonaz
 title: "OPERATOR — Adonaz"
 version: "1.0.0"
-created: "2026-04-06"
+created: "2026-04-06T00:00:00Z"
 status: active
 guild: exegetas
 license: "CC0-1.0"

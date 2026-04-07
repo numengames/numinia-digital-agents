@@ -4,8 +4,8 @@ title: "Backlog de Misiones — Índice Maestro"
 type: index
 status: active
 version: "1.0.0"
-created: "2026-04-07"
-updated: "2026-04-07"
+created: "2026-04-07T00:00:00Z"
+updated: "2026-04-07T00:00:00Z"
 author: "nimrod"
 license: "CC0-1.0"
 total_missions: 54

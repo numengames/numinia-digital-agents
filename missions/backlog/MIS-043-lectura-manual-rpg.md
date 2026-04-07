@@ -1,9 +1,9 @@
 ---
-id: "MIS-043"
+id: "MIS-00043"
 title: "Completar lectura del Manual RPG de Numinia"
 type: mission
 status: backlog
-created: "2026-04-04"
+created: "2026-04-04T00:00:00Z"
 area: "Documentación"
 guild: "Exegetas"
 tipo: "digital"

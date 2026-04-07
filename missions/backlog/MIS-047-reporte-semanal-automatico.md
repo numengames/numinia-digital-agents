@@ -1,9 +1,9 @@
 ---
-id: "MIS-047"
+id: "MIS-00047"
 title: "Configurar reporte semanal automático"
 type: mission
 status: backlog
-created: "2026-04-04"
+created: "2026-04-04T00:00:00Z"
 area: "Operaciones"
 guild: "Centinelas"
 tipo: "digital"

@@ -1,11 +1,11 @@
 ---
-id: "MIS-057"
+id: "MIS-00057"
 title: "QA Profundo del Sistema NWOS — Coherencia, Ciclos, Human-in-the-Loop, Métricas"
 type: mission
 status: en-curso
 version: "1.0.0"
-created: "2026-04-07"
-updated: "2026-04-07"
+created: "2026-04-07T00:00:00Z"
+updated: "2026-04-07T00:00:00Z"
 author: "pablo-fm"
 owner: "oracle"
 tags: [cao, qa, system, coherence, metrics, human-approval]
@@ -20,7 +20,7 @@ priority: "critical"
 effort: "XL"
 phase: "active"
 human_approval_score: 9
-started: "2026-04-07"
+started: "2026-04-07T00:00:00Z"
 ---
 
 # MIS-057 — QA Profundo del Sistema NWOS

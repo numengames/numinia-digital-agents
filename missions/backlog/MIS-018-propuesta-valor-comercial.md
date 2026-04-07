@@ -1,9 +1,9 @@
 ---
-id: "MIS-018"
+id: "MIS-00018"
 title: "Propuesta de Valor Comercial (One-Pager)"
 type: mission
 status: backlog
-created: "2026-04-04"
+created: "2026-04-04T00:00:00Z"
 area: "Ventas"
 guild: "Exegetas"
 tipo: "digital"

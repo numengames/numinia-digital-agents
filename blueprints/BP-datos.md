@@ -4,8 +4,8 @@ title: "Modelo de Datos"
 type: blueprint
 status: active
 version: "v0.1.0"
-created: "2026-04-05"
-updated: "2026-04-05"
+created: "2026-04-05T00:00:00Z"
+updated: "2026-04-05T00:00:00Z"
 author: "nimrod"
 owner: "oracle"
 tags: [blueprint, product, tech, data, blockchain, nft]

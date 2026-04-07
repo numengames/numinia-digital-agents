@@ -1,9 +1,9 @@
 ---
-id: "MIS-020"
+id: "MIS-00020"
 title: "Demo / Pitch Deck interactivo"
 type: mission
 status: backlog
-created: "2026-04-04"
+created: "2026-04-04T00:00:00Z"
 area: "Ventas"
 guild: "Alquimistas"
 tipo: "digital"

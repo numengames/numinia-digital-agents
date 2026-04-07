@@ -2,8 +2,8 @@
 agent: nimrod
 title: "SOUL — Nimrod"
 version: "0.2.0"
-created: "2026-04-02"
-updated: "2026-04-07"
+created: "2026-04-02T00:00:00Z"
+updated: "2026-04-07T00:00:00Z"
 status: active
 guild: centinelas
 branch: archangels

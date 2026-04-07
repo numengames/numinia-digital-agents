@@ -1,11 +1,11 @@
 ---
-id: "MIS-037"
+id: "MIS-00037"
 title: "Crear repositorio numinia-agents (Archive Summa)"
 type: mission
 status: done
 version: "1.0.0"
-created: "2026-04-04"
-updated: "2026-04-06"
+created: "2026-04-04T00:00:00Z"
+updated: "2026-04-06T00:00:00Z"
 author: "pablo-fm"
 owner: "oracle"
 tags: [cao, repository, archive, sentinels, documentation]
@@ -19,8 +19,8 @@ tipo: "digital"
 priority: "critical"
 effort: "L"
 phase: "done"
-started: "2026-04-05"
-completed: "2026-04-06"
+started: "2026-04-05T00:00:00Z"
+completed: "2026-04-06T00:00:00Z"
 ---
 
 # MIS-037 — Crear repositorio numinia-agents (Archive Summa)

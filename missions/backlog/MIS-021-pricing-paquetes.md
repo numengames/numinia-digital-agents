@@ -1,9 +1,9 @@
 ---
-id: "MIS-021"
+id: "MIS-00021"
 title: "Definición de Pricing y Paquetes"
 type: mission
 status: backlog
-created: "2026-04-04"
+created: "2026-04-04T00:00:00Z"
 area: "Ventas"
 guild: "Exegetas"
 tipo: "biológico"

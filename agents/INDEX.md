@@ -4,8 +4,8 @@ title: "Agents — Index"
 type: agent
 status: active
 version: "1.0.0"
-created: "2026-04-06"
-updated: "2026-04-06"
+created: "2026-04-06T00:00:00Z"
+updated: "2026-04-06T00:00:00Z"
 author: "nimrod"
 owner: "oracle"
 tags: [agents, index]

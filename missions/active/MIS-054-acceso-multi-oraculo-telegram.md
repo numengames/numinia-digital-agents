@@ -1,11 +1,11 @@
 ---
-id: "MIS-054"
+id: "MIS-00054"
 title: "Acceso multi-Oráculo a Nimrod vía Telegram"
 type: mission
 status: en-curso
 version: "1.0.0"
-created: "2026-04-06"
-updated: "2026-04-06"
+created: "2026-04-06T00:00:00Z"
+updated: "2026-04-06T00:00:00Z"
 author: "pablo-fm"
 owner: "oracle"
 tags: [cao, telegram, access, sentinels, multi-oracle]
@@ -19,7 +19,7 @@ tipo: "digital"
 priority: "high"
 effort: "S"
 phase: "active"
-started: "2026-04-06"
+started: "2026-04-06T00:00:00Z"
 completed: null
 ---
 

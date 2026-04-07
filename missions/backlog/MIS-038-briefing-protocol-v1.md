@@ -1,9 +1,9 @@
 ---
-id: "MIS-038"
+id: "MIS-00038"
 title: "Diseñar Briefing Protocol v1.0"
 type: mission
 status: backlog
-created: "2026-04-04"
+created: "2026-04-04T00:00:00Z"
 area: "CAO"
 guild: "Centinelas"
 tipo: "digital"

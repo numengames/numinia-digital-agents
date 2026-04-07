@@ -1,9 +1,9 @@
 ---
-id: "MIS-040"
+id: "MIS-00040"
 title: "Dashboard CAO: definición de KPIs"
 type: mission
 status: backlog
-created: "2026-04-04"
+created: "2026-04-04T00:00:00Z"
 area: "CAO"
 guild: "Centinelas"
 tipo: "híbrido"

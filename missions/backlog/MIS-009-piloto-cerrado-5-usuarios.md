@@ -1,9 +1,9 @@
 ---
-id: "MIS-009"
+id: "MIS-00009"
 title: "Piloto cerrado con 5 usuarios beta"
 type: mission
 status: backlog
-created: "2026-04-04"
+created: "2026-04-04T00:00:00Z"
 area: "Producto"
 guild: "Alquimistas"
 tipo: "híbrido"

@@ -2,7 +2,7 @@
 agent: nimrod
 title: "STATUS — Nimrod"
 version: "auto"
-updated: "2026-04-06"
+updated: "2026-04-06T00:00:00Z"
 status: active
 license: "CC0-1.0"
 ---

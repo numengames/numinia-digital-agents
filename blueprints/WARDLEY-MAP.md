@@ -5,8 +5,8 @@ type: blueprint
 subtype: wardley-map
 status: active
 version: "v0.1.0"
-created: "2026-04-07"
-updated: "2026-04-07"
+created: "2026-04-07T00:00:00Z"
+updated: "2026-04-07T00:00:00Z"
 author: "nimrod"
 owner: "oracle"
 tags: [blueprint, wardley, strategy, nwos]

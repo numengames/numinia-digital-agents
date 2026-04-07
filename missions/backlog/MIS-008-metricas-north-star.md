@@ -1,9 +1,9 @@
 ---
-id: "MIS-008"
+id: "MIS-00008"
 title: "Definir métricas North Star del producto"
 type: mission
 status: backlog
-created: "2026-04-04"
+created: "2026-04-04T00:00:00Z"
 area: "Producto"
 guild: "Exegetas"
 tipo: "biológico"

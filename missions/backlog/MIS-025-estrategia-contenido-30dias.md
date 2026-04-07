@@ -1,9 +1,9 @@
 ---
-id: "MIS-025"
+id: "MIS-00025"
 title: "Estrategia de contenido 30 días"
 type: mission
 status: backlog
-created: "2026-04-04"
+created: "2026-04-04T00:00:00Z"
 area: "Contenido"
 guild: "Exegetas"
 tipo: "híbrido"

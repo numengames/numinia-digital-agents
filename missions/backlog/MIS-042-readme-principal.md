@@ -1,9 +1,9 @@
 ---
-id: "MIS-042"
+id: "MIS-00042"
 title: "README principal de numinia-agents"
 type: mission
 status: backlog
-created: "2026-04-04"
+created: "2026-04-04T00:00:00Z"
 area: "Documentación"
 guild: "Exegetas"
 tipo: "digital"

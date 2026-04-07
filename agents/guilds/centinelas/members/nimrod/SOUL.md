@@ -2,8 +2,8 @@
 agent: nimrod
 title: "SOUL — Nimrod"
 version: "0.3.0"
-created: "2026-03-15"
-updated: "2026-04-06"
+created: "2026-03-15T00:00:00Z"
+updated: "2026-04-06T00:00:00Z"
 status: active
 guild: centinelas
 role: "Guardian of the Gates"

@@ -1,9 +1,9 @@
 ---
-id: "MIS-007"
+id: "MIS-00007"
 title: "Integrar Cal.com en onboarding de Numinia"
 type: mission
 status: backlog
-created: "2026-04-04"
+created: "2026-04-04T00:00:00Z"
 area: "Producto"
 guild: "Centinelas"
 tipo: "híbrido"

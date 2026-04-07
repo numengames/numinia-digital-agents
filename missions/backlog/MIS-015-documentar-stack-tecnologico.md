@@ -1,9 +1,9 @@
 ---
-id: "MIS-015"
+id: "MIS-00015"
 title: "Documentar stack tecnológico de Numinia"
 type: mission
 status: backlog
-created: "2026-04-04"
+created: "2026-04-04T00:00:00Z"
 area: "Infraestructura"
 guild: "Alquimistas"
 tipo: "biológico"

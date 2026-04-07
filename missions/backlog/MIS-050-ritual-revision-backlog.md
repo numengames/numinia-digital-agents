@@ -1,9 +1,9 @@
 ---
-id: "MIS-050"
+id: "MIS-00050"
 title: "Ritual de revisión del backlog (Dark Council)"
 type: mission
 status: backlog
-created: "2026-04-04"
+created: "2026-04-04T00:00:00Z"
 area: "Operaciones"
 guild: "Procuradores"
 tipo: "híbrido"
