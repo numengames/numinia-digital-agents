@@ -3,8 +3,9 @@ id: "ops-security"
 title: "Security Policy"
 type: protocol
 status: active
-version: "1.0.0"
+version: "1.1.0"
 created: "2026-04-06T00:00:00Z"
+updated: "2026-04-07T18:00:00Z"
 author: "nimrod"
 owner: "oracle"
 tags: [operations, security]
@@ -12,13 +13,12 @@ license: "CC0-1.0"
 ---
 # Security Policy
 
-> **Resumen:** Protocolo operativo estándar del sistema NWOS.
-> **Epistémico:** Cómo se ejecuta este proceso y por qué de esta forma.
-> **Pragmático:** Seguir estos pasos en el contexto especificado.
-> **Audiencia:** Agentes
+> **Summary:** Standard operational security protocol for the NWOS system.
+> **Epistemic:** How this process is executed and why in this way.
+> **Pragmatic:** Follow these steps in the specified context.
+> **Audience:** Agents
 
 ---
-
 
 ## What NEVER goes in this repository
 
@@ -46,3 +46,10 @@ Before any commit, verify:
 ## Credential management
 
 See `operations/credential-map.md` for the structure of credentials without real values.
+
+---
+
+## Version history
+
+- v1.0.0 (2026-04-06) — Initial creation.
+- v1.1.0 (2026-04-07) — Translated to English (MIS-056).

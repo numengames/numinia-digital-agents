@@ -3,22 +3,22 @@ id: "decisions-index"
 title: "Decisions — Index"
 type: adr
 status: active
-version: "1.0.0"
+version: "1.1.0"
 created: "2026-04-06T00:00:00Z"
+updated: "2026-04-07T18:00:00Z"
 author: "nimrod"
 owner: "oracle"
 tags: [decisions, index, adr]
 license: "CC0-1.0"
 ---
-# Decisions — Voluntad Cristalizada
+# Decisions — Crystallized Will
 
-> **Resumen:** Documento del sistema NWOS — Decisions — Index.
-> **Epistémico:** Qué se decidió, por qué, y qué alternativas se descartaron.
-> **Pragmático:** Consultar antes de tomar decisiones en el mismo dominio.
-> **Audiencia:** Agentes · Oráculos
+> **Summary:** NWOS system document — Decisions — Index.
+> **Epistemic:** What was decided, why, and what alternatives were discarded.
+> **Pragmatic:** Consult before making decisions in the same domain.
+> **Audience:** Agents · Oracles
 
 ---
-
 
 Architectural Decision Records (ADR) of the Narrative Work OS. These records are:
 - **Append-only** — never delete
@@ -27,15 +27,15 @@ Architectural Decision Records (ADR) of the Narrative Work OS. These records are
 
 ## Active decisions
 
-| ID | Decisión | Estado | Fecha |
-|---|---|---|---|
+| ID | Decision | Status | Date |
+|----|----------|--------|------|
 | ADR-001 | GitHub as Archive Summa | ✅ Active | 2026-04-06 |
 | ADR-002 | Markdown as universal format | ✅ Active | 2026-04-06 |
-| DEC-001 | Self-hosting sobre SaaS | ✅ Activa | 2026-04-03 |
-| DEC-002 | Construir en público con licencia CC0 | ✅ Activa | 2026-04-02 |
-| DEC-003 | Arbitrum como blockchain de Numinia | ⚠️ Provisional | 2026-04-05 |
-| DEC-004 | Arquitectura CAO híbrida | ✅ Activa | 2026-04-05 |
-| DEC-005 | pablofm.com como portal público de la CAO | ✅ Activa | 2026-04-03 |
+| DEC-001 | Self-hosting over SaaS | ✅ Active | 2026-04-03 |
+| DEC-002 | Build in public with CC0 license | ✅ Active | 2026-04-02 |
+| DEC-003 | Arbitrum as Numinia blockchain | ⚠️ Provisional | 2026-04-05 |
+| DEC-004 | Hybrid CAO architecture | ✅ Active | 2026-04-05 |
+| DEC-005 | pablofm.com as public CAO portal | ✅ Active | 2026-04-03 |
 
 ## How to create an ADR
 
@@ -44,3 +44,10 @@ Architectural Decision Records (ADR) of the Narrative Work OS. These records are
 3. Fill context, decision, and consequences
 4. Open PR with label `decision`
 5. Oracle approves and merges
+
+---
+
+## Version history
+
+- v1.0.0 (2026-04-06) — Initial creation.
+- v1.1.0 (2026-04-07) — Translated to English (MIS-056).

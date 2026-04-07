@@ -1,9 +1,9 @@
 ---
 agent: adonaz
 title: "STATUS — Adonaz"
-version: "0.1.0"
+version: "0.2.0"
 created: "2026-04-07T00:00:00Z"
-updated: "2026-04-07T00:00:00Z"
+updated: "2026-04-07T18:00:00Z"
 status: active
 guild: Procurator
 branch: Trustee
@@ -12,66 +12,73 @@ license: "CC0-1.0"
 ---
 # STATUS — Adonaz
 
-> **Resumen:** Estado operativo actual de Adonaz.
-> **Epistémico:** Métricas, capacidades y pendientes.
-> **Pragmático:** Briefing rápido antes de activar al agente.
-> **Audiencia:** Agentes · Oráculos
+> **Summary:** Current operational status of Adonaz.
+> **Epistemic:** Metrics, capabilities, and pending items.
+> **Pragmatic:** Quick briefing before activating the agent.
+> **Audience:** Agents · Oracles
 
 ---
 
-**Estado:** ✅ Activo
-**Activado:** 2026-04-06
-**Última sesión:** 2026-04-07
-**Modelo:** anthropic/claude-haiku-3-5
+**Status:** ✅ Active
+**Activated:** 2026-04-06
+**Last session:** 2026-04-07
+**Model:** anthropic/claude-haiku-3-5
 
 ---
 
-## Métricas acumuladas
+## Cumulative metrics
 
-| Métrica | Valor |
-|---------|-------|
-| Días activo | 1 |
-| Misiones completadas | 1 (MIS-037 — Archive Summa) |
-| Documentos indexados | 43 (8 fondos documentales) |
-| Fondos bajo custodia | 8 |
-
----
-
-## Capacidades operativas
-
-- ✅ Archive Summa — lectura, indexación, curación
-- ✅ GitHub — lectura del repo numinia-digital-agents
-- ⬜ gog CLI — no configurado
-- ⬜ Email — no configurado
-- ⬜ Shell/exec — no habilitado (no necesario para el rol)
+| Metric | Value |
+|--------|-------|
+| Days active | 1 |
+| Missions completed | 1 (MIS-037 — Archive Summa) |
+| Documents indexed | 43 (8 documentary funds) |
+| Funds under custody | 8 |
 
 ---
 
-## Fondos documentales bajo custodia
+## Active operational capabilities
 
-| Fondo | Ruta | Documentos |
-|-------|------|------------|
-| Canon | `canon/` | 9 (inmutables) |
-| Agentes | `agents/` | 5+ |
-| Misiones | `missions/` | 53+ |
-| Protocolos | `protocols/` | 2+ |
-| Decisiones | `decisions/` | 5+ |
+- ✅ Archive Summa — reading, indexing, curation
+- ✅ GitHub — read access to numinia-digital-agents repo
+- ⬜ gog CLI — not configured
+- ⬜ Email — not configured
+- ⬜ Shell/exec — not enabled (not required for the role)
+
+---
+
+## Documentary funds under custody
+
+| Fund | Path | Documents |
+|------|------|-----------|
+| Canon | `canon/` | 9 (immutable) |
+| Agents | `agents/` | 5+ |
+| Missions | `missions/` | 53+ |
+| Protocols | `protocols/` | 2+ |
+| Decisions | `decisions/` | 5+ |
 | Blueprints | `blueprints/` | 8+ |
-| Operaciones | `operations/` | 3+ |
-| Reportes | `reports/` | 5+ |
+| Operations | `operations/` | 3+ |
+| Reports | `reports/` | 5+ |
 
 ---
 
-## Misiones
+## Missions
 
-| ID | Título | Estado |
-|----|--------|--------|
-| MIS-037 | Archive Summa — diseño e indexación | ✅ Completada |
+| ID | Title | Status |
+|----|-------|--------|
+| MIS-037 | Archive Summa — design and indexing | ✅ Completed |
 
 ---
 
-## Pendientes
+## Pending
 
-- [ ] Completar indexación de misiones (53+ docs)
-- [ ] Proponer sistema de tags cruzados entre fondos
-- [ ] Knowledge Graph relacional (identificado como dimensión faltante)
+- [ ] Complete indexing of missions (53+ docs)
+- [ ] Propose cross-fund tagging system
+- [ ] Relational knowledge graph (identified as missing dimension)
+
+---
+
+## VERSION HISTORY
+
+- v0.1.0 (2026-04-07) — Initial design.
+- v0.2.0 (2026-04-07) — Translated to English (MIS-056).

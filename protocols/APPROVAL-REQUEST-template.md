@@ -3,25 +3,24 @@ id: "APR-TEMPLATE"
 title: "Approval Request — Template"
 type: template
 status: active
-version: "1.0.0"
+version: "1.1.0"
 created: "2026-04-07T12:56:00Z"
-updated: "2026-04-07T12:56:00Z"
+updated: "2026-04-07T18:00:00Z"
 author: "nimrod"
 owner: "oracle"
 tags: [template, approval, human-in-the-loop]
 license: "CC0-1.0"
 ---
-# Template — Solicitud de Aprobación
+# Template — Approval Request
 
-> **Resumen:** Template reutilizable para crear documentos del sistema.
-> **Epistémico:** Qué aprendes leyendo este documento.
-> **Pragmático:** Qué puedes hacer con este documento.
-> **Audiencia:** Agentes
+> **Summary:** Reusable template for creating approval request documents.
+> **Epistemic:** What you learn by reading this document.
+> **Pragmatic:** What you can do with this document.
+> **Audience:** Agents
 
 ---
 
-
-*Copia este template cuando necesites aprobación humana. Rellena todas las secciones.*
+*Copy this template whenever you need human approval. Fill in all sections.*
 
 ---
 
@@ -29,91 +28,91 @@ license: "CC0-1.0"
 ---
 id: "APR-{YYYYMMDD}-{NNN}"
 type: approval-request
-agent: "{nombre-agente}"
-mission: "{MIS-NNNNN o N/A}"
+agent: "{agent-name}"
+mission: "{MIS-NNNNN or N/A}"
 score: {1-10}
 created: "{YYYY-MM-DDTHH:MM:SSZ}"
 status: pending
 oracle_response: ""
 ---
 
-## 🔔 SOLICITUD DE APROBACIÓN
+## 🔔 APPROVAL REQUEST
 
-**Agente:** {nombre} | **Misión:** {MIS-NNNNN} | **Score:** {X}/10
-
----
-
-### CONTEXTO MÍNIMO
-> Lo que necesitas saber para no estar volando a ciegas.
-
-{2-4 frases. Estado actual / por qué surge ahora / qué lo originó.}
+**Agent:** {name} | **Mission:** {MIS-NNNNN} | **Score:** {X}/10
 
 ---
 
-### ACCIÓN PROPUESTA
+### MINIMUM CONTEXT
+> What you need to know to not be flying blind.
 
-{Descripción exacta de lo que se va a ejecutar. Sin ambigüedad.}
-
-**Alternativas descartadas:**
-- {Opción A descartada — por qué}
-- {Opción B descartada — por qué}
+{2-4 sentences. Current state / why it arises now / what triggered it.}
 
 ---
 
-### VALOR EPISTÉMICO
-> ¿Qué aprendemos si se ejecuta?
+### PROPOSED ACTION
 
-- **Si sale bien:** {hipótesis validada / conocimiento confirmado}
-- **Si sale mal:** {qué revela del sistema}
-- **Si no se ejecuta:** {qué permanece desconocido}
+{Exact description of what will be executed. No ambiguity.}
 
----
-
-### VALOR PRAGMÁTICO
-> ¿Qué impacto tiene en el mundo real?
-
-- **Impacto inmediato:** {cambios en archivos / sistemas / personas}
-- **Impacto diferido:** {consecuencias a 24h / 1 semana}
-- **Reversibilidad:** {reversible | parcialmente reversible | irreversible}
+**Discarded alternatives:**
+- {Option A discarded — why}
+- {Option B discarded — why}
 
 ---
 
-### EJEMPLO PRÁCTICO *(omitir si la acción es obvia)*
+### EPISTEMIC VALUE
+> What do we learn if executed?
 
-{Un caso concreto donde esto marca la diferencia.}
-
----
-
-### COSTE DE NO DECIDIR
-
-{¿Qué pasa si no hay respuesta en 48h?}
+- **If it goes well:** {validated hypothesis / confirmed knowledge}
+- **If it goes wrong:** {what it reveals about the system}
+- **If not executed:** {what remains unknown}
 
 ---
 
-### SCORE DE IMPORTANCIA: {X}/10
+### PRAGMATIC VALUE
+> What real-world impact does it have?
 
-**Escala:**
-- 1-2: Rutina — no requiere aprobación
-- 3-4: Operativo — impacto limitado, reversible (24h)
-- 5-6: Táctico — impacto moderado (24h)
-- 7-8: Estratégico — afecta arquitectura (12h)
-- 9: Sistémico — canon / OPERATOR / seguridad (inmediato)
-- 10: Fundacional — irreversible / reputación / dinero (inmediato + reunión)
-
-**Justificación del score:** {Una frase que explica por qué este número.}
+- **Immediate impact:** {changes to files / systems / people}
+- **Deferred impact:** {consequences at 24h / 1 week}
+- **Reversibility:** {reversible | partially reversible | irreversible}
 
 ---
 
-**¿Apruebas?**
-- [ ] Sí — procedo
-- [ ] No — documento en decisions/ y archivo
-- [ ] Defiero hasta: {fecha}
-- [ ] Modificar: {instrucciones}
+### PRACTICAL EXAMPLE *(omit if the action is obvious)*
+
+{A concrete case where this makes a difference.}
+
+---
+
+### COST OF NOT DECIDING
+
+{What happens if there is no response within 48h?}
+
+---
+
+### IMPORTANCE SCORE: {X}/10
+
+**Scale:**
+- 1-2: Routine — no approval required
+- 3-4: Operational — limited impact, reversible (24h)
+- 5-6: Tactical — moderate impact (24h)
+- 7-8: Strategic — affects architecture (12h)
+- 9: Systemic — canon / OPERATOR / security (immediate)
+- 10: Foundational — irreversible / reputation / money (immediate + meeting)
+
+**Score justification:** {One sentence explaining why this number.}
+
+---
+
+**Do you approve?**
+- [ ] Yes — I proceed
+- [ ] No — I document in decisions/ and archive
+- [ ] Defer until: {date}
+- [ ] Modify: {instructions}
 ```
 
 ---
 
-## Ejemplo completado — score 8/10
+## Completed example — score 8/10
 
 ```markdown
 ---
@@ -124,64 +123,71 @@ mission: "MIS-00057"
 score: 8
 created: "2026-04-07T12:56:00Z"
 status: approved
-oracle_response: "Aprobado — go"
+oracle_response: "Approved — go"
 ---
 
-## 🔔 SOLICITUD DE APROBACIÓN
+## 🔔 APPROVAL REQUEST
 
-**Agente:** Nimrod | **Misión:** MIS-00057 | **Score:** 8/10
-
----
-
-### CONTEXTO MÍNIMO
-
-La arquitectura actual organiza los agentes bajo `agents/guilds/`. Esto causó un bug: 
-Nimrod existe en dos rutas simultáneas (sentinels/ y centinelas/ — el mismo gremio en 
-dos idiomas). La solución es mover los agentes a una capa raíz independiente.
+**Agent:** Nimrod | **Mission:** MIS-00057 | **Score:** 8/10
 
 ---
 
-### ACCIÓN PROPUESTA
+### MINIMUM CONTEXT
 
-Migrar todos los archivos de agentes a `agents/{nombre-agente}/` y crear `guilds/` 
-con solo charter.md y roster.md por gremio. Actualizar P-001, README y agents/INDEX.md.
-
-**Alternativas descartadas:**
-- Mantener la estructura actual — perpetúa el bug y viola el modelo conceptual
-- Solo eliminar la duplicación — parche sin resolver la causa raíz
+The current architecture organizes agents under `agents/guilds/`. This caused a bug:
+Nimrod exists in two simultaneous paths (sentinels/ and centinelas/ — the same guild in
+two languages). The solution is to move agents to an independent root layer.
 
 ---
 
-### VALOR EPISTÉMICO
+### PROPOSED ACTION
 
-- **Si sale bien:** Confirma que la arquitectura flat escala a multi-guild sin duplicación
-- **Si sale mal:** Revela dependencias ocultas en P-001 o herramientas que asumen la ruta actual
-- **Si no se ejecuta:** El bug crece con cada nuevo agente que se active
+Migrate all agent files to `agents/{agent-name}/` and create `guilds/` with only
+charter.md and roster.md per guild. Update P-001, README and agents/INDEX.md.
 
----
-
-### VALOR PRAGMÁTICO
-
-- **Impacto inmediato:** ~15 archivos movidos, 3 documentos actualizados
-- **Impacto diferido:** Cualquier agente nuevo se crea en la estructura correcta desde el principio
-- **Reversibilidad:** Reversible con git revert, pero requiere avisar a agentes activos
+**Discarded alternatives:**
+- Keep the current structure — perpetuates the bug and violates the conceptual model
+- Only eliminate the duplication — a patch without resolving the root cause
 
 ---
 
-### COSTE DE NO DECIDIR
+### EPISTEMIC VALUE
 
-El bug sentinels/centinelas persiste. Cualquier nuevo agente hereda la misma confusión. 
-Cuando haya 5+ agentes activos, la deuda arquitectónica será mucho más cara de resolver.
-
----
-
-### SCORE DE IMPORTANCIA: 8/10
-
-Afecta el protocolo de arranque (P-001) de todos los agentes futuros y codifica 
-la distinción semántica agente-guild que es central al modelo del NWOS.
+- **If it goes well:** Confirms that the flat architecture scales to multi-guild without duplication
+- **If it goes wrong:** Reveals hidden dependencies in P-001 or tools that assume the current path
+- **If not executed:** The bug grows with every new agent that gets activated
 
 ---
 
-**¿Apruebas?**
-- [x] Sí — procedo
+### PRAGMATIC VALUE
+
+- **Immediate impact:** ~15 files moved, 3 documents updated
+- **Deferred impact:** Any new agent is created in the correct structure from the start
+- **Reversibility:** Reversible with git revert, but requires notifying active agents
+
+---
+
+### COST OF NOT DECIDING
+
+The sentinels/centinelas bug persists. Any new agent inherits the same confusion.
+When there are 5+ active agents, the architectural debt will be much more expensive to resolve.
+
+---
+
+### IMPORTANCE SCORE: 8/10
+
+Affects the startup protocol (P-001) of all future agents and encodes
+the agent-guild semantic distinction that is central to the NWOS model.
+
+---
+
+**Do you approve?**
+- [x] Yes — I proceed
 ```
+
+---
+
+## Version history
+
+- v1.0.0 (2026-04-07) — Initial creation.
+- v1.1.0 (2026-04-07) — Translated to English (MIS-056).

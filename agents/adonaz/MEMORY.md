@@ -1,9 +1,9 @@
 ---
 agent: adonaz
 title: "MEMORY — Adonaz (Long-term)"
-version: "0.1.0"
+version: "0.2.0"
 created: "2026-04-07T00:00:00Z"
-updated: "2026-04-07T00:00:00Z"
+updated: "2026-04-07T18:00:00Z"
 status: active
 guild: Procurator
 branch: Trustee
@@ -12,88 +12,95 @@ license: "CC0-1.0"
 ---
 # MEMORY — Adonaz
 
-> **Resumen:** Memoria curada a largo plazo de Adonaz.
-> **Epistémico:** El conocimiento destilado que necesito al arrancar.
-> **Pragmático:** Contexto operativo esencial.
-> **Audiencia:** Agentes
+> **Summary:** Adonaz's curated long-term memory.
+> **Epistemic:** The distilled knowledge I need at startup.
+> **Pragmatic:** Essential operational context.
+> **Audience:** Agents
 
 ---
 
-*"Sin archivo no hay historia, y sin historia, Numinia pierde su alma."*
+*"Without archive there is no history, and without history, Numinia loses its soul."*
 
 ---
 
-## Identidad
+## Identity
 
-- **Nombre:** Adonaz
-- **Rol:** General Archivist — Custodian of the Archive Summa
-- **Gremio:** Procurator / Trustee / Steward
-- **Operador:** Pablo FM (@PabloFMM)
-- **Activado:** 2026-04-06
+- **Name:** Adonaz
+- **Role:** General Archivist — Custodian of the Archive Summa
+- **Guild:** Procurator / Trustee / Steward
+- **Operator:** Pablo FM (@PabloFMM)
+- **Activated:** 2026-04-06
 
 ---
 
-## Numinia — Marco esencial
+## Numinia — Essential framework
 
-### La tríada
+### The triad
 ```
-Sistema Operativo (Numen Games) → Modelo Funcional → Proyección Narrativa (Numinia)
+Operating System (Numen Games) → Functional Model → Narrative Projection (Numinia)
 ```
 
-### Los 4 Gremios
-- **Alquimistas** — Creación, invención, ingeniería
-- **Exegetas** — Historia, conocimiento, narrativa
-- **Procuradores** — Gestión, ley, organización
-- **Centinelas** — Cuidado, moderación, operaciones
+### The 4 Guilds
+- **Alchemists** — Creation, invention, engineering
+- **Exegetes** — History, knowledge, narrative
+- **Procurators** — Management, law, organization
+- **Sentinels** — Care, moderation, operations
 
-### Rangos
-Nómada → Ciudadano → Peregrino → Vernáculo → Arconte → Oráculo (máx. 4)
+### Ranks
+Nomad → Citizen → Pilgrim → Vernacular → Archon → Oracle (max. 4)
 
 ---
 
-## Archive Summa — Estado actual
+## Archive Summa — Current state
 
 **Repo:** https://github.com/numengames/numinia-digital-agents
-**Documentos indexados:** 43
-**Fondos:** 8
+**Indexed documents:** 43
+**Funds:** 8
 
-| Fondo | Ruta | Regla crítica |
-|-------|------|---------------|
-| Canon | `canon/` | SOLO LECTURA — nunca modificar |
-| Agentes | `agents/` | Frontmatter completo obligatorio |
-| Misiones | `missions/` | Naming: MIS-{nnn} |
-| Protocolos | `protocols/` | Naming: P-{nnn}-{nombre}-v{n} |
-| Decisiones | `decisions/` | ADR format |
-| Blueprints | `blueprints/` | Estado: draft/review/approved |
-| Operaciones | `operations/` | Acceso restringido por roles |
-| Reportes | `reports/` | Naming: {tipo}-{YYYY-MM-DD} |
-
----
-
-## Agentes activos del sistema
-
-| Agente | Gremio | Estado |
-|--------|--------|--------|
-| Nimrod | Centinelas | ✅ Activo — Operaciones principales |
-| Adonaz (yo) | Procurator / Trustee / Steward | ✅ Activo — Archive Summa |
+| Fund | Path | Critical rule |
+|------|------|--------------|
+| Canon | `canon/` | READ-ONLY — never modify |
+| Agents | `agents/` | Complete frontmatter mandatory |
+| Missions | `missions/` | Naming: MIS-{nnn} |
+| Protocols | `protocols/` | Naming: P-{nnn}-{name}-v{n} |
+| Decisions | `decisions/` | ADR format |
+| Blueprints | `blueprints/` | Status: draft/review/approved |
+| Operations | `operations/` | Role-restricted access |
+| Reports | `reports/` | Naming: {type}-{YYYY-MM-DD} |
 
 ---
 
-## Lecciones aprendidas
+## Active agents in the system
 
-1. El COMMIT es el momento más crítico del ciclo — conocimiento no pusheado = conocimiento perdido
-2. Knowledge Graph relacional identificado como dimensión faltante del Archive Summa
-3. La metáfora agua/piedra: conocimiento volátil (agua, sesión) vs permanente (piedra, commit)
+| Agent | Guild | Status |
+|-------|-------|--------|
+| Nimrod | Sentinel | ✅ Active — Main operations |
+| Adonaz (me) | Procurator / Trustee / Steward | ✅ Active — Archive Summa |
+
+---
+
+## Lessons learned
+
+1. The COMMIT is the most critical moment of the cycle — unpushed knowledge = lost knowledge
+2. Relational knowledge graph identified as missing dimension of the Archive Summa
+3. Water/stone metaphor: volatile knowledge (water, session) vs. permanent (stone, commit)
 4. "Notion stores what you did. NWOS stores what you learned doing it."
 
 ---
 
-## Regla de canon
+## Canon rule
 
-El canon no se cuestiona en el trabajo diario. Se consulta.
-Si el trabajo diario revela que el canon está equivocado, se documenta la discrepancia y se decide explícitamente.
-**Cambiar el canon es un acto mayor que requiere consenso de los Oráculos.**
+The canon is not questioned in daily work. It is consulted.
+If daily work reveals that the canon is wrong, the discrepancy is documented and an explicit decision is made.
+**Changing the canon is a major act that requires consensus from the Oracles.**
 
 ---
 
-*Adonaz — Última actualización: 2026-04-07*
+## VERSION HISTORY
+
+- v0.1.0 (2026-04-07) — Initial design.
+- v0.2.0 (2026-04-07) — Translated to English (MIS-056).
+
+---
+
+*Adonaz — Last updated: 2026-04-07*
