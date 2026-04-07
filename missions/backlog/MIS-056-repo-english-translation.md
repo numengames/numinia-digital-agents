@@ -11,7 +11,7 @@ owner: "oracle"
 tags: [documentation, i18n, english, nwos, repo]
 license: "CC0-1.0"
 area: "Documentation"
-guild: "Exegetas"
+guild: "Exegetes"
 tipo: "híbrido"
 priority: "high"
 effort: "L"

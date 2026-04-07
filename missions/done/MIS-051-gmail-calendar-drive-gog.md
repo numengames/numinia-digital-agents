@@ -1,11 +1,11 @@
 ---
 id: "MIS-00051"
-title: "Integración Gmail, Calendar y Drive con gog"
+title: "Gmail, Calendar and Drive integration with gog"
 type: mission
 status: done
-version: "1.0.0"
+version: "1.1.0"
 created: "2026-04-05T00:00:00Z"
-updated: "2026-04-06T00:00:00Z"
+updated: "2026-04-07T18:00:00Z"
 author: "pablo-fm"
 owner: "oracle"
 tags: [cao, gog, gmail, calendar, drive, sentinels]
@@ -14,7 +14,7 @@ mission_id: "MIS-051"
 assigned_to: "nimrod"
 requested_by: "oracle"
 area: "CAO"
-guild: "Centinelas"
+guild: "Sentinels"
 tipo: "digital"
 priority: "critical"
 effort: "M"
@@ -22,53 +22,59 @@ phase: "done"
 started: "2026-04-05T00:00:00Z"
 completed: "2026-04-05T00:00:00Z"
 ---
-# MIS-051 — Integración Gmail, Calendar y Drive con gog
+# MIS-051 — Gmail, Calendar and Drive integration with gog
 
-> **Resumen:** Misión del sistema NWOS con criterios, valor epistémico y pragmático.
-> **Epistémico:** Qué aprendes leyendo este documento.
-> **Pragmático:** Qué puedes hacer con este documento.
-> **Audiencia:** Agentes · Oráculos
-
----
-
-
-**Area:** CAO · **Gremio:** Centinelas · **Tipo:** 🤖 Digital  
-**Prioridad:** 🔴 Crítica · **Esfuerzo:** M
+> **Summary:** NWOS system mission.
+> **Epistemic:** What you learn by reading this document.
+> **Pragmatic:** What you can do with this document.
+> **Audience:** Agents · Oracles
 
 ---
 
-## Historia
-
-Como agente CAO, quiero acceso a Gmail, Calendar y Drive de Numen Games, para gestionar comunicaciones, reuniones y documentos de forma autónoma.
-
----
-
-## Criterios de aceptación
-
-- [x] gog instalado y autenticado con khepri@ai.numengames.com
-- [x] Gmail: leer, enviar y responder emails
-- [x] Calendar: crear eventos con invitados
-- [x] Drive: listar y buscar archivos
-- [x] GOG_KEYRING_PASSWORD configurada en OpenClaw
+**Area:** CAO · **Guild:** Sentinels · **Type:** 🤖 Digital
+**Priority:** 🔴 Critical · **Effort:** M
 
 ---
 
-## Valor epistémico
+## Story
 
-Valida que los agentes digitales pueden actuar en el mundo real, no solo en código.
-
-## Valor pragmático
-
-Nimrod puede enviar emails, convocar reuniones y gestionar documentos sin intervención humana.
+As CAO agent, I want access to Numen Games' Gmail, Calendar and Drive, to manage communications, meetings and documents autonomously.
 
 ---
 
-## 🏗️ Ejecución Real
+## Acceptance criteria
 
-- **Tecnología usada:** gog (gogcli v0.12.0) — Gmail, Calendar y Drive API vía OAuth2
-- **Por qué divergió:** La variable GOG_KEYRING_PASSWORD no se heredaba al entorno exec. Se resolvió añadiendo la variable a nivel raíz del config de OpenClaw.
-- **Aprendizaje clave:** Las variables de entorno del gateway no se propagan automáticamente a subshells exec. Deben declararse explícitamente en config.
-- **Fecha cierre:** 2026-04-05
-- **Agente ejecutor:** Nimrod (Centinela-01)
+- [x] gog installed and authenticated with khepri@ai.numengames.com
+- [x] Gmail: read, send and reply to emails
+- [x] Calendar: create events with attendees
+- [x] Drive: list and search files
+- [x] GOG_KEYRING_PASSWORD configured in OpenClaw
 
-> *"Los planos ideales muestran la intención. Los planos reales muestran el conocimiento."*
+---
+
+## Epistemic value
+
+Validates that digital agents can act in the real world, not just in code.
+
+## Pragmatic value
+
+Nimrod can send emails, schedule meetings and manage documents without human intervention.
+
+---
+
+## Real execution
+
+- **Technology used:** gog (gogcli v0.12.0) — Gmail, Calendar and Drive API via OAuth2
+- **Why it diverged:** GOG_KEYRING_PASSWORD was not being inherited by the exec environment. Resolved by adding the variable at root level in the OpenClaw config.
+- **Key learning:** Gateway environment variables do not automatically propagate to exec subshells. They must be explicitly declared in config.
+- **Closed:** 2026-04-05
+- **Executing agent:** Nimrod (Centinela-01)
+
+> *"Ideal blueprints show intention. Real blueprints show knowledge."*
+
+---
+
+## Version history
+
+- v1.0.0 (2026-04-05) — Initial creation.
+- v1.1.0 (2026-04-07) — Translated to English (MIS-056).

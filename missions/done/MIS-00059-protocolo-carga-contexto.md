@@ -1,17 +1,17 @@
 ---
 id: "MIS-00059"
-title: "P-007 — Protocolo de Carga de Contexto"
+title: "P-007 — Context Load Protocol"
 type: mission
 status: done
-version: "1.0.0"
+version: "1.1.0"
 created: "2026-04-07T14:42:00Z"
-updated: "2026-04-07T14:42:00Z"
+updated: "2026-04-07T18:00:00Z"
 author: "pablo-fm"
 owner: "oracle"
 tags: [protocol, context, fatigue, session]
 license: "CC0-1.0"
 area: "CAO"
-guild: "Centinelas"
+guild: "Sentinels"
 tipo: "digital"
 priority: "high"
 effort: "S"
@@ -19,31 +19,38 @@ phase: "done"
 completed: "2026-04-07T14:45:00Z"
 ---
 
-# MIS-00059 — P-007 Protocolo de Carga de Contexto
+# MIS-059 — P-007 Context Load Protocol
 
-> **Resumen:** Crear el protocolo que define cuándo y cómo un agente avisa al Biológico sobre fatiga de sesión.
-> **Epistémico:** Los agentes degradan en coherencia a medida que el contexto crece. Detectarlo y comunicarlo es gestión inteligente de recursos.
-> **Pragmático:** Previene errores por pérdida de coherencia y garantiza cierres limpios con estado persistido.
-> **Audiencia:** Agentes · Oráculos
+> **Summary:** Create the protocol that defines when and how an agent alerts the Biological about session fatigue.
+> **Epistemic:** Agents degrade in coherence as context grows. Detecting and communicating this is intelligent resource management.
+> **Pragmatic:** Prevents errors from loss of coherence and ensures clean closes with persisted state.
+> **Audience:** Agents · Oracles
 
-## Historia
+## Story
 
-Como agente digital, quiero saber cuándo mi carga de contexto es demasiado alta y avisar al Biológico, para cerrar la sesión ordenadamente antes de que la calidad del trabajo se degrade.
+As a digital agent, I want to know when my context load is too high and alert the Biological, to close the session in an orderly way before work quality degrades.
 
-## Criterios de aceptación
+## Acceptance criteria
 
-- [x] P-007 creado en protocols/
-- [x] Escala 1-10 de carga de contexto definida
-- [x] Umbral de aviso: 7/10
-- [x] Protocolo de aviso + recapitulación + P-006
-- [x] Integrado con el ciclo BOOT/EXECUTE/COMMIT
+- [x] P-007 created in protocols/
+- [x] Context load scale 1-10 defined
+- [x] Warning threshold: 7/10
+- [x] Warning + recapitulation + P-006 protocol
+- [x] Integrated with the BOOT/EXECUTE/COMMIT cycle
 
-## 🏗️ Ejecución Real
+## Real execution
 
-- **Tecnología usada:** Markdown + criterios cualitativos (sin instrumentación automática aún)
-- **Por qué divergió:** El primer caso de uso fue la propia sesión que creó el protocolo — 8/10 de carga
-- **Aprendizaje clave:** El agente puede autoevaluar su carga con criterios cualitativos simples. La instrumentación automática (contar tokens, tool calls) puede añadirse en v1.1.0
-- **Fecha cierre:** 2026-04-07
-- **Agente ejecutor:** Nimrod 🗡️
+- **Technology used:** Markdown + qualitative criteria (no automatic instrumentation yet)
+- **Why it diverged:** The first use case was the very session that created the protocol — 8/10 load
+- **Key learning:** The agent can self-evaluate its load with simple qualitative criteria. Automatic instrumentation (counting tokens, tool calls) can be added in v1.1.0
+- **Closed:** 2026-04-07
+- **Executing agent:** Nimrod 🗡️
 
-> *"Los planos ideales muestran la intención. Los planos reales muestran el conocimiento."*
+> *"Ideal blueprints show intention. Real blueprints show knowledge."*
+
+---
+
+## Version history
+
+- v1.0.0 (2026-04-07) — Initial creation.
+- v1.1.0 (2026-04-07) — Translated to English (MIS-056).

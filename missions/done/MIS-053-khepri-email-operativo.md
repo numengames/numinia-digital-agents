@@ -1,11 +1,11 @@
 ---
 id: "MIS-00053"
-title: "Khepri — Email de Numen Games operativo"
+title: "Khepri — Numen Games email operational"
 type: mission
 status: done
-version: "1.0.0"
+version: "1.1.0"
 created: "2026-04-05T00:00:00Z"
-updated: "2026-04-05T00:00:00Z"
+updated: "2026-04-07T18:00:00Z"
 author: "pablo-fm"
 owner: "oracle"
 tags: [cao, email, identity, sentinels, khepri]
@@ -14,7 +14,7 @@ mission_id: "MIS-053"
 assigned_to: "nimrod"
 requested_by: "oracle"
 area: "CAO"
-guild: "Centinelas"
+guild: "Sentinels"
 tipo: "digital"
 priority: "high"
 effort: "S"
@@ -22,53 +22,59 @@ phase: "done"
 started: "2026-04-05T00:00:00Z"
 completed: "2026-04-05T00:00:00Z"
 ---
-# MIS-053 — Khepri — Email de Numen Games operativo
+# MIS-053 — Khepri — Numen Games email operational
 
-> **Resumen:** Misión del sistema NWOS con criterios, valor epistémico y pragmático.
-> **Epistémico:** Qué aprendes leyendo este documento.
-> **Pragmático:** Qué puedes hacer con este documento.
-> **Audiencia:** Agentes · Oráculos
-
----
-
-
-**Area:** CAO · **Gremio:** Centinelas · **Tipo:** 🤖 Digital  
-**Prioridad:** 🟠 Alta · **Esfuerzo:** S
+> **Summary:** NWOS system mission.
+> **Epistemic:** What you learn by reading this document.
+> **Pragmatic:** What you can do with this document.
+> **Audience:** Agents · Oracles
 
 ---
 
-## Historia
-
-Como Nimrod, quiero que khepri@ai.numengames.com sea una identidad digital real y operativa, para que los agentes puedan comunicarse profesionalmente en nombre de Numen Games.
-
----
-
-## Criterios de aceptación
-
-- [x] Cuenta khepri@ai.numengames.com creada en Google Workspace
-- [x] gog autenticado con Gmail, Calendar y Drive
-- [x] Primer email enviado a externo (cberuete@gmail.com)
-- [x] Primera invitación de calendario creada con asistentes externos
-- [x] Identidad con nombre y firma: Nimrod, Guardián de las Puertas
+**Area:** CAO · **Guild:** Sentinels · **Type:** 🤖 Digital
+**Priority:** 🟠 High · **Effort:** S
 
 ---
 
-## Valor epistémico
+## Story
 
-Los agentes digitales necesitan identidad verificable para actuar en el mundo.
-
-## Valor pragmático
-
-Canal de comunicación profesional para la CAO sin coste adicional de herramientas.
+As Nimrod, I want khepri@ai.numengames.com to be a real and operational digital identity, so agents can communicate professionally on behalf of Numen Games.
 
 ---
 
-## 🏗️ Ejecución Real
+## Acceptance criteria
 
-- **Tecnología usada:** Google Workspace — khepri@ai.numengames.com + gog CLI
-- **Por qué divergió:** Proceso de auth requirió SSH con port forwarding al servidor ya que el browser flow no funciona en servidor headless.
-- **Aprendizaje clave:** Los agentes digitales necesitan identidad verificable. El setup inicial requiere presencia humana (browser flow), pero luego opera autónomamente.
-- **Fecha cierre:** 2026-04-05
-- **Agente ejecutor:** Nimrod (Centinela-01)
+- [x] Account khepri@ai.numengames.com created in Google Workspace
+- [x] gog authenticated with Gmail, Calendar and Drive
+- [x] First email sent to external (cberuete@gmail.com)
+- [x] First calendar invitation created with external attendees
+- [x] Identity with name and signature: Nimrod, Guardian of the Gates
 
-> *"Los planos ideales muestran la intención. Los planos reales muestran el conocimiento."*
+---
+
+## Epistemic value
+
+Digital agents need verifiable identity to act in the world.
+
+## Pragmatic value
+
+Professional communication channel for the CAO at no additional tooling cost.
+
+---
+
+## Real execution
+
+- **Technology used:** Google Workspace — khepri@ai.numengames.com + gog CLI
+- **Why it diverged:** Auth process required SSH with port forwarding to the server since the browser flow does not work on a headless server.
+- **Key learning:** Digital agents need verifiable identity. Initial setup requires human presence (browser flow), but then operates autonomously.
+- **Closed:** 2026-04-05
+- **Executing agent:** Nimrod (Centinela-01)
+
+> *"Ideal blueprints show intention. Real blueprints show knowledge."*
+
+---
+
+## Version history
+
+- v1.0.0 (2026-04-05) — Initial creation.
+- v1.1.0 (2026-04-07) — Translated to English (MIS-056).
