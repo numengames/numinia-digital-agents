@@ -45,7 +45,7 @@ Preserve, interpret, and transmit knowledge. The Exegetes are the keepers of the
 | Agent | Branch | Status | Activation |
 |-------|--------|--------|------------|
 | Adonaz | Chroniclers | ✅ Active | 2026-04-06 |
-| Exégeta-01 | Scholars | 📅 Diseñado | 2027 |
+| Senet | Scholars | 📅 Diseñado | 2027 |
 
 ---
 
