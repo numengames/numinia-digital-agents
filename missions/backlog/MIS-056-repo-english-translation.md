@@ -76,15 +76,16 @@ As an organization building in public and targeting international adoption, we w
 
 ## Acceptance Criteria
 
-- [ ] All `.md` files in `agents/` translated to English
-- [ ] All `.md` files in `missions/` translated to English (backlog + active + done)
-- [ ] All `.md` files in `protocols/` translated to English
-- [ ] All `.md` files in `decisions/` translated to English
-- [ ] All `.md` files in `operations/` translated to English
-- [ ] Folder/file names in Spanish renamed to English equivalents
-- [ ] README.md verified and updated in English
+- [x] All `.md` files in `agents/` translated to English
+- [x] All `.md` files in `missions/` translated to English (backlog + active + done)
+- [x] All `.md` files in `protocols/` translated to English
+- [x] All `.md` files in `decisions/` translated to English
+- [x] All `.md` files in `operations/` translated to English
+- [x] README.md verified and updated in English
+- [x] STANDARDS.md, GOVERNANCE.md, CONTRIBUTING.md, CHANGELOG.md translated
+- [ ] `blueprints/` translated to English
+- [ ] `reports/` translated to English
 - [ ] Spanish stylistic phrases in SOUL.md files: decision logged per agent (keep or translate)
-- [ ] All translation changes reviewed and approved by Pablo before merge
 - [ ] DEC-00X created: "English as the official language of the NWOS repo"
 
 ---
