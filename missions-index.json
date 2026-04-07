@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-07T22:40:00Z",
+  "generated": "2026-04-07T23:00:00Z",
   "repo": "numengames/numinia-digital-agents",
   "missions": [
     {"id":"MIS-001","title":"Define the Numinia MVP in one page","area":"Product","guild":"Alchemists","type":"biological","priority":"critical","effort":"S","status":"todo"},
@@ -62,6 +62,7 @@
     {"id":"MIS-058","title":"Approval Brief Protocol","area":"CAO","guild":"Sentinels","type":"digital","priority":"high","effort":"S","status":"in-progress","assignedTo":"nimrod"},
     {"id":"MIS-060","title":"Agent Synchronization with the Canonical Repo","area":"CAO","guild":"Sentinels","type":"digital","priority":"high","effort":"M","status":"todo","assignedTo":"nimrod"},
     {"id":"MIS-061","title":"El Sistema — NWOS Web Visualization at /sistema","area":"Product","guild":"Alchemists","type":"digital","priority":"high","effort":"XL","status":"todo"},
-    {"id":"MIS-062","title":"Mission System v2 — States, Sub-missions, IDs, Kanban","area":"CAO","guild":"Sentinels","type":"hybrid","priority":"high","effort":"XL","status":"in-progress","assignedTo":"nimrod"}
+    {"id":"MIS-062","title":"Mission System v2 — States, Sub-missions, IDs, Kanban","area":"CAO","guild":"Sentinels","type":"hybrid","priority":"high","effort":"XL","status":"in-progress","assignedTo":"nimrod"},
+    {"id":"MIS-063","title":"NWOS Phase 2 — Iteration 1: Deploy Form at /velo","area":"Product","guild":"Alchemists","type":"digital","priority":"critical","effort":"M","status":"done","assignedTo":"nimrod","completed":"2026-04-07","hasDetail":true}
   ]
 }
