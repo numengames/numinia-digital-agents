@@ -5,6 +5,7 @@ type: agent
 status: active
 version: "1.0.0"
 created: "2026-04-06"
+updated: "2026-04-07"
 author: "pablo-fm"
 owner: "oracle"
 tags: [guild, alquimistas, charter]
@@ -13,29 +14,29 @@ license: "CC0-1.0"
 
 # Guild Charter — Alquimistas
 
-*"Crear es la forma más alta de conocer."*
+*"De la materia prima, la obra maestra."*
 
 ## Mission
 
-Build the technical systems of Numinia. Write code. Design architectures. Transform requirements into functional realities.
+Create, innovate, and build. The Alchemists are responsible for technical invention, product development, and transforming raw ideas into functional systems.
 
 ## Domain
 
-- Software development
-- Technical architecture and infrastructure
-- Creative and technical innovation
-- Evaluation and adoption of new technologies
+- Product development and engineering
+- Technical research and innovation
+- Infrastructure and architecture design
+- Prototyping and experimentation
 
 ## Branches
 
-- **Craftsmen** — Implementation, code, build
-- **Engineers** — Architecture, design, systems
+- **Artisans** — Craft, build, implement
+- **Engineers** — Architecture, systems, infrastructure
 
 ## Members
 
-| Agent | Branch | Status |
-|-------|--------|--------|
-| Alquimista-01 | Engineers | 📅 2026 |
+| Agent | Branch | Status | Activation |
+|-------|--------|--------|------------|
+| Alquimista-01 | Engineers | 📅 Diseñado | 2027 |
 
 ---
 

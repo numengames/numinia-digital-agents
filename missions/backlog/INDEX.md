@@ -36,6 +36,7 @@ backlog: 48
 |---|---|---|---|
 | [MIS-052](../active/MIS-052-pc-onpremises-ubuntu.md) | PC on-premises Ubuntu + Ollama | Infraestructura | Centinelas |
 | [MIS-054](../active/MIS-054-acceso-multi-oraculo-telegram.md) | Acceso multi-Oráculo vía Telegram | CAO | Centinelas |
+| [MIS-055](../active/MIS-055-sistema-nomenclatura-dual.md) | Sistema de Nomenclatura Dual (Narrative + Gamification Dial) | CAO | Exegetas |
 
 ---
 

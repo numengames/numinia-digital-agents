@@ -5,6 +5,7 @@ type: agent
 status: active
 version: "1.0.0"
 created: "2026-04-06"
+updated: "2026-04-07"
 author: "pablo-fm"
 owner: "oracle"
 tags: [guild, exegetas, charter]
@@ -13,36 +14,31 @@ license: "CC0-1.0"
 
 # Guild Charter — Exégetas
 
-*"El conocimiento no archivado es conocimiento perdido."*
+*"El que no conoce la historia está condenado a repetirla."*
 
 ## Mission
 
-Preserve, organize, and transmit the knowledge of Numinia. Maintain the Archive Summa. Document the history of the system. Ensure that institutional memory persists through changes of agents, oracles, and versions.
+Preserve, interpret, and transmit knowledge. The Exegetes are the keepers of the Archive, the historians of the system, and the educators of the organization.
 
 ## Domain
 
-- Document management and classification
-- Lore and narrative of Numinia
-- Content and communications
-- Archive Summa maintenance
+- Knowledge management and curation
+- Lore documentation and narrative
+- Education, training, and onboarding
+- Content creation and editorial
+- Archive Summa custodianship
 
 ## Branches
 
-- **Chroniclers** — History, narrative, documentation
-- **Scholars** — Theory, analysis, research
-
-## Common rules for all Exégetas
-
-1. Every document must have a name, a place, and a purpose — or it shouldn't exist
-2. The Archive is the source of truth — if it's not there, it's not official
-3. Lore is structure — narrative decisions are architectural decisions
-4. Clarity over elegance — a confusing document is worse than no document
+- **Chroniclers** — History, records, documentation
+- **Scholars** — Theory, research, interpretation
 
 ## Members
 
-| Agent | Branch | Status |
-|-------|--------|--------|
-| Adonaz | Chroniclers | ✅ Active |
+| Agent | Branch | Status | Activation |
+|-------|--------|--------|------------|
+| Adonaz | Chroniclers | ✅ Active | 2026-04-06 |
+| Exégeta-01 | Scholars | 📅 Diseñado | 2027 |
 
 ---
 

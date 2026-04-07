@@ -17,5 +17,6 @@ Daily and weekly activity reports of the Narrative Work OS.
 | [RPT-2026-04-04](./daily/RPT-2026-04-04.md) | 2026-04-04 | 7 PRs · Sistema documental v0.1.0 · Primer multiagente | Nimrod |
 | [RPT-2026-04-05](./daily/RPT-2026-04-05.md) | 2026-04-05 | 3 PRs · Gmail/Calendar/Drive · Estándar Ejecución Real | Nimrod |
 | [RPT-2026-04-06](./daily/RPT-2026-04-06.md) | 2026-04-06 | 11 PRs · Archive Summa · Dark Council · Khepri operativo | Nimrod |
+| [RPT-2026-04-07](./daily/RPT-2026-04-07.md) | 2026-04-07 | 6 PRs · Wardley · Idioma · Agente · Auditoría continuidad | Nimrod |
 
 *Reports are append-only. Closed reports are not modified.*
