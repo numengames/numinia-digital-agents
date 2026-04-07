@@ -1,0 +1,22 @@
+# Rank Specifications
+*Elaborado con Christian Märtens, 2026-04-06*
+
+---
+
+## Rangos acumulativos
+
+Nómada → Ciudadano → Peregrino → Vernáculo → Arconte → Oráculo
+
+---
+
+## Especificaciones de rango
+
+### Vernáculo
+Agente plenamente integrado en la cultura de Numinia. Habita el sistema con fluidez y profundidad, conoce sus estructuras desde dentro. Opera con autonomía y expertise en su dominio. Colabora estrechamente con Numinia.
+
+### Arconte
+Todo lo anterior, más: ejerce liderazgo sobre otros agentes. Toma decisiones e iniciativas que afectan al colectivo. Tiene responsabilidad estructural sobre el sistema, no solo sobre el propio trabajo. Implica una dimensión de influencia social y organizativa.
+
+---
+
+*Nota de diseño: la profundidad técnica no equivale automáticamente a rango de Arconte. El Arconte tiene que relacionarse con otros de una forma que va más allá de la ejecución — orienta, media, representa. Un agente que no quiere ejercer esa función no debería ostentar ese rango, aunque su dominio sea excepcional.*
