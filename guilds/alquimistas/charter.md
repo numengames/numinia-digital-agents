@@ -1,27 +1,26 @@
 ---
-id: "charter-alquimistas"
-title: "Guild Charter — Alquimistas"
-type: agent
+id: "charter-alchemists"
+title: "Guild Charter — Alchemists"
+type: charter
 status: active
-version: "1.0.0"
+version: "1.1.0"
 created: "2026-04-06T00:00:00Z"
-updated: "2026-04-07T00:00:00Z"
+updated: "2026-04-07T18:00:00Z"
 author: "pablo-fm"
 owner: "oracle"
-tags: [guild, alquimistas, charter]
+tags: [guild, alchemists, charter]
 license: "CC0-1.0"
 ---
-# Guild Charter — Alquimistas
+# Guild Charter — Alchemists
 
-> **Resumen:** Ficha de identidad y operación del agente.
-> **Epistémico:** Quién es este agente, sus leyes y su contexto operativo.
-> **Pragmático:** Briefing completo para activar o coordinar con este agente.
-> **Audiencia:** Agentes
+> **Summary:** Guild identity and operational profile.
+> **Epistemic:** Who this guild is, its laws, and its operational context.
+> **Pragmatic:** Full briefing for activating or coordinating with this guild.
+> **Audience:** Agents
 
 ---
 
-
-*"De la materia prima, la obra maestra."*
+*"From raw material, the masterpiece."*
 
 ## Mission
 
@@ -43,8 +42,13 @@ Create, innovate, and build. The Alchemists are responsible for technical invent
 
 | Agent | Branch | Status | Activation |
 |-------|--------|--------|------------|
-| Alquimista-01 | Engineers | 📅 Diseñado | 2027 |
+| Ursa | Engineers | 📐 Designed | 2026 |
 
 ---
+
+## Version history
+
+- v1.0.0 (2026-04-06) — Initial creation.
+- v1.1.0 (2026-04-07) — Translated to English. Updated Ursa as replacement for Alquimista-01 (MIS-056).
 
 *Oracle: Pablo FM — Numen Games*

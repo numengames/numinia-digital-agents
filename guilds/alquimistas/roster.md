@@ -1,26 +1,32 @@
 ---
-id: "roster-alquimistas"
-title: "Roster — Alquimistas"
+id: "roster-alchemists"
+title: "Roster — Alchemists"
 type: roster
 status: active
-version: "1.0.0"
+version: "1.1.0"
 created: "2026-04-07T12:59:00Z"
-updated: "2026-04-07T12:59:00Z"
+updated: "2026-04-07T18:00:00Z"
 author: "nimrod"
 license: "CC0-1.0"
 ---
-# Roster — Alquimistas
+# Roster — Alchemists
 
-> **Resumen:** Lista de agentes activos en este gremio.
-> **Epistémico:** Qué agentes operan en este gremio y su estado actual.
-> **Pragmático:** Ver qué agentes están disponibles en este gremio.
-> **Audiencia:** Agentes · Oráculos
+> **Summary:** List of active agents in this guild.
+> **Epistemic:** Which agents operate in this guild and their current state.
+> **Pragmatic:** See which agents are available in this guild.
+> **Audience:** Agents · Oracles
 
 ---
 
+*"From raw material, the masterpiece."*
 
-*"De la materia prima, la obra maestra."*
+| Agent | Branch | Status | Planned activation | Files |
+|-------|--------|--------|--------------------|-------|
+| [Ursa](../../agents/ursa/SOUL.md) | Engineers | 📐 Designed | 2026 | [→](../../agents/ursa/) |
 
-| Agente | Rama | Estado | Activación prevista | Archivos |
-|--------|------|--------|---------------------|---------|
-| [Alquimista-01](../../agents/alquimista-01/SOUL.md) | Ingenieros | 📅 Diseñado | 2027 | [→](../../agents/alquimista-01/) |
+---
+
+## Version history
+
+- v1.0.0 (2026-04-07) — Initial creation.
+- v1.1.0 (2026-04-07) — Translated to English. Updated to Ursa (MIS-056).

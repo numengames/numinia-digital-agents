@@ -1,11 +1,11 @@
 ---
 id: "MIS-00052"
-title: "Infraestructura on-premises — PC dedicado"
+title: "On-premises infrastructure — Dedicated PC"
 type: mission
 status: en-curso
-version: "1.0.0"
+version: "1.1.0"
 created: "2026-04-05T00:00:00Z"
-updated: "2026-04-06T00:00:00Z"
+updated: "2026-04-07T18:00:00Z"
 author: "pablo-fm"
 owner: "oracle"
 tags: [infrastructure, hardware, ollama, sentinels]
@@ -13,54 +13,53 @@ license: "CC0-1.0"
 mission_id: "MIS-052"
 assigned_to: "nimrod"
 requested_by: "oracle"
-area: "Infraestructura"
-guild: "Centinelas"
+area: "Infrastructure"
+guild: "Sentinels"
 tipo: "digital"
 priority: "high"
 effort: "L"
 phase: "active"
 started: null
 completed: null
-blocked_reason: "PC en camino — pendiente de llegada física"
+blocked_reason: "PC in transit — pending physical arrival"
 ---
-# MIS-052 — Infraestructura on-premises — PC dedicado
+# MIS-052 — On-premises infrastructure — Dedicated PC
 
-> **Resumen:** Misión del sistema NWOS con criterios, valor epistémico y pragmático.
-> **Epistémico:** Qué aprendes leyendo este documento.
-> **Pragmático:** Qué puedes hacer con este documento.
-> **Audiencia:** Agentes · Oráculos
-
----
-
-
-**Area:** Infraestructura · **Gremio:** Centinelas · **Tipo:** 🤖 Digital  
-**Prioridad:** 🟠 Alta · **Esfuerzo:** L
+> **Summary:** NWOS system mission.
+> **Epistemic:** What you learn by reading this document.
+> **Pragmatic:** What you can do with this document.
+> **Audience:** Agents · Oracles
 
 ---
 
-## Historia
-
-Como operador, quiero un PC dedicado on-premises con Ubuntu 24.04 y Ollama, para reducir costes de inferencia en un 60-70% ejecutando modelos locales.
-
----
-
-## Criterios de aceptación
-
-- [ ] Ubuntu 24.04 LTS instalado en Ryzen 9 7950X + RTX 4080
-- [ ] NVIDIA drivers + CUDA configurados
-- [ ] Ollama instalado con Mistral 7B, Qwen2.5 14B
-- [ ] OpenClaw conectado al nodo local
-- [ ] Migración de servicios del servidor VPS
+**Area:** Infrastructure · **Guild:** Sentinels · **Type:** 🤖 Digital
+**Priority:** 🟠 High · **Effort:** L
 
 ---
 
-## Valor epistémico
+## Story
 
-Determina qué modelos caben en 16 GB VRAM y qué tareas pueden migrar a local.
+As operator, I want a dedicated on-premises PC with Ubuntu 24.04 and Ollama, to reduce inference costs by 60-70% by running local models.
 
-## Valor pragmático
+---
 
-Reducción drástica de coste mensual en API de Anthropic (~60-70%).
+## Acceptance criteria
+
+- [ ] Ubuntu 24.04 LTS installed on Ryzen 9 7950X + RTX 4080
+- [ ] NVIDIA drivers + CUDA configured
+- [ ] Ollama installed with Mistral 7B, Qwen2.5 14B
+- [ ] OpenClaw connected to local node
+- [ ] VPS services migrated
+
+---
+
+## Epistemic value
+
+Determines which models fit in 16 GB VRAM and which tasks can migrate to local.
+
+## Pragmatic value
+
+Drastic reduction in monthly Anthropic API costs (~60-70%).
 
 ---
 
@@ -70,11 +69,18 @@ Reducción drástica de coste mensual en API de Anthropic (~60-70%).
 - **GPU:** RTX 4080 (16 GB VRAM)
 - **RAM:** 32 GB DDR5
 - **SSD:** Corsair MP600 2TB NVMe
-- **Placa:** ASUS PRIME X670E-PRO WIFI
-- **SO:** Ubuntu 24.04 LTS
+- **Motherboard:** ASUS PRIME X670E-PRO WIFI
+- **OS:** Ubuntu 24.04 LTS
 
 ---
 
-## Notas
+## Notes
 
-PC en camino. Cuando llegue: instalar Ubuntu → CUDA → Ollama → conectar a OpenClaw como nodo local.
+PC in transit. When it arrives: install Ubuntu → CUDA → Ollama → connect to OpenClaw as local node.
+
+---
+
+## Version history
+
+- v1.0.0 (2026-04-05) — Initial creation.
+- v1.1.0 (2026-04-07) — Translated to English (MIS-056).

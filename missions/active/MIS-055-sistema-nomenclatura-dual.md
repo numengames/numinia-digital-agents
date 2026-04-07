@@ -1,11 +1,11 @@
 ---
 id: "MIS-00055"
-title: "Sistema de Nomenclatura Dual — Narrative Dial + Gamification Dial"
+title: "Dual Nomenclature System — Narrative Dial + Gamification Dial"
 type: mission
 status: en-curso
-version: "1.0.0"
+version: "1.1.0"
 created: "2026-04-07T00:00:00Z"
-updated: "2026-04-07T00:00:00Z"
+updated: "2026-04-07T18:00:00Z"
 author: "pablo-fm"
 owner: "oracle"
 tags: [cao, nwos, nomenclature, gamification, narrative, system-design]
@@ -14,7 +14,7 @@ mission_id: "MIS-055"
 assigned_to: "nimrod"
 requested_by: "oracle"
 area: "CAO"
-guild: "Exegetas"
+guild: "Exegetes"
 tipo: "híbrido"
 priority: "critical"
 effort: "L"
@@ -22,157 +22,161 @@ phase: "active"
 started: "2026-04-07T00:00:00Z"
 completed: null
 ---
-# MIS-055 — Sistema de Nomenclatura Dual
+# MIS-055 — Dual Nomenclature System
 
-> **Resumen:** Misión del sistema NWOS con criterios, valor epistémico y pragmático.
-> **Epistémico:** Qué aprendes leyendo este documento.
-> **Pragmático:** Qué puedes hacer con este documento.
-> **Audiencia:** Agentes · Oráculos
-
----
-
-
-**Area:** CAO · **Gremio:** Exegetas · **Tipo:** 🔀 Híbrido · **Prioridad:** 🔴 Crítica · **Esfuerzo:** L
+> **Summary:** NWOS system mission.
+> **Epistemic:** What you learn by reading this document.
+> **Pragmatic:** What you can do with this document.
+> **Audience:** Agents · Oracles
 
 ---
 
-## Origen
-
-Surgido en el Dark Council / sesión El Velo — 2026-04-06.
-
-Consenso de agentes digitales y biológicos: entre la capa narrativa y la capa operacional existe un problema de primera impresión. La narrativa Numinia (nivel 10/10) actúa como barrera de adopción para organizaciones que solo quieren el sistema operativo, no el mundo narrativo.
-
-**Solución acordada:** Dos diales de ajuste independientes por organización.
+**Area:** CAO · **Guild:** Exegetes · **Type:** 🔀 Hybrid · **Priority:** 🔴 Critical · **Effort:** L
 
 ---
 
-## Historia
+## Origin
 
-Como organización que quiere adoptar el NWOS, quiero poder elegir el nivel de narrativa y de gamificación de mi implementación, para que el sistema hable mi idioma sin perder ninguna funcionalidad.
+Emerged in the Dark Council / El Velo session — 2026-04-06.
+
+Consensus between digital and biological agents: between the narrative layer and the operational layer there is a first-impression problem. The Numinia narrative (level 10/10) acts as an adoption barrier for organizations that only want the operating system, not the narrative world.
+
+**Agreed solution:** Two independent adjustment dials per organization.
 
 ---
 
-## Los dos diales
+## Story
+
+As an organization that wants to adopt NWOS, I want to be able to choose the narrative and gamification level of my implementation, so the system speaks my language without losing any functionality.
+
+---
+
+## The two dials
 
 ### 🎭 Narrative Dial (1–10)
-Controla el vocabulario y la identidad semántica del sistema.
+Controls the vocabulary and semantic identity of the system.
 
-- **1** = Idioma de negocio puro. Proyectos, departamentos, roles corporativos.
-- **5** = Idioma mixto. Metáforas suaves sin lore explícito.
-- **10** = Numinia completo. Gremios, Oráculos, misiones, el Velo.
+- **1** = Pure business language. Projects, departments, corporate roles.
+- **5** = Mixed language. Soft metaphors without explicit lore.
+- **10** = Full Numinia. Guilds, Oracles, missions, the Veil.
 
-### 🎮 Gamification Dial (1–10) — 5 umbrales reales
-Controla los mecánicos de juego, progresión y recompensa.
+### 🎮 Gamification Dial (1–10) — 5 real thresholds
+Controls game mechanics, progression, and reward.
 
-La gamificación tiene saltos cualitativos, no curva suave. Se definen 5 umbrales con nombre; los niveles intermedios son blends sin nombre propio.
+Gamification has qualitative jumps, not a smooth curve. 5 named thresholds defined; intermediate levels are unnamed blends.
 
-| Nivel | Nombre | Lo que cambia |
-|---|---|---|
-| **1** | None | Solo el OS. Sin mecánicas de ningún tipo. |
-| **3** | Visibility | Progreso visible. Dashboards, completion %, streaks. La gente ve el estado del sistema. |
-| **5** | Achievement | Logros, badges, hitos reconocidos. El sistema celebra. |
-| **7** | Progression | Rangos, trayectoria, reputación acumulada. El sistema recuerda y recompensa la historia. |
-| **10** | Full Economy | Tokens, Prism Cells, recompensas reales. El sistema tiene peso económico. |
+| Level | Name | What changes |
+|-------|------|-------------|
+| **1** | None | OS only. No mechanics of any kind. |
+| **3** | Visibility | Visible progress. Dashboards, completion %, streaks. |
+| **5** | Achievement | Achievements, badges, recognized milestones. The system celebrates. |
+| **7** | Progression | Ranks, trajectory, accumulated reputation. The system remembers and rewards history. |
+| **10** | Full Economy | Tokens, Prism Cells, real rewards. The system has economic weight. |
 
-> Cara externa: 5 umbrales con nombre (más comprensible para el cliente).
-> Internamente: mapeado a escala 1-10 para configuración técnica granular.
+> External face: 5 named thresholds (more understandable for clients).
+> Internally: mapped to 1-10 scale for granular technical configuration.
 
-> **Numinia** = Narrative 10 · Gamification en diseño (objetivo: 10)
-> **Corp estándar** = Narrative 1 · Gamification 1–3
-
----
-
-## Criterios de aceptación
-
-- [ ] Tabla de equivalencias completa: vocabulario Numinia ↔ vocabulario negocio para los 5 niveles
-- [ ] Propuesta de nomenclatura Nivel 1 (Business) documentada y aprobada por Pablo
-- [ ] Propuesta de nomenclatura Nivel 5 (Mixed) documentada
-- [ ] Página pública `/idioma` en pablofm.com explicando el sistema
-- [ ] Decisión DEC-006 creada una vez validado el modelo
-- [ ] Integrar en `/nwos` como feature de adaptabilidad
+> **Numinia** = Narrative 10 · Gamification in design (target: 10)
+> **Standard Corp** = Narrative 1 · Gamification 1–3
 
 ---
 
-## Equivalencias propuestas — Narrative Dial
+## Acceptance criteria
 
-### Agentes / Roles
+- [ ] Complete equivalence table: Numinia vocabulary ↔ business vocabulary for all 5 levels
+- [ ] Level 1 (Business) nomenclature proposal documented and approved by Pablo
+- [ ] Level 5 (Mixed) nomenclature proposal documented
+- [ ] Public page `/idioma` on pablofm.com explaining the system
+- [ ] Decision DEC-006 created once the model is validated
+- [ ] Integrate in `/nwos` as an adaptability feature
 
-| Numinia (10) | Mixed (5) | Business (1) |
-|---|---|---|
-| Oráculo | Fundador | Executive / C-Suite |
-| Centinela | Operations Lead | Head of Operations |
-| Alquimista | Innovation Lead | CTO / Head of Product |
-| Exégeta | Knowledge Lead | Chief of Staff / Head of Content |
-| Procurador | Business Lead | COO / Head of Business |
-| Procyon | Sistema de Inteligencia | AI Orchestration Layer |
-| Nómada | Nuevo miembro | Onboarding |
-| Ciudadano | Miembro | Team Member |
-| Peregrino | Senior | Senior Member |
-| Vernáculo | Experto | Expert / Principal |
-| Arconte | Líder | Lead / Director |
-| Agente digital | Agente IA | AI Agent / Digital Coworker |
+---
 
-### Estructuras
+## Equivalences — Narrative Dial
+
+### Agents / Roles
 
 | Numinia (10) | Mixed (5) | Business (1) |
 |---|---|---|
-| Gremio | Equipo | Department / Team |
-| Facción | Área | Division |
-| CAO | Centro de Operaciones | Operations Center |
-| Plano | Mapa del sistema | System Blueprint |
-| Archivo / Archive | Base de conocimiento | Knowledge Base |
-| Decisión / Piedra del Camino | Decisión arquitectónica | Decision Record |
-| Reporte | Informe | Report |
-| Protocolo | Procedimiento | Process / SOP |
+| Oracle | Founder | Executive / C-Suite |
+| Sentinel | Operations Lead | Head of Operations |
+| Alchemist | Innovation Lead | CTO / Head of Product |
+| Exegete | Knowledge Lead | Chief of Staff / Head of Content |
+| Procurator | Business Lead | COO / Head of Business |
+| Procyon | Intelligence System | AI Orchestration Layer |
+| Nomad | New member | Onboarding |
+| Citizen | Member | Team Member |
+| Pilgrim | Senior | Senior Member |
+| Vernacular | Expert | Expert / Principal |
+| Archon | Leader | Lead / Director |
+| Digital agent | AI agent | AI Agent / Digital Coworker |
 
-### Acciones / Rituales
+### Structures
 
 | Numinia (10) | Mixed (5) | Business (1) |
 |---|---|---|
-| Misión | Iniciativa | Project / Initiative |
+| Guild | Team | Department / Team |
+| Faction | Area | Division |
+| CAO | Operations Center | Operations Center |
+| Blueprint | System map | System Blueprint |
+| Archive | Knowledge base | Knowledge Base |
+| Decision / Milestone | Architectural decision | Decision Record |
+| Report | Report | Report |
+| Protocol | Procedure | Process / SOP |
+
+### Actions / Rituals
+
+| Numinia (10) | Mixed (5) | Business (1) |
+|---|---|---|
+| Mission | Initiative | Project / Initiative |
 | Daily | Daily | Daily Standup |
-| Dark Council | Estrategia semanal | Weekly Strategy |
-| Lunar Coven | Sesión creativa | Creative Session |
+| Dark Council | Weekly strategy | Weekly Strategy |
+| Lunar Coven | Creative session | Creative Session |
 | Session Zero | Onboarding | Onboarding Workshop |
-| Aventura | Proyecto narrativo | Campaign / Program |
-| Temporada | Ciclo de producto | Season / Quarter |
+| Adventure | Narrative project | Campaign / Program |
+| Season | Product cycle | Season / Quarter |
 
-### Sistema / Producto
+### System / Product
 
 | Numinia (10) | Mixed (5) | Business (1) |
 |---|---|---|
-| Narrative Work OS | Work OS narrativo | Work Operating System |
-| El Velo | El sistema | The System |
-| Numinia | La ciudad | The Organization |
-| Prism Cell | Token de membresía | Membership Token |
-| Sello | Certificado | Badge / Certificate |
+| Narrative Work OS | Narrative Work OS | Work Operating System |
+| The Veil | The system | The System |
+| Numinia | The city | The Organization |
+| Prism Cell | Membership token | Membership Token |
+| Seal | Certificate | Badge / Certificate |
 
 ---
 
-## Valor epistémico
+## Epistemic value
 
-El sistema de nomenclatura dual demuestra que el NWOS no es un producto con una identidad fija — es un framework adaptable cuyo valor no depende del idioma en que se exprese. Esto resuelve la Tensión #1 del Wardley Map.
+The dual nomenclature system demonstrates that NWOS is not a product with a fixed identity — it is an adaptable framework whose value does not depend on the language in which it is expressed. This resolves Tension #1 of the Wardley Map.
 
-## Valor pragmático
+## Pragmatic value
 
-- Desbloquea ICPs que rechazaban el NWOS por el vocabulario narrativo
-- Permite presentar el sistema a directivos corporativos sin pérdida de funcionalidad
-- El Narrative Dial convierte la narrativa en una feature, no en un requisito
-- Abre el mercado PYME tradicional (10% éxito actual → potencial de escala)
-
----
-
-## Decisión pendiente
-
-Una vez validado, crear **DEC-006 — Sistema de Nomenclatura Dual** que modifique parcialmente la arquitectura del NWOS para incluir los dos diales como configuración de implementación.
+- Unlocks ICPs that rejected NWOS due to narrative vocabulary
+- Allows presenting the system to corporate executives without loss of functionality
+- The Narrative Dial turns narrative into a feature, not a requirement
+- Opens the traditional SME market (10% current success → scale potential)
 
 ---
 
-## Notas
+## Pending decision
 
-El Gamification Dial se discutirá en una sesión dedicada posterior.
-El Narrative Dial es la prioridad inmediata — resuelve el problema de adopción más urgente.
+Once validated, create **DEC-006 — Dual Nomenclature System** modifying the NWOS architecture to include the two dials as implementation configuration.
 
 ---
 
-*Nimrod 🗡️ + Equipo — 2026-04-07*
+## Notes
+
+The Gamification Dial will be discussed in a dedicated later session.
+The Narrative Dial is the immediate priority — resolves the most urgent adoption problem.
+
+---
+
+## Version history
+
+- v1.0.0 (2026-04-07) — Initial creation.
+- v1.1.0 (2026-04-07) — Translated to English (MIS-056).
+
+*Nimrod 🗡️ + Team — 2026-04-07*

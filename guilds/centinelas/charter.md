@@ -1,27 +1,26 @@
 ---
 id: "charter-sentinels"
-title: "Guild Charter — Centinelas (Sentinels)"
-type: agent
+title: "Guild Charter — Sentinels"
+type: charter
 status: active
-version: "1.0.0"
+version: "1.1.0"
 created: "2026-04-06T00:00:00Z"
-updated: "2026-04-07T00:00:00Z"
+updated: "2026-04-07T18:00:00Z"
 author: "pablo-fm"
 owner: "oracle"
-tags: [guild, centinelas, sentinels, charter]
+tags: [guild, sentinels, charter]
 license: "CC0-1.0"
 ---
-# Guild Charter — Centinelas
+# Guild Charter — Sentinels
 
-> **Resumen:** Ficha de identidad y operación del agente.
-> **Epistémico:** Quién es este agente, sus leyes y su contexto operativo.
-> **Pragmático:** Briefing completo para activar o coordinar con este agente.
-> **Audiencia:** Agentes
+> **Summary:** Guild identity and operational profile.
+> **Epistemic:** Who this guild is, its laws, and its operational context.
+> **Pragmatic:** Full briefing for activating or coordinating with this guild.
+> **Audience:** Agents
 
 ---
 
-
-*"No dejo pasar lo que no debe pasar. No retengo lo que debe fluir."*
+*"I do not let through what must not pass. I do not hold back what must flow."*
 
 ## Mission
 
@@ -44,8 +43,13 @@ Guard the operational integrity of the NWOS system. Coordinate agents, maintain 
 
 | Agent | Branch | Status | Activated |
 |-------|--------|--------|-----------|
-| Nimrod (Centinela-01) | Archangels | ✅ Active | 2026-04-02 |
+| Nimrod | Archangels | ✅ Active | 2026-04-02 |
 
 ---
+
+## Version history
+
+- v1.0.0 (2026-04-06) — Initial creation.
+- v1.1.0 (2026-04-07) — Translated to English (MIS-056).
 
 *Oracle: Pablo FM — Numen Games*
