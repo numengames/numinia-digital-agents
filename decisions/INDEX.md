@@ -20,10 +20,15 @@ Architectural Decision Records (ADR) of the Narrative Work OS. These records are
 
 ## Active decisions
 
-| ADR | Decision | Status |
-|-----|---------|--------|
-| ADR-001 | GitHub as Archive Summa | ✅ Active |
-| ADR-002 | Markdown as universal format | ✅ Active |
+| ID | Decisión | Estado | Fecha |
+|---|---|---|---|
+| ADR-001 | GitHub as Archive Summa | ✅ Active | 2026-04-06 |
+| ADR-002 | Markdown as universal format | ✅ Active | 2026-04-06 |
+| DEC-001 | Self-hosting sobre SaaS | ✅ Activa | 2026-04-03 |
+| DEC-002 | Construir en público con licencia CC0 | ✅ Activa | 2026-04-02 |
+| DEC-003 | Arbitrum como blockchain de Numinia | ⚠️ Provisional | 2026-04-05 |
+| DEC-004 | Arquitectura CAO híbrida | ✅ Activa | 2026-04-05 |
+| DEC-005 | pablofm.com como portal público de la CAO | ✅ Activa | 2026-04-03 |
 
 ## How to create an ADR
 
