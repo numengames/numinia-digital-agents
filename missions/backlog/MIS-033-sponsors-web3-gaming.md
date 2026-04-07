@@ -1,0 +1,36 @@
+---
+id: "MIS-033"
+title: "Identificar 10 sponsors Web3/Gaming"
+type: mission
+status: backlog
+created: "2026-04-04"
+area: "Financiación"
+guild: "Procuradores"
+tipo: "híbrido"
+priority: "high"
+effort: "M"
+license: "CC0-1.0"
+---
+
+# MIS-033 — Identificar 10 sponsors Web3/Gaming
+
+**Area:** Financiación · **Gremio:** Procuradores · **Tipo:** 🔀 Híbrido · **Prioridad:** 🟠 Alta · **Esfuerzo:** M
+
+## Historia
+
+Como equipo de financiación, quiero identificar 10 sponsors potenciales del ecosistema Web3/Gaming, para diversificar ingresos más allá de clientes directos.
+
+## Criterios de aceptación
+
+- [ ] 10 sponsors identificados con: empresa, contacto, budget estimado, fit
+- [ ] Al menos 5 contactados con propuesta de sponsorship
+- [ ] Propuesta de sponsorship template creada
+- [ ] 2 conversaciones activas abiertas
+
+## Valor epistémico
+
+Valida si el modelo de sponsorship es viable para la fase actual.
+
+## Valor pragmático
+
+Ingresos no dilutivos que pueden cubrir costes operativos.

@@ -1,0 +1,36 @@
+---
+id: "MIS-015"
+title: "Documentar stack tecnológico de Numinia"
+type: mission
+status: backlog
+created: "2026-04-04"
+area: "Infraestructura"
+guild: "Alquimistas"
+tipo: "biológico"
+priority: "high"
+effort: "S"
+license: "CC0-1.0"
+---
+
+# MIS-015 — Documentar stack tecnológico de Numinia
+
+**Area:** Infraestructura · **Gremio:** Alquimistas · **Tipo:** 🧬 Biológico · **Prioridad:** 🟠 Alta · **Esfuerzo:** S
+
+## Historia
+
+Como nuevo agente o colaborador técnico, quiero entender el stack completo de Numinia, para contribuir sin preguntar lo básico.
+
+## Criterios de aceptación
+
+- [ ] STACK.md con: frontend, backend, DB, infra, herramientas de agentes
+- [ ] Diagrama de arquitectura actualizado
+- [ ] Decisiones de stack enlazadas a DEC-xxx
+- [ ] Publicado en el repo
+
+## Valor epistémico
+
+Hace explícitas las decisiones técnicas implícitas.
+
+## Valor pragmático
+
+Onboarding técnico en < 30 minutos.

@@ -1,0 +1,36 @@
+---
+id: "MIS-013"
+title: "Sistema de monitoreo y alertas"
+type: mission
+status: backlog
+created: "2026-04-04"
+area: "Infraestructura"
+guild: "Centinelas"
+tipo: "digital"
+priority: "high"
+effort: "S"
+license: "CC0-1.0"
+---
+
+# MIS-013 — Sistema de monitoreo y alertas
+
+**Area:** Infraestructura · **Gremio:** Centinelas · **Tipo:** 🤖 Digital · **Prioridad:** 🟠 Alta · **Esfuerzo:** S
+
+## Historia
+
+Como operador, quiero saber inmediatamente si un servicio cae, para restablecer operación antes de que afecte a usuarios.
+
+## Criterios de aceptación
+
+- [ ] Uptime monitoring para pablofm.com, numengames.com, Umami, Cal.com
+- [ ] Alerta por Telegram en caída
+- [ ] Dashboard de estado visible
+- [ ] Tiempo de detección < 2 minutos
+
+## Valor epistémico
+
+Revela la estabilidad real de la infraestructura en producción.
+
+## Valor pragmático
+
+Cero downtime sin intervención humana permanente.

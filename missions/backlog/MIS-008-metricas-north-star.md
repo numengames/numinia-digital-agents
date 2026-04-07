@@ -1,0 +1,36 @@
+---
+id: "MIS-008"
+title: "Definir métricas North Star del producto"
+type: mission
+status: backlog
+created: "2026-04-04"
+area: "Producto"
+guild: "Exegetas"
+tipo: "biológico"
+priority: "high"
+effort: "XS"
+license: "CC0-1.0"
+---
+
+# MIS-008 — Definir métricas North Star del producto
+
+**Area:** Producto · **Gremio:** Exegetas · **Tipo:** 🧬 Biológico · **Prioridad:** 🟠 Alta · **Esfuerzo:** XS
+
+## Historia
+
+Como equipo, quiero una sola métrica North Star que todos podamos optimizar, para alinear decisiones sin reuniones.
+
+## Criterios de aceptación
+
+- [ ] 1 métrica North Star definida y justificada
+- [ ] 3-5 métricas de input que la mueven
+- [ ] Aprobada por los 4 Oráculos
+- [ ] Documentada en METRICS.md
+
+## Valor epistémico
+
+Fuerza consenso sobre qué es el éxito real del producto.
+
+## Valor pragmático
+
+Toda decisión de producto puede evaluarse contra ella.

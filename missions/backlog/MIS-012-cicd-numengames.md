@@ -1,0 +1,36 @@
+---
+id: "MIS-012"
+title: "Configurar pipeline CI/CD numengames.com"
+type: mission
+status: backlog
+created: "2026-04-04"
+area: "Infraestructura"
+guild: "Centinelas"
+tipo: "digital"
+priority: "high"
+effort: "M"
+license: "CC0-1.0"
+---
+
+# MIS-012 — Configurar pipeline CI/CD numengames.com
+
+**Area:** Infraestructura · **Gremio:** Centinelas · **Tipo:** 🤖 Digital · **Prioridad:** 🟠 Alta · **Esfuerzo:** M
+
+## Historia
+
+Como agente, quiero poder hacer deploy de numengames.com via PR sin intervención manual, para reducir fricción de despliegue.
+
+## Criterios de aceptación
+
+- [ ] GitHub Actions configurado para numengames.com
+- [ ] Deploy automático en merge a main
+- [ ] Tests de build obligatorios antes de merge
+- [ ] Notificación de deploy en Telegram
+
+## Valor epistémico
+
+Mide la madurez del flujo de trabajo del equipo técnico.
+
+## Valor pragmático
+
+Los agentes pueden hacer mejoras sin depender de Pablo para el deploy.

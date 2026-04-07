@@ -1,0 +1,36 @@
+---
+id: "MIS-021"
+title: "Definición de Pricing y Paquetes"
+type: mission
+status: backlog
+created: "2026-04-04"
+area: "Ventas"
+guild: "Exegetas"
+tipo: "biológico"
+priority: "high"
+effort: "S"
+license: "CC0-1.0"
+---
+
+# MIS-021 — Definición de Pricing y Paquetes
+
+**Area:** Ventas · **Gremio:** Exegetas · **Tipo:** 🧬 Biológico · **Prioridad:** 🟠 Alta · **Esfuerzo:** S
+
+## Historia
+
+Como prospecto, quiero entender cuánto cuesta Numinia y qué incluye cada opción, para tomar una decisión de compra informada.
+
+## Criterios de aceptación
+
+- [ ] 2-3 paquetes definidos con nombre, precio y features
+- [ ] Pricing validado con benchmarks del mercado
+- [ ] Publicado en web (numengames.com/pricing)
+- [ ] Revisado por Pablo antes de publicar
+
+## Valor epistémico
+
+Fuerza decisión sobre posicionamiento: premium vs. accesible.
+
+## Valor pragmático
+
+Sin pricing público, cada conversación comercial empieza desde cero.
