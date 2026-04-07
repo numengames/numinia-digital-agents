@@ -1,58 +1,62 @@
 ---
 id: "DEC-003"
-title: "Arbitrum como blockchain de Numinia"
+title: "Arbitrum as Numinia blockchain"
 type: decision
 status: provisional
-version: "1.0.0"
+version: "1.1.0"
 created: "2026-04-05T00:00:00Z"
-updated: "2026-04-05T00:00:00Z"
+updated: "2026-04-07T18:00:00Z"
 author: "pablo-fm"
 owner: "oracle"
 tags: [decisions, product, tech, blockchain, arbitrum]
-area: "Producto / Tech"
+area: "Product / Tech"
 pending_dark_council: true
 superseded_by: null
 license: "CC0-1.0"
 ---
-# DEC-003 — Arbitrum como blockchain de Numinia
+# DEC-003 — Arbitrum as Numinia blockchain
 
-> **Resumen:** Decisión arquitectónica o estratégica con contexto y alternativas.
-> **Epistémico:** Qué se decidió, por qué, y qué alternativas se descartaron.
-> **Pragmático:** Consultar antes de tomar decisiones en el mismo dominio.
-> **Audiencia:** Agentes · Oráculos
+> **Summary:** Architectural or strategic decision with context and alternatives.
+> **Epistemic:** What was decided, why, and what alternatives were discarded.
+> **Pragmatic:** Consult before making decisions in the same domain.
+> **Audience:** Agents · Oracles
+
+---
+
+> ⚠️ **Status: Provisional** — Pending ratification at Dark Council
+
+## Context
+
+Numinia needs a blockchain for NFTs, seal smart contracts, and Digital Goods.
+
+## Decision
+
+**Arbitrum One (L2 on Ethereum).**
+
+## Why
+
+- Very low fees — viable for microtransactions
+- EVM compatible — known stack, Solidity, mature tooling
+- Active grants ecosystem (AGV, DAO Grants)
+- Community-owned (DAO governance)
+
+## Discarded alternatives
+
+- **Ethereum mainnet** — prohibitive fees for the use case
+- **Solana** — different ecosystem, less EVM tooling
+- **Polygon** — similar but less active grants ecosystem in gaming
+- **Base / Optimism** — valid, lower traction in gaming
+
+## Pros / Cons
+
+**Pros:** Low fees · Available grants · Known EVM stack
+**Cons:** Lower speed than Solana · Dependency on Ethereum ecosystem
 
 ---
 
+## Version history
 
-> ⚠️ **Estado: Provisional** — Pendiente de ratificación en Dark Council
-
-## Contexto
-
-Numinia necesita una blockchain para NFTs, smart contracts de sellos y Digital Goods.
-
-## Decisión
-
-**Arbitrum One (L2 sobre Ethereum).**
-
-## Por qué
-
-- Fees muy bajos — viable para microtransacciones
-- EVM compatible — stack conocido, Solidity, herramientas maduras
-- Ecosistema de grants activo (AGV, DAO Grants)
-- Propiedad de su comunidad (DAO governance)
-
-## Alternativas descartadas
-
-- **Ethereum mainnet** — fees prohibitivos para el caso de uso
-- **Solana** — ecosistema diferente, menos tooling EVM
-- **Polygon** — similar pero ecosistema de grants menos activo en gaming
-- **Base / Optimism** — válidos, menor tracción en gaming
-
-## Pros / Contras
-
-**Pros:** Fees bajos · Grants disponibles · EVM conocido  
-**Contras:** Menor velocidad que Solana · Dependencia del ecosistema Ethereum
-
----
+- v1.0.0 (2026-04-05) — Initial decision (provisional).
+- v1.1.0 (2026-04-07) — Translated to English (MIS-056).
 
 *Oracle: Pablo FM — 2026-04-05*

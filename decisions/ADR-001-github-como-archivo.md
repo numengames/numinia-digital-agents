@@ -17,10 +17,10 @@ license: "CC0-1.0"
 ---
 # ADR-001 — GitHub as Archive Summa
 
-> **Resumen:** Documento del sistema NWOS — GitHub as Archive Summa.
-> **Epistémico:** Qué se decidió, por qué, y qué alternativas se descartaron.
-> **Pragmático:** Consultar antes de tomar decisiones en el mismo dominio.
-> **Audiencia:** Agentes · Oráculos
+> **Summary:** NWOS system document — GitHub as Archive Summa.
+> **Epistemic:** What was decided, why, and what alternatives were discarded.
+> **Pragmatic:** Consult before making decisions in the same domain.
+> **Audience:** Agents · Oracles
 
 ---
 
@@ -63,5 +63,12 @@ The Narrative Work OS needs a single source of truth that:
 This repository is the proof that the decision works. The decision validates itself.
 
 ---
+
+---
+
+## Version history
+
+- v1.0.0 (2026-04-06) — Initial decision.
+- v1.1.0 (2026-04-07) — Translated to English (MIS-056).
 
 *Oracle: Pablo FM — 2026-04-06*

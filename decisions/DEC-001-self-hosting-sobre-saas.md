@@ -1,53 +1,57 @@
 ---
 id: "DEC-001"
-title: "Self-hosting sobre SaaS para infraestructura"
+title: "Self-hosting over SaaS for infrastructure"
 type: decision
 status: active
-version: "1.0.0"
+version: "1.1.0"
 created: "2026-04-03T00:00:00Z"
-updated: "2026-04-03T00:00:00Z"
+updated: "2026-04-07T18:00:00Z"
 author: "pablo-fm"
 owner: "oracle"
 tags: [decisions, infrastructure, self-hosting, philosophy]
-area: "Infraestructura / Filosofía"
+area: "Infrastructure / Philosophy"
 superseded_by: null
 license: "CC0-1.0"
 ---
-# DEC-001 — Self-hosting sobre SaaS para infraestructura
+# DEC-001 — Self-hosting over SaaS for infrastructure
 
-> **Resumen:** Decisión arquitectónica o estratégica con contexto y alternativas.
-> **Epistémico:** Qué se decidió, por qué, y qué alternativas se descartaron.
-> **Pragmático:** Consultar antes de tomar decisiones en el mismo dominio.
-> **Audiencia:** Agentes · Oráculos
+> **Summary:** Architectural or strategic decision with context and alternatives.
+> **Epistemic:** What was decided, why, and what alternatives were discarded.
+> **Pragmatic:** Consult before making decisions in the same domain.
+> **Audience:** Agents · Oracles
+
+---
+
+## Context
+
+Numen Games needed analytics and a contact system for pablofm.com. The options were SaaS services or self-hosted solutions.
+
+## Decision
+
+**Self-hosting.** Umami for analytics, Cal.com for bookings, both on the own server.
+
+## Why
+
+- Pablo's ZK philosophy: data should not leave where it doesn't need to leave
+- Cost 0 vs. paid SaaS at scale
+- Consistent with Numinia values: digital sovereignty
+
+## Discarded alternatives
+
+- **Google Analytics** — cedes data to Google, requires cookie banner
+- **Formspree** — no control, endpoint can disappear
+- **Calendly** — paid beyond a certain usage
+
+## Pros / Cons
+
+**Pros:** Full data control · Real privacy · Operational cost 0
+**Cons:** Own maintenance required · Requires operational infrastructure
 
 ---
 
+## Version history
 
-## Contexto
-
-Numen Games necesitaba analytics y sistema de contacto para pablofm.com. Las opciones eran servicios SaaS o soluciones self-hosted.
-
-## Decisión
-
-**Self-hosting.** Umami para analytics, Cal.com para reservas, ambos en el servidor propio.
-
-## Por qué
-
-- Filosofía ZK de Pablo: los datos no deben salir de donde no necesitan salir
-- Coste 0 vs. SaaS de pago a escala
-- Coherencia con los valores de Numinia: soberanía digital
-
-## Alternativas descartadas
-
-- **Google Analytics** — cede datos a Google, requiere banner de cookies
-- **Formspree** — sin control, endpoint puede desaparecer
-- **Calendly** — de pago a partir de cierto uso
-
-## Pros / Contras
-
-**Pros:** Control total de datos · Privacidad real · Coste operativo 0  
-**Contras:** Mantenimiento propio · Requiere infraestructura operativa
-
----
+- v1.0.0 (2026-04-03) — Initial decision.
+- v1.1.0 (2026-04-07) — Translated to English (MIS-056).
 
 *Oracle: Pablo FM — 2026-04-03*

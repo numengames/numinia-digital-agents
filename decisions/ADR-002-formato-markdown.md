@@ -15,10 +15,10 @@ license: "CC0-1.0"
 ---
 # ADR-002 — Markdown as Universal Format
 
-> **Resumen:** Documento del sistema NWOS — Markdown as Universal Format.
-> **Epistémico:** Qué se decidió, por qué, y qué alternativas se descartaron.
-> **Pragmático:** Consultar antes de tomar decisiones en el mismo dominio.
-> **Audiencia:** Agentes · Oráculos
+> **Summary:** NWOS system document — Markdown as Universal Format.
+> **Epistemic:** What was decided, why, and what alternatives were discarded.
+> **Pragmatic:** Consult before making decisions in the same domain.
+> **Audience:** Agents · Oracles
 
 ---
 
@@ -46,5 +46,12 @@ The Archive Summa needs a document format that:
 ⚠️ Versioning is in frontmatter, not in the filename (exception: protocols)
 
 ---
+
+---
+
+## Version history
+
+- v1.0.0 (2026-04-06) — Initial decision.
+- v1.1.0 (2026-04-07) — Translated to English (MIS-056).
 
 *Oracle: Pablo FM — 2026-04-06*

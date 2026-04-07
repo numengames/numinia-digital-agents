@@ -1,53 +1,57 @@
 ---
 id: "DEC-004"
-title: "Arquitectura CAO híbrida"
+title: "Hybrid CAO architecture"
 type: decision
 status: active
-version: "1.0.0"
+version: "1.1.0"
 created: "2026-04-05T00:00:00Z"
-updated: "2026-04-05T00:00:00Z"
+updated: "2026-04-07T18:00:00Z"
 author: "pablo-fm"
 owner: "oracle"
 tags: [decisions, cao, agents, architecture]
-area: "CAO / Sistema de agentes"
+area: "CAO / Agent system"
 superseded_by: null
 license: "CC0-1.0"
 ---
-# DEC-004 — Arquitectura CAO híbrida
+# DEC-004 — Hybrid CAO architecture
 
-> **Resumen:** Decisión arquitectónica o estratégica con contexto y alternativas.
-> **Epistémico:** Qué se decidió, por qué, y qué alternativas se descartaron.
-> **Pragmático:** Consultar antes de tomar decisiones en el mismo dominio.
-> **Audiencia:** Agentes · Oráculos
+> **Summary:** Architectural or strategic decision with context and alternatives.
+> **Epistemic:** What was decided, why, and what alternatives were discarded.
+> **Pragmatic:** Consult before making decisions in the same domain.
+> **Audience:** Agents · Oracles
+
+---
+
+## Context
+
+The CAO needed to define how to operate digital agents. Persistent sessions or on-demand subagents?
+
+## Decision
+
+**Hybrid architecture: ephemeral subagents for missions now, persistent sessions when the system matures.**
+
+## Why
+
+- Subagents work today without additional configuration (proven with MIS-001)
+- Persistent sessions require more infrastructure
+- Minimum viable complexity — no premature over-engineering
+- The .md missions system works equally with both models
+
+## Discarded alternatives
+
+- **Persistent sessions from the start** — risk of breaking config, fixed cost without usage
+- **A single generalist agent** — does not scale, loses specialization
+
+## Pros / Cons
+
+**Pros:** Works today · Cost proportional to usage · No config risk
+**Cons:** No memory between missions (mitigated with briefing protocol)
 
 ---
 
+## Version history
 
-## Contexto
-
-La CAO necesitaba definir cómo operar los agentes digitales. ¿Sesiones persistentes o subagentes bajo demanda?
-
-## Decisión
-
-**Arquitectura híbrida: subagentes efímeros para misiones ahora, sesiones persistentes cuando el sistema madure.**
-
-## Por qué
-
-- Los subagentes funcionan hoy sin configuración adicional (probado con MIS-001)
-- Las sesiones persistentes requieren más infraestructura
-- Mínima complejidad que funciona — no sobreingeniería prematura
-- El sistema de misiones .md funciona igual con ambos modelos
-
-## Alternativas descartadas
-
-- **Sesiones persistentes desde el inicio** — riesgo de romper config, coste fijo sin uso
-- **Un solo agente generalista** — no escala, pierde especialización
-
-## Pros / Contras
-
-**Pros:** Funciona hoy · Coste proporcional al uso · Sin riesgo de config  
-**Contras:** Sin memoria entre misiones (mitigado con briefing protocolo)
-
----
+- v1.0.0 (2026-04-05) — Initial decision.
+- v1.1.0 (2026-04-07) — Translated to English (MIS-056).
 
 *Oracle: Pablo FM — 2026-04-05*
