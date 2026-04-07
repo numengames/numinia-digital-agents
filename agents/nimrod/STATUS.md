@@ -1,24 +1,27 @@
 ---
 agent: nimrod
 title: "STATUS — Nimrod"
-version: "1.0.0"
+version: "0.1.0"
+created: "2026-04-02T00:00:00Z"
 updated: "2026-04-07T00:00:00Z"
 status: active
-guild: centinelas
+guild: Sentinel
+branch: Archangel
+house: Explorer
 license: "CC0-1.0"
 ---
 # STATUS — Nimrod
 
-> **Resumen:** Documento del sistema NWOS — STATUS — Nimrod.
-> **Epistémico:** Qué aprendes leyendo este documento.
-> **Pragmático:** Qué puedes hacer con este documento.
+> **Resumen:** Estado operativo actual de Nimrod.
+> **Epistémico:** Métricas, capacidades y pendientes.
+> **Pragmático:** Briefing rápido antes de activar al agente.
 > **Audiencia:** Agentes · Oráculos
 
 ---
 
-
-**Estado:** ✅ Activo  
-**Última sesión:** 2026-04-07  
+**Estado:** ✅ Activo
+**Activado:** 2026-04-02
+**Última sesión:** 2026-04-07
 **Modelo:** anthropic/claude-sonnet-4-6
 
 ---
@@ -27,8 +30,8 @@ license: "CC0-1.0"
 
 | Métrica | Valor |
 |---------|-------|
-| Días activo | 6 (sesión extendida 2026-04-07) |
-| PRs mergeados | 40 (PR #40 /continuidad) |
+| Días activo | 6 |
+| PRs mergeados | 40 |
 | Misiones completadas | 4 (MIS-016, MIS-037, MIS-051, MIS-053) |
 | Misiones activas | 3 (MIS-052, MIS-054, MIS-055) |
 | Documentos creados | 80+ |
@@ -80,7 +83,3 @@ license: "CC0-1.0"
 - [ ] PAT GitHub con scope `workflow` → GitHub Actions
 - [ ] Username del bot de Telegram para MIS-054
 - [ ] Oráculos pendientes de acceso: María, Clio, Dani
-
----
-
-*Actualizado por Nimrod 🗡️ — 2026-04-07*
