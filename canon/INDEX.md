@@ -3,41 +3,71 @@ id: "canon-index"
 title: "Canon — Index"
 type: seminal
 status: active
-version: "1.0.0"
-created: "2026-04-06"
-updated: "2026-04-06"
+version: "1.1.0"
+created: "2026-04-06T00:00:00Z"
+updated: "2026-04-07T12:59:00Z"
 author: "pablo-fm"
 owner: "oracle"
 tags: [canon, index, seminal]
 license: "CC0-1.0"
+changelog:
+  - version: "1.1.0"
+    date: "2026-04-07T12:59:00Z"
+    change: "Added S-009 Rank Specifications (QA audit). Reclassified S-010 as meta-document. Total: 10 seminales."
+  - version: "1.0.0"
+    date: "2026-04-06T00:00:00Z"
+    change: "Initial canon with 9 documents."
 ---
 
 # Canon — Memoria Inmutable
 
-The 9 foundational documents of Numinia. These documents are immutable by policy and by technical enforcement (CODEOWNERS). They are the ground on which everything else is built.
+Los 10 documentos fundacionales de Numinia. Son inmutables por política y por enforcement técnico (CODEOWNERS). Son el suelo sobre el que todo lo demás se construye.
 
-## Modification policy
+## Política de modificación
 
-**Nobody** can modify these documents once published. If a contradiction with operational reality is found:
-1. Document the discrepancy in `decisions/` as an ADR
-2. Decide explicitly: change practice or update canon
-3. Updating canon requires Oracle consensus + label `canon-change`
+**Nadie** puede modificar estos documentos una vez publicados. Si se encuentra una contradicción con la realidad operativa:
+1. Documentar la discrepancia en `decisions/` como ADR
+2. Decidir explícitamente: cambiar la práctica o actualizar el canon
+3. Actualizar el canon requiere consenso de Oráculos + label `canon-change`
 
-## The 9 Seminal Documents
+## Los 10 Documentos Seminales
 
-| # | Document | Content | Value |
-|---|----------|---------|-------|
-| S-001 | Welcome to Numinia | Entry point. Historical context and purpose. | 9/10 |
-| S-002 | Numinia Brand & Culture | Complete brand v0.1.2: narrative, identity, values, rituals. | 9/10 |
-| S-003 | Epistemic Relations | The triad OS→Model→Narrative. Peirce + Jung. | 10/10 |
-| S-004 | Compendium of Attributes | Agent attributes, rank system, character sheet. | 9/10 |
-| S-005 | Role Structure | Role theory: Basic Level (guilds) + Prototype (factions). | 10/10 |
-| S-006 | Platform Role System | Digital Goods platform roles and permissions v2. | 8/10 |
-| S-007 | About Session Zero | 4 introduction escape rooms, seals, Prism Cells. | 8/10 |
-| S-008 | Numinia — El Juego de Rol | Complete RPG manual in Spanish. ~4,600 lines. | 8/10 |
-| S-009 | Archive System | How the Archive Summa is organized. | — |
+| # | ID | Documento | Archivo | Idioma | Valor |
+|---|----|-----------|---------|--------|-------|
+| 1 | S-001 | Welcome to Numinia | `Welcome to Numinia.md` | EN | 9/10 |
+| 2 | S-002 | Numinia Brand & Culture | `Numinia Brand and Culture.md` | EN | 9/10 |
+| 3 | S-003 | Epistemic Relations | `Epistemic relations between Numen Games and Numinia.md` | EN | 10/10 |
+| 4 | S-004 | Compendium of Attributes | `Compendium of Attributes and Ranks in Numinia.md` | EN | 9/10 |
+| 5 | S-005 | Role Structure | `Role structure in the Numinia system.md` | EN | 10/10 |
+| 6 | S-006 | Platform Role System | `Platform Role System.md` | EN | 8/10 |
+| 7 | S-007 | About Session Zero | `About Session Zero.md` | EN | 8/10 |
+| 8 | S-008 | Numinia — El Juego de Rol | `Numinia. El juego de rol (manual completo).txt` | ES | 8/10 |
+| 9 | S-009 | Rank Specifications | `Rank Specifications.md` | EN | 7/10 |
+| 10 | S-010 | Archive System | `README.md` (meta) | EN | — |
+
+## Notas sobre S-009
+
+`Rank Specifications` fue elaborado el 2026-04-06 con Christian Märtens. Define la **dimensión social del Arconte**: que la profundidad técnica por sí sola no confiere el rango — se requiere también capacidad de liderazgo y contribución a la comunidad. Complementa S-004 (Compendium) añadiendo el *por qué* detrás de las distinciones de rango.
+
+Fue detectado en la auditoría de QA del 2026-04-07 como documento existente sin ID canónico asignado.
+
+## Notas sobre S-010
+
+S-010 es un meta-documento: describe la carpeta canon en sí misma. Está incluido por completitud y navegabilidad, pero no es un seminal de contenido en el mismo sentido que S-001–S-009.
+
+## Relaciones entre documentos (Knowledge Graph)
+
+| Documento | Relación | Documento destino |
+|-----------|----------|-------------------|
+| S-004 Compendium | `extended_by` | S-009 Rank Specs |
+| S-003 Epistemic | `grounds` | S-005 Role Structure |
+| S-003 Epistemic | `grounds` | S-002 Brand & Culture |
+| S-005 Role Structure | `implements` | S-006 Platform Role System |
+| S-007 Session Zero | `instantiates` | S-008 RPG Manual |
+| S-001 Welcome | `summarizes` | S-002, S-005, S-006 |
+| S-008 RPG Manual | `is_narrative_of` | S-003 Epistemic |
 
 ---
 
-*The canon does not get questioned in daily work. It gets consulted.*
-*If daily work reveals the canon is wrong, document the discrepancy and decide explicitly.*
+*El canon no se cuestiona en el trabajo diario. Se consulta.*
+*Si el trabajo diario revela que el canon está equivocado, documenta la discrepancia y decide explícitamente.*
