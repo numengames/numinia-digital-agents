@@ -11,8 +11,15 @@ priority: "high"
 effort: "S"
 license: "CC0-1.0"
 ---
-
 # MIS-047 — Configurar reporte semanal automático
+
+> **Resumen:** Misión del sistema NWOS con criterios, valor epistémico y pragmático.
+> **Epistémico:** Qué aprendes leyendo este documento.
+> **Pragmático:** Qué puedes hacer con este documento.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
 
 **Area:** Operaciones · **Gremio:** Centinelas · **Tipo:** 🤖 Digital · **Prioridad:** 🟠 Alta · **Esfuerzo:** S
 

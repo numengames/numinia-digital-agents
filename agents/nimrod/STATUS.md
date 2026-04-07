@@ -7,8 +7,15 @@ status: active
 guild: centinelas
 license: "CC0-1.0"
 ---
-
 # STATUS — Nimrod
+
+> **Resumen:** Documento del sistema NWOS — STATUS — Nimrod.
+> **Epistémico:** Qué aprendes leyendo este documento.
+> **Pragmático:** Qué puedes hacer con este documento.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
 
 **Estado:** ✅ Activo  
 **Última sesión:** 2026-04-07  

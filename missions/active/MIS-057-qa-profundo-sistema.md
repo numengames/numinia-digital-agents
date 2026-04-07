@@ -22,8 +22,15 @@ phase: "active"
 human_approval_score: 9
 started: "2026-04-07T00:00:00Z"
 ---
-
 # MIS-057 — QA Profundo del Sistema NWOS
+
+> **Resumen:** Misión del sistema NWOS con criterios, valor epistémico y pragmático.
+> **Epistémico:** Qué aprendes leyendo este documento.
+> **Pragmático:** Qué puedes hacer con este documento.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
 
 **Area:** CAO · **Gremio:** Centinelas · **Tipo:** 🔀 Híbrido · **Prioridad:** 🔴 Crítica · **Esfuerzo:** XL  
 **Aprobación humana requerida:** 9/10 — Afecta la arquitectura central del sistema

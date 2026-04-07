@@ -1,4 +1,12 @@
 # Prompt — Archive Summa para análisis con otras IAs
+
+> **Resumen:** Documento del sistema NWOS — archive-summa-prompt-v0.1.0.
+> **Epistémico:** Qué aprendes leyendo este documento.
+> **Pragmático:** Qué puedes hacer con este documento.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
 **Versión:** v0.1.0 · 2026-04-06
 **Uso:** Pegar en cualquier IA para obtener análisis, críticas o mejoras
 

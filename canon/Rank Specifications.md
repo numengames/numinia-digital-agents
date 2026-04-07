@@ -1,4 +1,12 @@
 # Rank Specifications
+
+> **Resumen:** Documento del sistema NWOS — Rank Specifications.
+> **Epistémico:** Qué aprendes leyendo este documento.
+> **Pragmático:** Qué puedes hacer con este documento.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
 *Elaborado con Christian Märtens, 2026-04-06*
 
 ---

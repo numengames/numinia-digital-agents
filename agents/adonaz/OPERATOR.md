@@ -7,8 +7,15 @@ status: active
 guild: exegetas
 license: "CC0-1.0"
 ---
-
 # OPERATOR — Adonaz
+
+> **Resumen:** Documento del sistema NWOS — OPERATOR — Adonaz.
+> **Epistémico:** Qué aprendes leyendo este documento.
+> **Pragmático:** Qué puedes hacer con este documento.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
 
 ## Rules
 

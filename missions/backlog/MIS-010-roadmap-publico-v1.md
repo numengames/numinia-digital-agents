@@ -11,8 +11,15 @@ priority: "medium"
 effort: "S"
 license: "CC0-1.0"
 ---
-
 # MIS-010 — Roadmap público de Numinia v1.0
+
+> **Resumen:** Misión del sistema NWOS con criterios, valor epistémico y pragmático.
+> **Epistémico:** Qué aprendes leyendo este documento.
+> **Pragmático:** Qué puedes hacer con este documento.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
 
 **Area:** Producto · **Gremio:** Exegetas · **Tipo:** 🔀 Híbrido · **Prioridad:** 🟡 Media · **Esfuerzo:** S
 

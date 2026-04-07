@@ -11,8 +11,15 @@ priority: "high"
 effort: "S"
 license: "CC0-1.0"
 ---
-
 # MIS-007 — Integrar Cal.com en onboarding de Numinia
+
+> **Resumen:** Misión del sistema NWOS con criterios, valor epistémico y pragmático.
+> **Epistémico:** Qué aprendes leyendo este documento.
+> **Pragmático:** Qué puedes hacer con este documento.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
 
 **Area:** Producto · **Gremio:** Centinelas · **Tipo:** 🔀 Híbrido · **Prioridad:** 🟠 Alta · **Esfuerzo:** S
 

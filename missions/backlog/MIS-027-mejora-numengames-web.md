@@ -11,8 +11,15 @@ priority: "critical"
 effort: "M"
 license: "CC0-1.0"
 ---
-
 # MIS-027 — Mejora de numengames.com
+
+> **Resumen:** Misión del sistema NWOS con criterios, valor epistémico y pragmático.
+> **Epistémico:** Qué aprendes leyendo este documento.
+> **Pragmático:** Qué puedes hacer con este documento.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
 
 **Area:** Contenido · **Gremio:** Alquimistas · **Tipo:** 🤖 Digital · **Prioridad:** 🔴 Crítica · **Esfuerzo:** M
 

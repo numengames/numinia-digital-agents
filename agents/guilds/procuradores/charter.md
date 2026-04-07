@@ -10,8 +10,15 @@ owner: "oracle"
 tags: [guild, procuradores, charter]
 license: "CC0-1.0"
 ---
-
 # Guild Charter — Procuradores
+
+> **Resumen:** Ficha de identidad y operación del agente.
+> **Epistémico:** Quién es este agente, sus leyes y su contexto operativo.
+> **Pragmático:** Briefing completo para activar o coordinar con este agente.
+> **Audiencia:** Agentes
+
+---
+
 
 *"Sin estructura, el caos. Sin flexibilidad, la rigidez."*
 

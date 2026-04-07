@@ -11,8 +11,15 @@ priority: "high"
 effort: "S"
 license: "CC0-1.0"
 ---
-
 # MIS-021 — Definición de Pricing y Paquetes
+
+> **Resumen:** Misión del sistema NWOS con criterios, valor epistémico y pragmático.
+> **Epistémico:** Qué aprendes leyendo este documento.
+> **Pragmático:** Qué puedes hacer con este documento.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
 
 **Area:** Ventas · **Gremio:** Exegetas · **Tipo:** 🧬 Biológico · **Prioridad:** 🟠 Alta · **Esfuerzo:** S
 

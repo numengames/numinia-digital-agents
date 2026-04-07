@@ -13,8 +13,15 @@ area: "Producto / Comunicación"
 superseded_by: null
 license: "CC0-1.0"
 ---
-
 # DEC-005 — pablofm.com como portal público de la CAO
+
+> **Resumen:** Decisión arquitectónica o estratégica con contexto y alternativas.
+> **Epistémico:** Qué se decidió, por qué, y qué alternativas se descartaron.
+> **Pragmático:** Consultar antes de tomar decisiones en el mismo dominio.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
 
 ## Contexto
 

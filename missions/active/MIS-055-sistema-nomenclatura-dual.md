@@ -22,8 +22,15 @@ phase: "active"
 started: "2026-04-07T00:00:00Z"
 completed: null
 ---
-
 # MIS-055 — Sistema de Nomenclatura Dual
+
+> **Resumen:** Misión del sistema NWOS con criterios, valor epistémico y pragmático.
+> **Epistémico:** Qué aprendes leyendo este documento.
+> **Pragmático:** Qué puedes hacer con este documento.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
 
 **Area:** CAO · **Gremio:** Exegetas · **Tipo:** 🔀 Híbrido · **Prioridad:** 🔴 Crítica · **Esfuerzo:** L
 

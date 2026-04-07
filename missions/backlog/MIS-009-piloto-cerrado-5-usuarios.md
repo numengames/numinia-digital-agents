@@ -11,8 +11,15 @@ priority: "high"
 effort: "L"
 license: "CC0-1.0"
 ---
-
 # MIS-009 — Piloto cerrado con 5 usuarios beta
+
+> **Resumen:** Misión del sistema NWOS con criterios, valor epistémico y pragmático.
+> **Epistémico:** Qué aprendes leyendo este documento.
+> **Pragmático:** Qué puedes hacer con este documento.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
 
 **Area:** Producto · **Gremio:** Alquimistas · **Tipo:** 🔀 Híbrido · **Prioridad:** 🟠 Alta · **Esfuerzo:** L
 

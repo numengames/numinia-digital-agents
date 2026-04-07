@@ -21,8 +21,15 @@ effort: "M"
 phase: "backlog"
 human_approval_score: 5
 ---
-
 # MIS-00058 — Sistema de Inspecciones
+
+> **Resumen:** Misión del sistema NWOS con criterios, valor epistémico y pragmático.
+> **Epistémico:** Qué aprendes leyendo este documento.
+> **Pragmático:** Qué puedes hacer con este documento.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
 
 **Area:** CAO · **Gremio:** Centinelas · **Tipo:** 🤖 Digital · **Prioridad:** 🟠 Alta · **Esfuerzo:** M  
 **Aprobación humana requerida:** 5/10

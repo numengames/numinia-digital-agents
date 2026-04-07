@@ -13,8 +13,15 @@ area: "Producto"
 semaforo: "verde"
 license: "CC0-1.0"
 ---
-
 # BP — Webs
+
+> **Resumen:** Plano del sistema: estado actual, objetivo, gaps y dependencias.
+> **Epistémico:** El estado real vs. el objetivo — dónde estamos y hacia dónde vamos.
+> **Pragmático:** Identificar qué misiones abren los gaps documentados.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
 
 > *Plano de las superficies digitales de Numen Games. La cara visible del sistema.*
 

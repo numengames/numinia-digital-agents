@@ -22,8 +22,15 @@ phase: "done"
 started: "2026-04-05T00:00:00Z"
 completed: "2026-04-05T00:00:00Z"
 ---
-
 # MIS-053 — Khepri — Email de Numen Games operativo
+
+> **Resumen:** Misión del sistema NWOS con criterios, valor epistémico y pragmático.
+> **Epistémico:** Qué aprendes leyendo este documento.
+> **Pragmático:** Qué puedes hacer con este documento.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
 
 **Area:** CAO · **Gremio:** Centinelas · **Tipo:** 🤖 Digital  
 **Prioridad:** 🟠 Alta · **Esfuerzo:** S

@@ -23,8 +23,15 @@ started: null
 completed: null
 divergence_log: null
 ---
-
 # {MIS-XXX} — {Mission Title}
+
+> **Resumen:** Misión del sistema NWOS con criterios, valor epistémico y pragmático.
+> **Epistémico:** Qué aprendes leyendo este documento.
+> **Pragmático:** Qué puedes hacer con este documento.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
 
 **Area:** {area}  
 **Guild:** {guild}  

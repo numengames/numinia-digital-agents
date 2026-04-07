@@ -10,8 +10,15 @@ role: "{Role in Numinia}"
 model: "anthropic/claude-sonnet-4-6"
 license: "CC0-1.0"
 ---
-
 # SOUL — {Agent Name}
+
+> **Resumen:** Documento del sistema NWOS — SOUL — {Agent Name}.
+> **Epistémico:** Qué aprendes leyendo este documento.
+> **Pragmático:** Qué puedes hacer con este documento.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
 
 *"{Defining phrase}"*
 

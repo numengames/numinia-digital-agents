@@ -11,8 +11,15 @@ priority: "medium"
 effort: "XS"
 license: "CC0-1.0"
 ---
-
 # MIS-024 — Sistema de seguimiento post-call
+
+> **Resumen:** Misión del sistema NWOS con criterios, valor epistémico y pragmático.
+> **Epistémico:** Qué aprendes leyendo este documento.
+> **Pragmático:** Qué puedes hacer con este documento.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
 
 **Area:** Ventas · **Gremio:** Centinelas · **Tipo:** 🤖 Digital · **Prioridad:** 🟡 Media · **Esfuerzo:** XS
 

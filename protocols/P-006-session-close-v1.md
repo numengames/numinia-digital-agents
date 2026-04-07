@@ -15,8 +15,15 @@ mandatory: true
 human_approval_score: 7
 license: "CC0-1.0"
 ---
-
 # P-006 — Session Close Protocol v1
+
+> **Resumen:** Protocolo operativo estándar del sistema NWOS.
+> **Epistémico:** Cómo se ejecuta este proceso y por qué de esta forma.
+> **Pragmático:** Seguir estos pasos en el contexto especificado.
+> **Audiencia:** Agentes
+
+---
+
 
 *Todo lo que no se escribe, no ocurrió.*
 

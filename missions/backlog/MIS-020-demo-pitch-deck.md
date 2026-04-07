@@ -11,8 +11,15 @@ priority: "high"
 effort: "M"
 license: "CC0-1.0"
 ---
-
 # MIS-020 — Demo / Pitch Deck interactivo
+
+> **Resumen:** Misión del sistema NWOS con criterios, valor epistémico y pragmático.
+> **Epistémico:** Qué aprendes leyendo este documento.
+> **Pragmático:** Qué puedes hacer con este documento.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
 
 **Area:** Ventas · **Gremio:** Alquimistas · **Tipo:** 🤖 Digital · **Prioridad:** 🟠 Alta · **Esfuerzo:** M
 

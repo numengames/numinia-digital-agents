@@ -11,8 +11,15 @@ priority: "medium"
 effort: "M"
 license: "CC0-1.0"
 ---
-
 # MIS-049 — DORA Metrics para numengames-web
+
+> **Resumen:** Misión del sistema NWOS con criterios, valor epistémico y pragmático.
+> **Epistémico:** Qué aprendes leyendo este documento.
+> **Pragmático:** Qué puedes hacer con este documento.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
 
 **Area:** Operaciones · **Gremio:** Centinelas · **Tipo:** 🤖 Digital · **Prioridad:** 🟡 Media · **Esfuerzo:** M
 

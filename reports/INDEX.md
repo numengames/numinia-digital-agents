@@ -1,5 +1,13 @@
 # Reports — Evidencia Operativa
 
+> **Resumen:** Documento del sistema NWOS — INDEX.
+> **Epistémico:** Qué aprendes leyendo este documento.
+> **Pragmático:** Qué puedes hacer con este documento.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
+
 Daily and weekly activity reports of the Narrative Work OS.
 
 **Retention policy:**

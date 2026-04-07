@@ -13,8 +13,15 @@ done: 4
 active: 2
 backlog: 48
 ---
-
 # Backlog de Misiones — Índice Maestro
+
+> **Resumen:** Índice de documentos de este fondo documental.
+> **Epistémico:** Qué aprendes leyendo este documento.
+> **Pragmático:** Qué puedes hacer con este documento.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
 
 **Total:** 54 misiones · **Done:** 4 · **En curso:** 2 · **Backlog:** 48  
 *Fuente de verdad migrada desde pablofm.com/misiones — 2026-04-07*

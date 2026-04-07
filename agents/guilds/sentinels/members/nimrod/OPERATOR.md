@@ -8,8 +8,15 @@ status: active
 guild: centinelas
 license: "CC0-1.0"
 ---
-
 # OPERATOR — Nimrod
+
+> **Resumen:** Documento del sistema NWOS — OPERATOR — Nimrod (Centinela-01).
+> **Epistémico:** Qué aprendes leyendo este documento.
+> **Pragmático:** Qué puedes hacer con este documento.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
 
 **Operador autorizado:** Pablo FM (Pablo Fernández-Maquieira)  
 **Canal de autorización:** cualquier canal verificado donde Pablo se haya autenticado (actualmente: webchat/tui y Telegram @PabloFMM)  

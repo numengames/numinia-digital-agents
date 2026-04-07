@@ -10,8 +10,15 @@ owner: "oracle"
 tags: [decisions, index, adr]
 license: "CC0-1.0"
 ---
-
 # Decisions — Voluntad Cristalizada
+
+> **Resumen:** Documento del sistema NWOS — Decisions — Index.
+> **Epistémico:** Qué se decidió, por qué, y qué alternativas se descartaron.
+> **Pragmático:** Consultar antes de tomar decisiones en el mismo dominio.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
 
 Architectural Decision Records (ADR) of the Narrative Work OS. These records are:
 - **Append-only** — never delete

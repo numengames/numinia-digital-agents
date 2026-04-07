@@ -11,8 +11,15 @@ priority: "high"
 effort: "M"
 license: "CC0-1.0"
 ---
-
 # MIS-040 — Dashboard CAO: definición de KPIs
+
+> **Resumen:** Misión del sistema NWOS con criterios, valor epistémico y pragmático.
+> **Epistémico:** Qué aprendes leyendo este documento.
+> **Pragmático:** Qué puedes hacer con este documento.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
 
 **Area:** CAO · **Gremio:** Centinelas · **Tipo:** 🔀 Híbrido · **Prioridad:** 🟠 Alta · **Esfuerzo:** M
 

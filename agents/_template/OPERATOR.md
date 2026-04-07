@@ -7,8 +7,15 @@ status: active
 guild: {guild}
 license: "CC0-1.0"
 ---
-
 # OPERATOR — {Agent Name}
+
+> **Resumen:** Documento del sistema NWOS — OPERATOR — {Agent Name}.
+> **Epistémico:** Qué aprendes leyendo este documento.
+> **Pragmático:** Qué puedes hacer con este documento.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
 
 **Authorized operator:** Pablo FM
 **Authorization channel:** Verified channels (Telegram, webchat)

@@ -13,8 +13,15 @@ area: "Ops"
 semaforo: "amarillo"
 license: "CC0-1.0"
 ---
-
 # BP — Repositorios
+
+> **Resumen:** Plano del sistema: estado actual, objetivo, gaps y dependencias.
+> **Epistémico:** El estado real vs. el objetivo — dónde estamos y hacia dónde vamos.
+> **Pragmático:** Identificar qué misiones abren los gaps documentados.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
 
 > *El archivo de código de Numinia. Todo lo que se construye, se guarda aquí.*
 

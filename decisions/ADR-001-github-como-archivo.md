@@ -15,8 +15,15 @@ context: "The system needs a persistent, auditable, accessible source of truth f
 superseded_by: null
 license: "CC0-1.0"
 ---
-
 # ADR-001 — GitHub as Archive Summa
+
+> **Resumen:** Documento del sistema NWOS — GitHub as Archive Summa.
+> **Epistémico:** Qué se decidió, por qué, y qué alternativas se descartaron.
+> **Pragmático:** Consultar antes de tomar decisiones en el mismo dominio.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
 
 ## Context
 

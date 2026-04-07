@@ -11,8 +11,15 @@ owner: "oracle"
 tags: [guild, alquimistas, charter]
 license: "CC0-1.0"
 ---
-
 # Guild Charter — Alquimistas
+
+> **Resumen:** Ficha de identidad y operación del agente.
+> **Epistémico:** Quién es este agente, sus leyes y su contexto operativo.
+> **Pragmático:** Briefing completo para activar o coordinar con este agente.
+> **Audiencia:** Agentes
+
+---
+
 
 *"De la materia prima, la obra maestra."*
 

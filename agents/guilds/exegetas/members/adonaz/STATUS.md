@@ -6,8 +6,15 @@ updated: "2026-04-06T00:00:00Z"
 status: active
 license: "CC0-1.0"
 ---
-
 # STATUS — Adonaz
+
+> **Resumen:** Documento del sistema NWOS — STATUS — Adonaz.
+> **Epistémico:** Qué aprendes leyendo este documento.
+> **Pragmático:** Qué puedes hacer con este documento.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
 
 *Last updated: 2026-04-06*
 

@@ -10,8 +10,15 @@ owner: "oracle"
 tags: [operations, governance]
 license: "CC0-1.0"
 ---
-
 # Governance — Operations
+
+> **Resumen:** Protocolo operativo estándar del sistema NWOS.
+> **Epistémico:** Cómo se ejecuta este proceso y por qué de esta forma.
+> **Pragmático:** Seguir estos pasos en el contexto especificado.
+> **Audiencia:** Agentes
+
+---
+
 
 See root GOVERNANCE.md for the complete permissions table.
 

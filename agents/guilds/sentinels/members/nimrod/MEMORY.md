@@ -8,8 +8,15 @@ status: active
 guild: centinelas
 license: "CC0-1.0"
 ---
-
 # MEMORY — Nimrod
+
+> **Resumen:** Documento del sistema NWOS — MEMORY — Nimrod (Long-term).
+> **Epistémico:** Qué aprendes leyendo este documento.
+> **Pragmático:** Qué puedes hacer con este documento.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
 
 *Memoria curada a largo plazo. No es un log — es la destilación de lo que importa.*
 

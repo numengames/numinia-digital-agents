@@ -11,8 +11,15 @@ priority: "high"
 effort: "S"
 license: "CC0-1.0"
 ---
-
 # MIS-015 — Documentar stack tecnológico de Numinia
+
+> **Resumen:** Misión del sistema NWOS con criterios, valor epistémico y pragmático.
+> **Epistémico:** Qué aprendes leyendo este documento.
+> **Pragmático:** Qué puedes hacer con este documento.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
 
 **Area:** Infraestructura · **Gremio:** Alquimistas · **Tipo:** 🧬 Biológico · **Prioridad:** 🟠 Alta · **Esfuerzo:** S
 

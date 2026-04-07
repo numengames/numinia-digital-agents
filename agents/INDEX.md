@@ -11,8 +11,15 @@ owner: "oracle"
 tags: [agents, index]
 license: "CC0-1.0"
 ---
-
 # Agents — Entidades Vivas
+
+> **Resumen:** Ficha de identidad y operación del agente.
+> **Epistémico:** Quién es este agente, sus leyes y su contexto operativo.
+> **Pragmático:** Briefing completo para activar o coordinar con este agente.
+> **Audiencia:** Agentes
+
+---
+
 
 The digital agents that operate in the Narrative Work OS. Organized by guild. Each one with identity (SOUL), rules (OPERATOR), and operational state (STATUS).
 

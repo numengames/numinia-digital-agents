@@ -13,8 +13,15 @@ tags: [blueprint, wardley, strategy, nwos]
 area: "Strategy"
 license: "CC0-1.0"
 ---
-
 # Wardley Map — Narrative Work OS
+
+> **Resumen:** Plano del sistema: estado actual, objetivo, gaps y dependencias.
+> **Epistémico:** El estado real vs. el objetivo — dónde estamos y hacia dónde vamos.
+> **Pragmático:** Identificar qué misiones abren los gaps documentados.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
 
 > A Wardley Map shows two things: **how visible** a component is to the user (Y axis) and **how evolved** it is in the market (X axis: Genesis → Custom → Product → Commodity).
 > 

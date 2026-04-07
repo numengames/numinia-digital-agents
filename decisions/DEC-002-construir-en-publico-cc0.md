@@ -13,8 +13,15 @@ area: "Estrategia / Cultura"
 superseded_by: null
 license: "CC0-1.0"
 ---
-
 # DEC-002 — Construir en público con licencia CC0
+
+> **Resumen:** Decisión arquitectónica o estratégica con contexto y alternativas.
+> **Epistémico:** Qué se decidió, por qué, y qué alternativas se descartaron.
+> **Pragmático:** Consultar antes de tomar decisiones en el mismo dominio.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
 
 ## Contexto
 

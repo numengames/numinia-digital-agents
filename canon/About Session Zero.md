@@ -1,5 +1,13 @@
 # About Session Zero
 
+> **Resumen:** Documento del sistema NWOS — About Session Zero.
+> **Epistémico:** Qué aprendes leyendo este documento.
+> **Pragmático:** Qué puedes hacer con este documento.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
+
 ## Description
 
 Session Zero is a compendium of challenges that functions as a tutorial to learn some of the primordial concepts of Numinia. Specifically, it offers knowledge of the four guilds and the four factions of the city and their nature, as well as some of their essential values.

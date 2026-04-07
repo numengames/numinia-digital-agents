@@ -13,8 +13,15 @@ area: "CAO"
 semaforo: "amarillo"
 license: "CC0-1.0"
 ---
-
 # BP — CAO (Organización Autónoma Centralizada)
+
+> **Resumen:** Plano del sistema: estado actual, objetivo, gaps y dependencias.
+> **Epistémico:** El estado real vs. el objetivo — dónde estamos y hacia dónde vamos.
+> **Pragmático:** Identificar qué misiones abren los gaps documentados.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
 
 > *El plano central de la CAO. Define cómo los agentes digitales coordinan el trabajo de Numinia mientras los Oráculos descansan.*
 

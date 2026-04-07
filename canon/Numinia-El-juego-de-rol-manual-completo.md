@@ -13,8 +13,15 @@ seminal_id: "S-008"
 note: "Versión .md del manual RPG. El .txt original también está en canon/. Esta versión es más legible para los agentes."
 license: "CC0-1.0"
 ---
-
 # Numinia — El juego de rol (manual completo)
+
+> **Resumen:** Documento fundacional del universo Numinia.
+> **Epistémico:** Conocimiento fundacional del universo Numinia.
+> **Pragmático:** Fuente de verdad canónica — consultar antes de crear lore.
+> **Audiencia:** Agentes · Oráculos · Externos
+
+---
+
 
 *Ver archivo fuente: `Numinia. El juego de rol (manual completo).txt`*
 

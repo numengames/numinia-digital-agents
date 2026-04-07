@@ -15,8 +15,15 @@ score: 8.8
 score_prev: 9.5
 license: "CC0-1.0"
 ---
-
 # Auditoría — Divergencias Web vs Repo
+
+> **Resumen:** Auditoría de coherencia entre fuentes de verdad del sistema.
+> **Epistémico:** Divergencias entre la web y el repo — qué no está sincronizado.
+> **Pragmático:** Priorizar fixes según severidad (crítico/importante/menor).
+> **Audiencia:** Oráculos · Externos
+
+---
+
 **2026-04-07 · Alquimista-01 + Exégeta-01 + Nimrod**
 
 ---

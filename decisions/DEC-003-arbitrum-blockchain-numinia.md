@@ -14,8 +14,15 @@ pending_dark_council: true
 superseded_by: null
 license: "CC0-1.0"
 ---
-
 # DEC-003 — Arbitrum como blockchain de Numinia
+
+> **Resumen:** Decisión arquitectónica o estratégica con contexto y alternativas.
+> **Epistémico:** Qué se decidió, por qué, y qué alternativas se descartaron.
+> **Pragmático:** Consultar antes de tomar decisiones en el mismo dominio.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
 
 > ⚠️ **Estado: Provisional** — Pendiente de ratificación en Dark Council
 

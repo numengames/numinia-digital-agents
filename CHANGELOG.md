@@ -1,5 +1,13 @@
 # Changelog — numinia-digital-agents
 
+> **Resumen:** Documento del sistema NWOS — CHANGELOG.
+> **Epistémico:** Qué aprendes leyendo este documento.
+> **Pragmático:** Qué puedes hacer con este documento.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
+
 All notable changes to the Archive Summa are documented here.
 Format: [type] description — date — author
 

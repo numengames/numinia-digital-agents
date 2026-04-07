@@ -1,4 +1,12 @@
 # Archive Summa — Arquitectura v0.1.0
+
+> **Resumen:** Documento del sistema NWOS — archive-summa-arquitectura-v0.1.0.
+> **Epistémico:** Qué aprendes leyendo este documento.
+> **Pragmático:** Qué puedes hacer con este documento.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
 **Repositorio:** `numengames/numinia-agents`
 **Versión:** v0.1.0
 **Fecha:** 2026-04-06

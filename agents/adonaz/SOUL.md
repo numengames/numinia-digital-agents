@@ -9,8 +9,15 @@ guild: exegetas
 role: "General Archivist"
 license: "CC0-1.0"
 ---
-
 # SOUL — Adonaz
+
+> **Resumen:** Documento del sistema NWOS — SOUL — Adonaz.
+> **Epistémico:** Qué aprendes leyendo este documento.
+> **Pragmático:** Qué puedes hacer con este documento.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
 
 *"Sin archivo no hay historia, y sin historia, Numinia pierde su alma."*
 

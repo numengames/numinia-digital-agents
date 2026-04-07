@@ -23,8 +23,15 @@ started: null
 completed: null
 blocked_reason: "PC en camino — pendiente de llegada física"
 ---
-
 # MIS-052 — Infraestructura on-premises — PC dedicado
+
+> **Resumen:** Misión del sistema NWOS con criterios, valor epistémico y pragmático.
+> **Epistémico:** Qué aprendes leyendo este documento.
+> **Pragmático:** Qué puedes hacer con este documento.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
 
 **Area:** Infraestructura · **Gremio:** Centinelas · **Tipo:** 🤖 Digital  
 **Prioridad:** 🟠 Alta · **Esfuerzo:** L

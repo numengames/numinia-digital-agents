@@ -13,8 +13,15 @@ area: "Producto / Tech"
 semaforo: "amarillo"
 license: "CC0-1.0"
 ---
-
 # BP — Modelo de Datos
+
+> **Resumen:** Plano del sistema: estado actual, objetivo, gaps y dependencias.
+> **Epistémico:** El estado real vs. el objetivo — dónde estamos y hacia dónde vamos.
+> **Pragmático:** Identificar qué misiones abren los gaps documentados.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
 
 > *El Registro Akáshico no miente. Todo lo que existe en Numinia deja una huella. Los datos son esa huella.*
 

@@ -10,8 +10,15 @@ owner: "oracle"
 tags: [operations, security, credentials]
 license: "CC0-1.0"
 ---
-
 # Credential Map
+
+> **Resumen:** Protocolo operativo estándar del sistema NWOS.
+> **Epistémico:** Cómo se ejecuta este proceso y por qué de esta forma.
+> **Pragmático:** Seguir estos pasos en el contexto especificado.
+> **Audiencia:** Agentes
+
+---
+
 
 Structure of credentials without real values. This document shows WHERE things live, not WHAT they are.
 

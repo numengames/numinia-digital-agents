@@ -11,8 +11,15 @@ priority: "medium"
 effort: "S"
 license: "CC0-1.0"
 ---
-
 # MIS-023 — Case Study inicial
+
+> **Resumen:** Misión del sistema NWOS con criterios, valor epistémico y pragmático.
+> **Epistémico:** Qué aprendes leyendo este documento.
+> **Pragmático:** Qué puedes hacer con este documento.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
 
 **Area:** Ventas · **Gremio:** Exegetas · **Tipo:** 🤖 Digital · **Prioridad:** 🟡 Media · **Esfuerzo:** S
 

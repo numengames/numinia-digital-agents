@@ -1,5 +1,13 @@
 # Governance — Archive Summa
 
+> **Resumen:** Documento del sistema NWOS — GOVERNANCE.
+> **Epistémico:** Qué aprendes leyendo este documento.
+> **Pragmático:** Qué puedes hacer con este documento.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
+
 Rules derived from 100 mental simulations. Each rule includes the simulation that revealed it.
 
 ---

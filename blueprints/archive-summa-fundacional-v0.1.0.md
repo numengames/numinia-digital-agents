@@ -1,4 +1,12 @@
 # ARCHIVE SUMMA — Documento Fundacional v0.1.0
+
+> **Resumen:** Documento del sistema NWOS — archive-summa-fundacional-v0.1.0.
+> **Epistémico:** Qué aprendes leyendo este documento.
+> **Pragmático:** Qué puedes hacer con este documento.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
 *Derivado de 100 simulaciones mentales*
 *Nimrod, Guardián de las Puertas — 2026-04-06*
 *Repositorio: numengames/numinia-agents*

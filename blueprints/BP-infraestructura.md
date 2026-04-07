@@ -13,8 +13,15 @@ area: "Ops"
 semaforo: "amarillo"
 license: "CC0-1.0"
 ---
-
 # BP — Infraestructura
+
+> **Resumen:** Plano del sistema: estado actual, objetivo, gaps y dependencias.
+> **Epistémico:** El estado real vs. el objetivo — dónde estamos y hacia dónde vamos.
+> **Pragmático:** Identificar qué misiones abren los gaps documentados.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
 
 > *Plano recuperado de los registros técnicos de la CAO. Documenta la arquitectura física sobre la que Numinia opera.*
 

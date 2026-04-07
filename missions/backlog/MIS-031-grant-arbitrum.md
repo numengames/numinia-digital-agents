@@ -11,8 +11,15 @@ priority: "critical"
 effort: "M"
 license: "CC0-1.0"
 ---
-
 # MIS-031 — Revisión final del Grant Arbitrum
+
+> **Resumen:** Misión del sistema NWOS con criterios, valor epistémico y pragmático.
+> **Epistémico:** Qué aprendes leyendo este documento.
+> **Pragmático:** Qué puedes hacer con este documento.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
 
 **Area:** Financiación · **Gremio:** Procuradores · **Tipo:** 🤖 Digital · **Prioridad:** 🔴 Crítica · **Esfuerzo:** M
 

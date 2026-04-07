@@ -13,8 +13,15 @@ area: "Negocio"
 semaforo: "rojo"
 license: "CC0-1.0"
 ---
-
 # BP — Financiero
+
+> **Resumen:** Plano del sistema: estado actual, objetivo, gaps y dependencias.
+> **Epistémico:** El estado real vs. el objetivo — dónde estamos y hacia dónde vamos.
+> **Pragmático:** Identificar qué misiones abren los gaps documentados.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
 
 > *El plano que nadie quiere ver pero todos necesitan. Sin recursos, Numinia no crece.*
 

@@ -12,8 +12,15 @@ applies_to: [oracle, procyon]
 mandatory: true
 license: "CC0-1.0"
 ---
-
 # P-002 — Agent Onboarding Protocol v1
+
+> **Resumen:** Protocolo operativo estándar del sistema NWOS.
+> **Epistémico:** Cómo se ejecuta este proceso y por qué de esta forma.
+> **Pragmático:** Seguir estos pasos en el contexto especificado.
+> **Audiencia:** Agentes
+
+---
+
 
 ## When to use this protocol
 

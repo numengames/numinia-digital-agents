@@ -1,5 +1,13 @@
 # Sistema de Rangos y Permisos — Numinia Digital Goods
 
+> **Resumen:** Documento del sistema NWOS — Platform Role System.
+> **Epistémico:** Qué aprendes leyendo este documento.
+> **Pragmático:** Qué puedes hacer con este documento.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
+
 > Basado en el framework STSI del EEM Institute
 > y los documentos seminales de Numinia.
 > v2 — Abril 2026

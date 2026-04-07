@@ -11,8 +11,15 @@ priority: "critical"
 effort: "S"
 license: "CC0-1.0"
 ---
-
 # MIS-018 — Propuesta de Valor Comercial (One-Pager)
+
+> **Resumen:** Misión del sistema NWOS con criterios, valor epistémico y pragmático.
+> **Epistémico:** Qué aprendes leyendo este documento.
+> **Pragmático:** Qué puedes hacer con este documento.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
 
 **Area:** Ventas · **Gremio:** Exegetas · **Tipo:** 🤖 Digital · **Prioridad:** 🔴 Crítica · **Esfuerzo:** S
 

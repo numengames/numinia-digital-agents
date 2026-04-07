@@ -1,5 +1,13 @@
 # Agent Attributes
 
+> **Resumen:** Documento del sistema NWOS — Compendium of Attributes and Ranks in Numinia.
+> **Epistémico:** Qué aprendes leyendo este documento.
+> **Pragmático:** Qué puedes hacer con este documento.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
+
 There is a deep relationship between the different attributes of an agent (biological or digital), although this framework of relationships is not linear: while certain degrees of attributes, such as guild or faction, are composed of semantic subcategories with horizontal and vertical relationships (basic-level theory, prototype theory), the general categories of attributes establish more complex and abstract relationships. These are driven by mental frameworks and personal states that, in perspective with the environment, form dimensioned characteristics inclined toward systems thinking. The different categories of an agent's attributes are:
 
 ## Personal Traits

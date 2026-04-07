@@ -1,5 +1,13 @@
 # Contributing to the Archive Summa
 
+> **Resumen:** Documento del sistema NWOS — CONTRIBUTING.
+> **Epistémico:** Qué aprendes leyendo este documento.
+> **Pragmático:** Qué puedes hacer con este documento.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
+
 This repository is the canonical truth of the Numinia Digital Agents system.
 
 ## Who can contribute

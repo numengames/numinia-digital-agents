@@ -16,8 +16,15 @@ tipo: "híbrido"
 priority: "high"
 effort: "L"
 ---
-
 # MIS-056 — i18n — Documentación y sistema bilingüe ES + EN
+
+> **Resumen:** Misión del sistema NWOS con criterios, valor epistémico y pragmático.
+> **Epistémico:** Qué aprendes leyendo este documento.
+> **Pragmático:** Qué puedes hacer con este documento.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
 
 **Area:** Documentación · **Gremio:** Exegetas · **Tipo:** 🔀 Híbrido · **Prioridad:** 🟠 Alta · **Esfuerzo:** L
 

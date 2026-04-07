@@ -6,8 +6,15 @@ updated: "{YYYY-MM-DD}"
 status: {active|standby|design}
 license: "CC0-1.0"
 ---
-
 # STATUS — {Agent Name}
+
+> **Resumen:** Documento del sistema NWOS — STATUS — {Agent Name}.
+> **Epistémico:** Qué aprendes leyendo este documento.
+> **Pragmático:** Qué puedes hacer con este documento.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
 
 *Last updated: {YYYY-MM-DD}*
 

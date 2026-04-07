@@ -12,8 +12,15 @@ model: "anthropic/claude-haiku-3-5"
 operator: "pablo-fm"
 license: "CC0-1.0"
 ---
-
 # SOUL — Procurador-01
+
+> **Resumen:** Documento del sistema NWOS — SOUL — Procurador-01.
+> **Epistémico:** Qué aprendes leyendo este documento.
+> **Pragmático:** Qué puedes hacer con este documento.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
 
 *"Sin estructura, el caos. Sin flexibilidad, la rigidez."*
 

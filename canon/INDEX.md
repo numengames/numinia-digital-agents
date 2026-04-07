@@ -18,8 +18,15 @@ changelog:
     date: "2026-04-06T00:00:00Z"
     change: "Initial canon with 9 documents."
 ---
-
 # Canon — Memoria Inmutable
+
+> **Resumen:** Documento fundacional del universo Numinia.
+> **Epistémico:** Conocimiento fundacional del universo Numinia.
+> **Pragmático:** Fuente de verdad canónica — consultar antes de crear lore.
+> **Audiencia:** Agentes · Oráculos · Externos
+
+---
+
 
 Los 10 documentos fundacionales de Numinia. Son inmutables por política y por enforcement técnico (CODEOWNERS). Son el suelo sobre el que todo lo demás se construye.
 

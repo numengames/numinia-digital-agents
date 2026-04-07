@@ -11,8 +11,15 @@ priority: "high"
 effort: "XS"
 license: "CC0-1.0"
 ---
-
 # MIS-014 — Instalar Umami en numengames.com
+
+> **Resumen:** Misión del sistema NWOS con criterios, valor epistémico y pragmático.
+> **Epistémico:** Qué aprendes leyendo este documento.
+> **Pragmático:** Qué puedes hacer con este documento.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
 
 **Area:** Infraestructura · **Gremio:** Centinelas · **Tipo:** 🤖 Digital · **Prioridad:** 🟠 Alta · **Esfuerzo:** XS
 

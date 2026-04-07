@@ -13,8 +13,15 @@ decision: "All documents in the Archive Summa use Markdown (.md) as the primary 
 superseded_by: null
 license: "CC0-1.0"
 ---
-
 # ADR-002 — Markdown as Universal Format
+
+> **Resumen:** Documento del sistema NWOS — Markdown as Universal Format.
+> **Epistémico:** Qué se decidió, por qué, y qué alternativas se descartaron.
+> **Pragmático:** Consultar antes de tomar decisiones en el mismo dominio.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
 
 ## Context
 

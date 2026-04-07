@@ -11,8 +11,15 @@ priority: "high"
 effort: "XS"
 license: "CC0-1.0"
 ---
-
 # MIS-008 — Definir métricas North Star del producto
+
+> **Resumen:** Misión del sistema NWOS con criterios, valor epistémico y pragmático.
+> **Epistémico:** Qué aprendes leyendo este documento.
+> **Pragmático:** Qué puedes hacer con este documento.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
 
 **Area:** Producto · **Gremio:** Exegetas · **Tipo:** 🧬 Biológico · **Prioridad:** 🟠 Alta · **Esfuerzo:** XS
 

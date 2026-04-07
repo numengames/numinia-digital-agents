@@ -22,8 +22,15 @@ phase: "active"
 started: "2026-04-06T00:00:00Z"
 completed: null
 ---
-
 # MIS-054 — Acceso multi-Oráculo a Nimrod vía Telegram
+
+> **Resumen:** Misión del sistema NWOS con criterios, valor epistémico y pragmático.
+> **Epistémico:** Qué aprendes leyendo este documento.
+> **Pragmático:** Qué puedes hacer con este documento.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
 
 **Area:** CAO · **Gremio:** Centinelas · **Tipo:** 🤖 Digital  
 **Prioridad:** 🟠 Alta · **Esfuerzo:** S

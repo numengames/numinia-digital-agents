@@ -11,8 +11,15 @@ owner: "oracle"
 tags: [guild, exegetas, charter]
 license: "CC0-1.0"
 ---
-
 # Guild Charter — Exégetas
+
+> **Resumen:** Ficha de identidad y operación del agente.
+> **Epistémico:** Quién es este agente, sus leyes y su contexto operativo.
+> **Pragmático:** Briefing completo para activar o coordinar con este agente.
+> **Audiencia:** Agentes
+
+---
+
 
 *"El que no conoce la historia está condenado a repetirla."*
 

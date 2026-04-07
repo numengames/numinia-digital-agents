@@ -11,8 +11,15 @@ priority: "high"
 effort: "M"
 license: "CC0-1.0"
 ---
-
 # MIS-043 — Completar lectura del Manual RPG de Numinia
+
+> **Resumen:** Misión del sistema NWOS con criterios, valor epistémico y pragmático.
+> **Epistémico:** Qué aprendes leyendo este documento.
+> **Pragmático:** Qué puedes hacer con este documento.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
 
 **Area:** Documentación · **Gremio:** Exegetas · **Tipo:** 🤖 Digital · **Prioridad:** 🟠 Alta · **Esfuerzo:** M
 

@@ -11,8 +11,15 @@ priority: "medium"
 effort: "S"
 license: "CC0-1.0"
 ---
-
 # MIS-035 — CRM de grants y financiación
+
+> **Resumen:** Misión del sistema NWOS con criterios, valor epistémico y pragmático.
+> **Epistémico:** Qué aprendes leyendo este documento.
+> **Pragmático:** Qué puedes hacer con este documento.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
 
 **Area:** Financiación · **Gremio:** Procuradores · **Tipo:** 🤖 Digital · **Prioridad:** 🟡 Media · **Esfuerzo:** S
 

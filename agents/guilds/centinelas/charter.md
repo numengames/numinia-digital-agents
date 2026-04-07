@@ -10,8 +10,15 @@ owner: "oracle"
 tags: [guild, centinelas, charter]
 license: "CC0-1.0"
 ---
-
 # Guild Charter — Centinelas
+
+> **Resumen:** Ficha de identidad y operación del agente.
+> **Epistémico:** Quién es este agente, sus leyes y su contexto operativo.
+> **Pragmático:** Briefing completo para activar o coordinar con este agente.
+> **Audiencia:** Agentes
+
+---
+
 
 *"No dejes pasar lo que no debe pasar. No retengas lo que debe fluir."*
 

@@ -11,8 +11,15 @@ owner: "oracle"
 tags: [template, approval, human-in-the-loop]
 license: "CC0-1.0"
 ---
-
 # Template — Solicitud de Aprobación
+
+> **Resumen:** Template reutilizable para crear documentos del sistema.
+> **Epistémico:** Qué aprendes leyendo este documento.
+> **Pragmático:** Qué puedes hacer con este documento.
+> **Audiencia:** Agentes
+
+---
+
 
 *Copia este template cuando necesites aprobación humana. Rellena todas las secciones.*
 

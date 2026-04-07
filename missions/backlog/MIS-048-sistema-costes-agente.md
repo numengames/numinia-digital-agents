@@ -11,8 +11,15 @@ priority: "critical"
 effort: "M"
 license: "CC0-1.0"
 ---
-
 # MIS-048 — Sistema de costes por agente
+
+> **Resumen:** Misión del sistema NWOS con criterios, valor epistémico y pragmático.
+> **Epistémico:** Qué aprendes leyendo este documento.
+> **Pragmático:** Qué puedes hacer con este documento.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
 
 **Area:** Operaciones · **Gremio:** Centinelas · **Tipo:** 🤖 Digital · **Prioridad:** 🔴 Crítica · **Esfuerzo:** M
 

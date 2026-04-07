@@ -1,5 +1,13 @@
 # Numinia Brand & Culture
 
+> **Resumen:** Documento del sistema NWOS — Numinia Brand and Culture.
+> **Epistémico:** Qué aprendes leyendo este documento.
+> **Pragmático:** Qué puedes hacer con este documento.
+> **Audiencia:** Agentes · Oráculos
+
+---
+
+
 **Version:** V.0.1.2
 **Date:** Numinia Narrative March 20 2026
 **Review Cycle:** Every Six Months
