@@ -1,9 +1,9 @@
 ---
 agent: senet
 title: "STATUS — Senet"
-version: "0.1.0"
+version: "0.2.0"
 created: "2026-04-07T00:00:00Z"
-updated: "2026-04-07T00:00:00Z"
+updated: "2026-04-07T18:31:00Z"
 status: designed
 guild: Exegete
 branch: Erudite
@@ -12,53 +12,60 @@ license: "CC0-1.0"
 ---
 # STATUS — Senet
 
-> **Resumen:** Estado operativo actual de Senet.
-> **Epistémico:** Métricas, capacidades y pendientes.
-> **Pragmático:** Briefing rápido antes de activar al agente.
-> **Audiencia:** Agentes · Oráculos
+> **Summary:** Current operational status of Senet.
+> **Epistemic:** Metrics, capabilities, and pending items.
+> **Pragmatic:** Quick briefing before activating the agent.
+> **Audience:** Agents · Oracles
 
 ---
 
-**Estado:** 📅 Diseñado — pendiente de activación
-**Diseñado:** 2026-04-07
-**Última sesión:** —
-**Modelo:** anthropic/claude-sonnet-4-6
+**Status:** 📅 Designed — pending activation
+**Designed:** 2026-04-07
+**Last session:** —
+**Model:** anthropic/claude-sonnet-4-6
 
 ---
 
-## Capacidades previstas
+## Planned capabilities
 
-- ⬜ Diseño de mecánicas y dinámicas de juego
-- ⬜ Creación de aventuras para el JdR de Numinia
-- ⬜ Consulta y expansión del lore canónico
-- ⬜ GitHub — lectura del repo (canon/ en especial)
-- ⬜ Generación de contenido narrativo aprobado
-
----
-
-## Fuentes canónicas bajo su custodia
-
-| Documento | Ruta | Uso |
-|-----------|------|-----|
-| Manual completo JdR | `canon/Numinia-El-juego-de-rol-manual-completo.md` | Fuente de verdad principal |
-| About Session Zero | `canon/About Session Zero.md` | Mecánicas de introducción |
-| Compendium of Attributes and Ranks | `canon/Compendium of Attributes and Ranks in Numinia.md` | Sistema de atributos |
-| Welcome to Numinia | `canon/Welcome to Numinia.md` | Lore y cultura general |
-| Numinia Brand and Culture | `canon/Numinia Brand and Culture.md` | Identidad y valores del mundo |
+- ⬜ Game mechanics and dynamics design
+- ⬜ Adventure creation for the Numinia RPG
+- ⬜ Consultation and expansion of canonical lore
+- ⬜ GitHub — read access to repo (especially `canon/`)
+- ⬜ Generation of approved narrative content
 
 ---
 
-## Misiones previstas
+## Canonical sources under custody
 
-| ID | Título | Estado |
-|----|--------|--------|
-| — | Diseño de primera aventura canónica | 📅 Pendiente activación |
-| — | Expansión de mecánicas de facciones | 📅 Pendiente activación |
+| Document | Path | Use |
+|----------|------|-----|
+| Complete RPG Manual | `canon/Numinia-El-juego-de-rol-manual-completo.md` | Main source of truth |
+| About Session Zero | `canon/About Session Zero.md` | Introduction mechanics |
+| Compendium of Attributes and Ranks | `canon/Compendium of Attributes and Ranks in Numinia.md` | Attributes system |
+| Welcome to Numinia | `canon/Welcome to Numinia.md` | Lore and general culture |
+| Numinia Brand and Culture | `canon/Numinia Brand and Culture.md` | World identity and values |
 
 ---
 
-## Pendientes para activación
+## Planned missions
 
-- [ ] Leer el manual completo de rol antes de la primera sesión
-- [ ] Configurar acceso de lectura al repo
-- [ ] Primera misión asignada desde backlog (complejidad baja)
+| ID | Title | Status |
+|----|-------|--------|
+| — | Design of first canonical adventure | 📅 Pending activation |
+| — | Expansion of faction mechanics | 📅 Pending activation |
+
+---
+
+## Pending for activation
+
+- [ ] Read the complete RPG manual before first session
+- [ ] Configure read access to repo
+- [ ] First mission assigned from backlog (low complexity)
+
+---
+
+## Version history
+
+- v0.1.0 (2026-04-07) — Initial design.
+- v0.2.0 (2026-04-07) — Translated to English (MIS-056).

@@ -2,23 +2,25 @@
 agent: {agent-id}
 title: "SOUL — {Agent Name}"
 version: "0.1.0"
-created: "{YYYY-MM-DD}"
-updated: "{YYYY-MM-DD}"
+created: "{YYYY-MM-DDTHH:MM:SSZ}"
+updated: "{YYYY-MM-DDTHH:MM:SSZ}"
 status: active
-guild: {centinelas|exegetas|alquimistas|procuradores|coordinacion}
+guild: {Sentinel|Exegete|Alchemist|Procurator|Coordination}
+branch: "{Branch}"
+house: "{House}"
 role: "{Role in Numinia}"
 model: "anthropic/claude-sonnet-4-6"
+operator: "pablo-fm"
 license: "CC0-1.0"
 ---
 # SOUL — {Agent Name}
 
-> **Resumen:** Documento del sistema NWOS — SOUL — {Agent Name}.
-> **Epistémico:** Qué aprendes leyendo este documento.
-> **Pragmático:** Qué puedes hacer con este documento.
-> **Audiencia:** Agentes · Oráculos
+> **Summary:** NWOS system document — SOUL — {Agent Name}.
+> **Epistemic:** What you learn by reading this document.
+> **Pragmatic:** What you can do with this document.
+> **Audience:** Agents · Oracles
 
 ---
-
 
 *"{Defining phrase}"*
 
@@ -27,9 +29,10 @@ license: "CC0-1.0"
 ## Identity
 
 **Name:** {Name}
-**Guild:** {Guild} / {Branch}
+**Guild:** {Guild} / {Branch} / {House}
 **Role in Numinia:** {Role}
-**Emoji:** {Emoji}
+**Status:** Active / Designed
+**Operator:** Pablo FM
 
 ---
 
@@ -42,6 +45,12 @@ license: "CC0-1.0"
 ## Operational style
 
 [Describe tone, communication style, and approach to work]
+
+---
+
+## Specialization
+
+[Describe domain expertise and primary capabilities]
 
 ---
 
