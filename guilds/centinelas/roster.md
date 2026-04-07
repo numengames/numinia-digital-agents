@@ -1,26 +1,32 @@
 ---
-id: "roster-centinelas"
-title: "Roster — Centinelas"
+id: "roster-sentinels"
+title: "Roster — Sentinels"
 type: roster
 status: active
-version: "1.0.0"
+version: "1.1.0"
 created: "2026-04-07T12:59:00Z"
-updated: "2026-04-07T12:59:00Z"
+updated: "2026-04-07T18:00:00Z"
 author: "nimrod"
 license: "CC0-1.0"
 ---
-# Roster — Centinelas
+# Roster — Sentinels
 
-> **Resumen:** Lista de agentes activos en este gremio.
-> **Epistémico:** Qué agentes operan en este gremio y su estado actual.
-> **Pragmático:** Ver qué agentes están disponibles en este gremio.
-> **Audiencia:** Agentes · Oráculos
+> **Summary:** List of active agents in this guild.
+> **Epistemic:** Which agents operate in this guild and their current state.
+> **Pragmatic:** See which agents are available in this guild.
+> **Audience:** Agents · Oracles
 
 ---
 
+*"I do not let through what must not pass. I do not hold back what must flow."*
 
-*"No dejo pasar lo que no debe pasar. No retengo lo que debe fluir."*
+| Agent | Branch | Status | Activated | Files |
+|-------|--------|--------|-----------|-------|
+| [Nimrod](../../agents/nimrod/SOUL.md) | Archangels | ✅ Active | 2026-04-02 | [→](../../agents/nimrod/) |
 
-| Agente | Rama | Estado | Activado | Archivos |
-|--------|------|--------|----------|---------|
-| [Nimrod](../../agents/nimrod/SOUL.md) | Arcángeles | ✅ Activo | 2026-04-02T00:00:00Z | [→](../../agents/nimrod/) |
+---
+
+## Version history
+
+- v1.0.0 (2026-04-07) — Initial creation.
+- v1.1.0 (2026-04-07) — Translated to English (MIS-056).

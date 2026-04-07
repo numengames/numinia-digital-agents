@@ -1,43 +1,51 @@
 ---
 id: "MIS-00047"
-title: "Configurar reporte semanal automático"
+title: "Configure automatic weekly report"
 type: mission
 status: backlog
+version: "1.1.0"
 created: "2026-04-04T00:00:00Z"
-area: "Operaciones"
-guild: "Centinelas"
+updated: "2026-04-07T18:00:00Z"
+area: "Operations"
+guild: "Sentinels"
 tipo: "digital"
 priority: "high"
 effort: "S"
 license: "CC0-1.0"
 ---
-# MIS-047 — Configurar reporte semanal automático
+# MIS-047 — Configure automatic weekly report
 
-> **Resumen:** Misión del sistema NWOS con criterios, valor epistémico y pragmático.
-> **Epistémico:** Qué aprendes leyendo este documento.
-> **Pragmático:** Qué puedes hacer con este documento.
-> **Audiencia:** Agentes · Oráculos
+> **Summary:** NWOS system mission.
+> **Epistemic:** What you learn by reading this document.
+> **Pragmatic:** What you can do with this document.
+> **Audience:** Agents · Oracles
 
 ---
 
+**Area:** Operations · **Guild:** Sentinels · **Type:** 🤖 Digital · **Priority:** 🟠 High · **Effort:** S
 
-**Area:** Operaciones · **Gremio:** Centinelas · **Tipo:** 🤖 Digital · **Prioridad:** 🟠 Alta · **Esfuerzo:** S
+## Story
 
-## Historia
+As Pablo, I want to receive an automatic weekly report on Mondays, to have visibility of what happened without having to request it.
 
-Como Pablo, quiero recibir un reporte semanal automático los lunes, para tener visión de lo que ocurrió sin pedirlo.
+## Acceptance criteria
 
-## Criterios de aceptación
+- [ ] Cron configured: Monday 9am Madrid
+- [ ] Report includes: completed missions, in progress, KPIs, weekly cost
+- [ ] Sent by email (khepri) and Telegram
+- [ ] .md file generated and pushed to repo
 
-- [ ] Cron configurado: lunes 9am Madrid
-- [ ] Reporte incluye: misiones completadas, en curso, KPIs, coste semana
-- [ ] Enviado por email (khepri) y Telegram
-- [ ] Archivo .md generado y subido al repo
+## Epistemic value
 
-## Valor epistémico
+Weekly cadence = reference point for measuring real vs perceived progress.
 
-Cadencia semanal = punto de referencia para medir progreso real vs percibido.
+## Pragmatic value
 
-## Valor pragmático
+Pablo can evaluate the week in 2 minutes without reviewing the repo.
 
-Pablo puede evaluar la semana en 2 minutos sin revisar el repo.
+---
+
+## Version history
+
+- v1.0.0 (2026-04-04) — Initial creation.
+- v1.1.0 (2026-04-07) — Translated to English (MIS-056).

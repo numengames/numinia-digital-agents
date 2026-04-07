@@ -1,43 +1,51 @@
 ---
 id: "MIS-00042"
-title: "README principal de numinia-agents"
+title: "Main README for numinia-digital-agents"
 type: mission
 status: backlog
+version: "1.1.0"
 created: "2026-04-04T00:00:00Z"
-area: "Documentación"
-guild: "Exegetas"
+updated: "2026-04-07T18:00:00Z"
+area: "Documentation"
+guild: "Exegetes"
 tipo: "digital"
 priority: "high"
 effort: "S"
 license: "CC0-1.0"
 ---
-# MIS-042 — README principal de numinia-agents
+# MIS-042 — Main README for numinia-digital-agents
 
-> **Resumen:** Misión del sistema NWOS con criterios, valor epistémico y pragmático.
-> **Epistémico:** Qué aprendes leyendo este documento.
-> **Pragmático:** Qué puedes hacer con este documento.
-> **Audiencia:** Agentes · Oráculos
+> **Summary:** NWOS system mission.
+> **Epistemic:** What you learn by reading this document.
+> **Pragmatic:** What you can do with this document.
+> **Audience:** Agents · Oracles
 
 ---
 
+**Area:** Documentation · **Guild:** Exegetes · **Type:** 🤖 Digital · **Priority:** 🟠 High · **Effort:** S
 
-**Area:** Documentación · **Gremio:** Exegetas · **Tipo:** 🤖 Digital · **Prioridad:** 🟠 Alta · **Esfuerzo:** S
+## Story
 
-## Historia
+As a repo visitor, I want to understand in 2 minutes what this repository is and how to use it, to decide whether to go deeper or not.
 
-Como visitante del repo, quiero entender en 2 minutos qué es este repositorio y cómo usarlo, para decidir si profundizar o no.
+## Acceptance criteria
 
-## Criterios de aceptación
+- [ ] README with: what it is, who it's for, repo structure, how to get started
+- [ ] OS→Model→Narrative triad briefly explained
+- [ ] No Numinia jargon in the first paragraph (accessible to outsiders)
+- [ ] Links to key documents
 
-- [ ] README con: qué es, para quién es, estructura del repo, cómo empezar
-- [ ] Tríada OS→Modelo→Narrativa explicada brevemente
-- [ ] Sin jerga de Numinia en el primer párrafo (accesible a externos)
-- [ ] Links a documentos clave
+## Epistemic value
 
-## Valor epistémico
+The README is the first impression. It defines whether the repo is just for us or also for the world.
 
-El README es la primera impresión. Define si el repo es para nosotros o también para el mundo.
+## Pragmatic value
 
-## Valor pragmático
+Onboarding in < 2 minutes for any new collaborator or agent.
 
-Onboarding en < 2 minutos para cualquier nuevo colaborador o agente.
+---
+
+## Version history
+
+- v1.0.0 (2026-04-04) — Initial creation.
+- v1.1.0 (2026-04-07) — Translated to English (MIS-056).

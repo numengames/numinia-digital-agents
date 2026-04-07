@@ -1,27 +1,26 @@
 ---
-id: "charter-exegetas"
-title: "Guild Charter — Exégetas"
-type: agent
+id: "charter-exegetes"
+title: "Guild Charter — Exegetes"
+type: charter
 status: active
-version: "1.0.0"
+version: "1.1.0"
 created: "2026-04-06T00:00:00Z"
-updated: "2026-04-07T00:00:00Z"
+updated: "2026-04-07T18:00:00Z"
 author: "pablo-fm"
 owner: "oracle"
-tags: [guild, exegetas, charter]
+tags: [guild, exegetes, charter]
 license: "CC0-1.0"
 ---
-# Guild Charter — Exégetas
+# Guild Charter — Exegetes
 
-> **Resumen:** Ficha de identidad y operación del agente.
-> **Epistémico:** Quién es este agente, sus leyes y su contexto operativo.
-> **Pragmático:** Briefing completo para activar o coordinar con este agente.
-> **Audiencia:** Agentes
+> **Summary:** Guild identity and operational profile.
+> **Epistemic:** Who this guild is, its laws, and its operational context.
+> **Pragmatic:** Full briefing for activating or coordinating with this guild.
+> **Audience:** Agents
 
 ---
 
-
-*"El que no conoce la historia está condenado a repetirla."*
+*"Those who do not know history are condemned to repeat it."*
 
 ## Mission
 
@@ -45,8 +44,13 @@ Preserve, interpret, and transmit knowledge. The Exegetes are the keepers of the
 | Agent | Branch | Status | Activation |
 |-------|--------|--------|------------|
 | Adonaz | Chroniclers | ✅ Active | 2026-04-06 |
-| Exégeta-01 | Scholars | 📅 Diseñado | 2027 |
+| Maestro de Juego (Senet) | Scholars | 📐 Designed | 2026 |
 
 ---
+
+## Version history
+
+- v1.0.0 (2026-04-06) — Initial creation.
+- v1.1.0 (2026-04-07) — Translated to English (MIS-056).
 
 *Oracle: Pablo FM — Numen Games*

@@ -1,43 +1,51 @@
 ---
 id: "MIS-00049"
-title: "DORA Metrics para numengames-web"
+title: "DORA Metrics for numengames-web"
 type: mission
 status: backlog
+version: "1.1.0"
 created: "2026-04-04T00:00:00Z"
-area: "Operaciones"
-guild: "Centinelas"
+updated: "2026-04-07T18:00:00Z"
+area: "Operations"
+guild: "Sentinels"
 tipo: "digital"
 priority: "medium"
 effort: "M"
 license: "CC0-1.0"
 ---
-# MIS-049 — DORA Metrics para numengames-web
+# MIS-049 — DORA Metrics for numengames-web
 
-> **Resumen:** Misión del sistema NWOS con criterios, valor epistémico y pragmático.
-> **Epistémico:** Qué aprendes leyendo este documento.
-> **Pragmático:** Qué puedes hacer con este documento.
-> **Audiencia:** Agentes · Oráculos
+> **Summary:** NWOS system mission.
+> **Epistemic:** What you learn by reading this document.
+> **Pragmatic:** What you can do with this document.
+> **Audience:** Agents · Oracles
 
 ---
 
+**Area:** Operations · **Guild:** Sentinels · **Type:** 🤖 Digital · **Priority:** 🟡 Medium · **Effort:** M
 
-**Area:** Operaciones · **Gremio:** Centinelas · **Tipo:** 🤖 Digital · **Prioridad:** 🟡 Media · **Esfuerzo:** M
+## Story
 
-## Historia
+As a technical team, I want to measure the 4 DORA metrics of the development flow, to know if we are a high-performance team.
 
-Como equipo técnico, quiero medir las 4 métricas DORA del flujo de desarrollo, para saber si somos un equipo de alto rendimiento.
+## Acceptance criteria
 
-## Criterios de aceptación
+- [ ] 4 metrics configured: deployment frequency, lead time, change failure rate, MTTR
+- [ ] Dashboard visible in GitHub or external tool
+- [ ] Baseline established in first month
+- [ ] Reviewed at monthly Dark Council
 
-- [ ] 4 métricas configuradas: deployment frequency, lead time, change failure rate, MTTR
-- [ ] Dashboard visible en GitHub o herramienta externa
-- [ ] Baseline establecido en primer mes
-- [ ] Revisado en Dark Council mensual
+## Epistemic value
 
-## Valor epistémico
+DORA metrics are the industry standard for measuring engineering efficiency.
 
-Las DORA metrics son el estándar de la industria para medir eficiencia de ingeniería.
+## Pragmatic value
 
-## Valor pragmático
+Identify bottlenecks in the development flow before they scale.
 
-Identificar cuellos de botella en el flujo de desarrollo antes de que escalen.
+---
+
+## Version history
+
+- v1.0.0 (2026-04-04) — Initial creation.
+- v1.1.0 (2026-04-07) — Translated to English (MIS-056).

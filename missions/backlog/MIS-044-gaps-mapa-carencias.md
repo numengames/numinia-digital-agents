@@ -1,47 +1,55 @@
 ---
 id: "MIS-00044"
-title: "GAPS.md — Mapa de carencias de Numen Games"
+title: "GAPS.md — Numen Games gaps and weaknesses map"
 type: mission
 status: backlog
+version: "1.1.0"
 created: "2026-04-04T00:00:00Z"
-area: "Documentación"
-guild: "Procuradores"
+updated: "2026-04-07T18:00:00Z"
+area: "Documentation"
+guild: "Procurators"
 tipo: "híbrido"
 priority: "critical"
 effort: "S"
 license: "CC0-1.0"
 ---
-# MIS-044 — GAPS.md — Mapa de carencias de Numen Games
+# MIS-044 — GAPS.md — Numen Games gaps and weaknesses map
 
-> **Resumen:** Misión del sistema NWOS con criterios, valor epistémico y pragmático.
-> **Epistémico:** Qué aprendes leyendo este documento.
-> **Pragmático:** Qué puedes hacer con este documento.
-> **Audiencia:** Agentes · Oráculos
+> **Summary:** NWOS system mission.
+> **Epistemic:** What you learn by reading this document.
+> **Pragmatic:** What you can do with this document.
+> **Audience:** Agents · Oracles
 
 ---
 
+**Area:** Documentation · **Guild:** Procurators · **Type:** 🔀 Hybrid · **Priority:** 🔴 Critical · **Effort:** S
 
-**Area:** Documentación · **Gremio:** Procuradores · **Tipo:** 🔀 Híbrido · **Prioridad:** 🔴 Crítica · **Esfuerzo:** S
+## Story
 
-## Historia
+As a team, I want a structured document of current weaknesses, to make informed decisions about priorities.
 
-Como equipo, quiero un documento estructurado de carencias actuales, para tomar decisiones informadas sobre prioridades.
+## Acceptance criteria
 
-## Criterios de aceptación
+- [ ] Gaps documented by area: money, technical, team, product, commercial
+- [ ] Each gap: description, impact, proposed solution, priority
+- [ ] Reviewed with Pablo in a dedicated session
+- [ ] Published as GAPS.md
 
-- [ ] Carencias documentadas por área: dinero, técnica, equipo, producto, comercial
-- [ ] Cada carencia: descripción, impacto, solución propuesta, prioridad
-- [ ] Revisado con Pablo en sesión dedicada
-- [ ] Publicado como GAPS.md
+## Epistemic value
 
-## Valor epistémico
+Without a gaps map, resources are assigned to what is urgent but not to what is important.
 
-Sin mapa de carencias, los recursos se asignan a lo urgente pero no a lo importante.
+## Pragmatic value
 
-## Valor pragmático
+Foundation for Q2 strategic decisions.
 
-Base para decisiones estratégicas de Q2.
+## Notes
 
-## Notas
+Identified on 2026-04-02. Promised to Pablo. Pending execution.
 
-Identificado el 2026-04-02. Prometido a Pablo. Pendiente de ejecutar.
+---
+
+## Version history
+
+- v1.0.0 (2026-04-04) — Initial creation.
+- v1.1.0 (2026-04-07) — Translated to English (MIS-056).

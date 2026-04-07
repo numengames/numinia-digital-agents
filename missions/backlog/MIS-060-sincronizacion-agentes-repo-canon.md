@@ -1,11 +1,11 @@
 ---
 id: "MIS-060"
-title: "Sincronización de Agentes con el Repo Canónico"
+title: "Agent Synchronization with the Canonical Repo"
 type: mission
 status: backlog
-version: "1.1.0"
+version: "1.2.0"
 created: "2026-04-07T00:00:00Z"
-updated: "2026-04-07T16:29:00Z"
+updated: "2026-04-07T18:00:00Z"
 author: "nimrod"
 owner: "oracle"
 tags: [cao, sync, agents, architecture, workspace]
@@ -14,248 +14,178 @@ mission_id: "MIS-060"
 assigned_to: "nimrod"
 requested_by: "oracle"
 area: "CAO"
-guild: "Centinelas"
-tipo: "técnico"
-priority: "alta"
+guild: "Sentinels"
+tipo: "technical"
+priority: "high"
 effort: "M"
 phase: "backlog"
 ---
 
-# MIS-060 — Sincronización de Agentes con el Repo Canónico
+# MIS-060 — Agent Synchronization with the Canonical Repo
 
-**Área:** CAO · **Gremio:** Centinelas · **Prioridad:** 🟠 Alta · **Esfuerzo:** M
-
----
-
-## Origen
-
-Sesión del 2026-04-07. Pablo detectó que el agente de Christian operaba con un mapa de la organización desactualizado. Síntoma concreto: colisión de IDs de misión.
-
-- **En memoria de Nimrod:** MIS-055 = "Protocolo de Approval Brief"
-- **En el repo:** MIS-055 = "Sistema de Nomenclatura Dual"
+**Area:** CAO · **Guild:** Sentinels · **Priority:** 🟠 High · **Effort:** M
 
 ---
 
-## Diagnóstico completo
+## Origin
 
-### Root cause real (confirmado 16:11 UTC)
+Session of 2026-04-07. Pablo detected that Christian's agent was operating with an outdated map of the organization. Concrete symptom: mission ID collision.
 
-El git pull **sí estaba configurado** en el AGENTS.md de Christian. El proceso de sync de archivos funcionaba.
-
-El fallo fue en la **capa de encima**: el agente asignó un ID de misión en memoria sin verificar el repo activamente. `git pull` sincroniza archivos — no valida ni reconcilia la memoria local del agente.
-
-**Dos capas de sync, dos problemas distintos:**
-
-| Capa | Herramienta | Estado en el incidente |
-|---|---|---|
-| Sync de archivos | `git pull` en startup | ✅ Funcionaba |
-| Sync de memoria (validación de IDs) | Verificación explícita | ❌ No ocurrió |
-
-### El gap arquitectónico más profundo
-
-Durante el análisis emergió un problema de escala más relevante:
-
-> **AGENTS.md es un archivo local y estático.** OpenClaw lo inyecta al arrancar. Pero si la organización evoluciona en el repo, ese archivo no se actualiza solo. Cada agente arranca con el AGENTS.md del día que se instaló.
-
-Caso de uso real: una organización con 5 empleados onboarda NWOS. Cada uno abre su instancia de OpenClaw. La organización evoluciona durante 3 meses. Los AGENTS.md de todos los agentes siguen siendo los del día de instalación.
-
-**No hay mecanismo nativo que propague cambios del repo canónico a los workspaces locales de los agentes.**
+- **In Nimrod's memory:** MIS-055 = "Approval Brief Protocol"
+- **In the repo:** MIS-055 = "Dual Nomenclature System"
 
 ---
 
-## Soluciones analizadas
+## Full diagnosis
 
-### Opción A — Cron en cada servidor
+### Real root cause (confirmed 16:11 UTC)
+
+The git pull **was configured** in Christian's AGENTS.md. The file sync process was working.
+
+The failure was in the **layer above**: the agent assigned a mission ID from memory without actively verifying the repo. `git pull` syncs files — it does not validate or reconcile the agent's local memory.
+
+**Two sync layers, two distinct problems:**
+
+| Layer | Tool | State during the incident |
+|-------|------|--------------------------|
+| File sync | `git pull` at startup | ✅ Working |
+| Memory sync (ID validation) | Explicit verification | ❌ Did not happen |
+
+### The deeper architectural gap
+
+During the analysis, a more relevant scale problem emerged:
+
+> **AGENTS.md is a local, static file.** OpenClaw injects it at startup. But if the organization evolves in the repo, that file does not update itself. Each agent starts with the AGENTS.md from the day it was installed.
+
+Real use case: an organization with 5 employees onboards NWOS. Each one opens their OpenClaw instance. The organization evolves for 3 months. All agents' AGENTS.md files are still the ones from installation day.
+
+**There is no native mechanism that propagates changes from the canonical repo to agents' local workspaces.**
+
+---
+
+## Solutions analyzed
+
+### Option A — Cron on each server
 ```bash
-# Nightly: git pull + actualizar AGENTS.md
+# Nightly: git pull + update AGENTS.md
 git pull numinia-digital-agents
 cp numinia-digital-agents/agents/nimrod/AGENTS.md AGENTS.md
 ```
-**Pro:** Simple de implementar.
-**Contra:** Manual, no verificable, no escala. Con 3+ agentes es un script por servidor que nadie sabe si está corriendo.
+**Pro:** Simple to implement.
+**Con:** Manual, not verifiable, does not scale. With 3+ agents, it's one script per server that no one knows if it's running.
 
----
+### Option B — GitHub Action as deployment
+Each push to the canonical repo triggers an Action that SSHes into all registered servers and updates AGENTS.md.
 
-### Opción B — GitHub Action como deployment
-Cada push al repo canónico dispara un Action que hace SSH a todos los servidores registrados y actualiza los AGENTS.md.
+**Pro:** Automatic, auditable, scalable. Rollback possible. Staged deployments possible.
+**Con:** Requires maintaining a server registry. More infrastructure. Target for when 3+ agents are in production.
 
-**Pro:** Automático, auditable, escalable. Rollback posible. Staged deployments posibles.
-**Contra:** Requiere mantener un registro de servidores. Más infraestructura. Target para cuando haya 3+ agentes en producción.
-
----
-
-### Opción C — Symlink (solución inmediata)
+### Option C — Symlink (immediate solution)
 ```bash
 ln -sf /home/node/.openclaw/workspace/numinia-digital-agents/agents/nimrod/AGENTS.md \
        /home/node/.openclaw/workspace/AGENTS.md
 ```
-AGENTS.md deja de ser un archivo local — apunta directamente al del repo. El `git pull` del startup ya lo actualiza sin pasos adicionales.
+AGENTS.md stops being a local file — it points directly to the one in the repo. The `git pull` at startup already updates it with no additional steps.
 
-**Pro:** Cero overhead, cero scripts, funciona desde el primer momento. Elegante para 1-2 agentes.
+**Pro:** Zero overhead, zero scripts, works from the first moment. Elegant for 1-2 agents.
 
-**Por qué NO escala más allá de 2-3 agentes:**
+**Why it does NOT scale beyond 2-3 agents:**
 
-1. **Operación manual por servidor.** Cada nueva instancia de OpenClaw requiere SSH + crear el symlink manualmente. Con 5+ instancias esto es overhead de onboarding que crece linealmente.
+1. **Manual operation per server.** Each new OpenClaw instance requires SSH + creating the symlink manually.
+2. **No verification.** No way to know if all symlinks point to the right place without SSHing to each server individually.
+3. **Fragility under repo restructuring.** If the repo moves paths, all symlinks across all instances break simultaneously.
+4. **No audit trail.** No record of when each agent received which version of AGENTS.md.
+5. **Multi-tenant impossible.** When different organizations have their own NWOS instances, symlink management is unmanageable.
+6. **No staged rollouts.** A bad AGENTS.md pushed to the repo breaks ALL agents simultaneously.
 
-2. **Sin verificación.** No hay forma de saber si todos los symlinks apuntan al lugar correcto sin hacer SSH a cada servidor individualmente. Un symlink roto es silencioso.
-
-3. **Fragilidad ante reestructuración del repo.** Si el repo mueve `agents/nimrod/AGENTS.md` a `agents/AGENTS.md` (que MIS-060 propone), todos los symlinks de todas las instancias se rompen simultáneamente, sin aviso, sin rollback.
-
-4. **Sin audit trail.** No hay registro de cuándo cada agente recibió qué versión de AGENTS.md. Con Option B, cada deployment queda en el log de GitHub Actions.
-
-5. **Multi-tenant imposible.** Cuando diferentes organizaciones tengan sus propias instancias NWOS con repos distintos, la gestión de symlinks por organización es inmanejable.
-
-6. **Sin staged rollouts.** Si se sube un AGENTS.md malo al repo, rompe TODOS los agentes simultáneamente. Con Option B se puede hacer canary deployment.
-
-**Conclusión:** Opción C es la solución para ahora (Nimrod + Christian). Opción B es el target cuando la organización crezca.
+**Conclusion:** Option C is the solution for now (Nimrod + Christian). Option B is the target when the organization grows.
 
 ---
 
-## Plan de implementación en dos fases
+## Implementation plan — Two phases
 
-### FASE 1 — Ahora (Opción C + regla de validación de IDs)
+### PHASE 1 — Now (Option C + ID validation rule)
 
-**1a. Symlink en el servidor de Nimrod**
+**1a. Symlink on Nimrod's server**
 ```bash
 cd /home/node/.openclaw/workspace
 ln -sf numinia-digital-agents/agents/nimrod/AGENTS.md AGENTS.md
 ```
 
-**1b. Enmienda a P-003 (Mission Cycle)**
-Añadir regla: "Antes de asignar cualquier ID de misión, listar `missions/active/` y `missions/backlog/` del repo. Si no puedes verificarlo: no asignas ID."
+**1b. Amendment to P-003 (Mission Cycle)**
+Add rule: "Before assigning any mission ID, list `missions/active/` and `missions/backlog/` in the repo. If you cannot verify: do not assign ID."
 
-**1c. AGENTS.md de todos los agentes activos**
-Añadir regla explícita en la sección de misiones:
-> "Nunca asignes un ID de misión sin verificar primero el repo."
+**1c. AGENTS.md of all active agents**
+Add explicit rule: "Never assign a mission ID without verifying the repo first."
 
-Esta regla debe estar en el workspace (AGENTS.md), no solo en el repo.
+### PHASE 2 — When 3+ agents exist (Option B revised: Pull, not Push)
 
-### FASE 2 — Cuando haya 3+ agentes (Opción B revisada: Pull, no Push)
+**⚠️ Critical security decision (2026-04-07):**
+The original Option B (GitHub Action with SSH) was discarded by the infrastructure team.
 
-**⚠️ Decisión de seguridad crítica (2026-04-07):**
-La propuesta original de Opción B (GitHub Action con SSH) fue descartada por el equipo de infraestructura.
+**The problem:** GitHub Actions SSHes from public GitHub IPs → the server has port 22 closed to the public via Tailscale hardening. Opening public SSH undoes the hardening. Risk: 8/10.
 
-**El problema:** GitHub Actions hace SSH desde IPs públicas de GitHub → el servidor tiene el puerto 22 cerrado al público por hardening con Tailscale. Abrir SSH público deshace el hardening. Riesgo: 8/10.
+**The conceptual distinction:**
+- **Push (discarded):** GitHub → server. Requires open public SSH.
+- **Pull (adopted):** Server → GitHub. Only needs outbound HTTPS. Already allowed. Zero new risk.
 
-**La distinción conceptual:**
-- **Push (descartado):** GitHub → servidor. Requiere SSH público abierto.
-- **Pull (adoptado):** Servidor → GitHub. Solo necesita HTTPS saliente. Ya está permitido. Cero riesgo nuevo.
-
-**Implementación correcta — Cron job en el servidor:**
+**Correct implementation — Cron job on the server:**
 ```bash
-# En crontab del servidor: cada 15 minutos, git pull silencioso
-*/15 * * * * cd /home/node/.openclaw/workspace/numinia-digital-agents && git pull origin main
-```
-
-Ventajas sobre GitHub Actions:
-- No abre puertos nuevos
-- No necesita deploy keys en GitHub
-- No necesita GitHub Actions ni workflows
-- Mismo resultado: agente con instrucciones actualizadas
-- Máximo 15 minutos de retraso (ajustable)
-- Funciona con cualquier número de servidores sin configuración adicional en GitHub
-
-Registro de servidores en `infrastructure/servers.md` sigue siendo necesario para saber dónde están los crons configurados.
-
----
-
-## Entregables
-
-### E1 — Auditoría del workspace de Christian ✅ COMPLETADO
-- Archivo: `auditorias/workspace-christian-2026-04-07.md`
-- Root cause documentado. Git pull funcionaba. Fallo: memoria local no validada.
-
-### E2 — Enmienda a P-003 ⏳ PENDIENTE
-- Añadir regla de verificación de IDs antes de asignar
-- PR al repo canónico
-
-### E3 — Actualizar AGENTS.md de agentes activos ⏳ PENDIENTE
-- Nimrod: añadir regla de validación de IDs
-- Comunicar a Christian el mismo añadido para su workspace
-
-### E4 — Symlink + Cron job en servidor ⏳ PENDIENTE
-
-**Decisión arquitectónica final: Cron pull (no GitHub Actions push)**
-
-Razón: SSH público cerrado por hardening Tailscale. Abrir SSH público = riesgo 8/10. No aceptable.
-
-**Implementación completa:**
-
-```bash
-# PASO 1 — Symlink (una sola vez)
-cd /home/node/.openclaw/workspace
-cp AGENTS.md AGENTS.md.backup
-ln -sf numinia-digital-agents/agents/nimrod/AGENTS.md AGENTS.md
-ls -la AGENTS.md
-# Resultado esperado: AGENTS.md -> numinia-digital-agents/agents/nimrod/AGENTS.md
-
-# PASO 2 — Cron job (una sola vez)
-crontab -e
-# Añadir esta línea:
+# In server crontab: every 15 minutes, silent git pull
 */15 * * * * cd /home/node/.openclaw/workspace/numinia-digital-agents && git pull origin main >> /home/node/.openclaw/logs/git-pull.log 2>&1
-
-# PASO 3 — Verificar cron activo
-crontab -l
-
-# PASO 4 — Verificar log tras 15 minutos
-tail -f /home/node/.openclaw/logs/git-pull.log
 ```
 
-**Flujo resultante:**
-```
-cada 15 min
-    servidor
-        → git pull numinia-digital-agents (HTTPS, sin abrir puertos)
-            → repo actualizado
-                → AGENTS.md symlink apunta al repo
-                    → próxima sesión del agente tiene instrucciones actualizadas
-```
+---
 
-**Máximo retraso:** 15 minutos desde push al repo hasta que el agente lo tiene. Ajustable.
+## Deliverables
 
-### E5 — ADR: Arquitectura de sync de workspaces ⏳ PENDIENTE
-- Crear `decisions/DEC-00X — Arquitectura de sync de workspaces.md`
-- Registrar: Cron pull elegido sobre GitHub Actions push por razones de seguridad (Tailscale hardening)
-- Registrar: Opción B (cron) válida para N servidores — cada uno tiene su propio cron, sin configuración central
+- [x] E1 — Christian's workspace audit completed
+- [ ] E2 — P-003 amendment: ID verification rule before assigning
+- [ ] E3 — AGENTS.md of active agents updated with validation rule
+- [ ] E4 — Symlink + Cron job on server
+- [ ] E5 — ADR: Workspace sync architecture (cron pull vs GitHub Actions push)
 
 ---
 
-## Criterios de aceptación
+## Acceptance criteria
 
-- [x] E1 completado — auditoría workspace Christian
-- [ ] P-003 tiene la regla de verificación de IDs antes de asignar
-- [ ] AGENTS.md de Nimrod tiene la regla de validación
-- [ ] Christian tiene la misma regla en su workspace
-- [ ] Symlink activo y verificado en servidor (`ls -la AGENTS.md` muestra symlink)
-- [ ] Cron job activo (`crontab -l` lo muestra, log confirma ejecución)
-- [ ] DEC creada documentando la decisión de arquitectura (cron pull vs github actions push)
-- [ ] No puede volver a ocurrir una colisión de IDs como la de MIS-055
-
----
-
-## Valor epistémico
-
-Esta misión demuestra que la fiabilidad de un sistema multi-agente no depende solo de que los agentes lean los mismos documentos — depende de que los documentos que leen sean *la misma versión en el mismo momento*. La sincronización es un problema de distribución, no de disciplina.
-
-## Valor pragmático
-
-Elimina la posibilidad de colisiones de IDs. Establece la base arquitectónica para escalar el sistema a nuevas instancias de forma reproducible y auditable.
+- [x] E1 completed — Christian workspace audit
+- [ ] P-003 has the ID verification rule before assigning
+- [ ] Nimrod's AGENTS.md has the validation rule
+- [ ] Christian has the same rule in his workspace
+- [ ] Symlink active and verified on server
+- [ ] Cron job active (crontab -l shows it, log confirms execution)
+- [ ] DEC created documenting the architecture decision
+- [ ] Mission ID collisions cannot recur
 
 ---
 
-## Aprendizajes de esta sesión
+## Epistemic value
 
-> *"git pull sincroniza archivos. No sincroniza tu memoria."*
+This mission demonstrates that the reliability of a multi-agent system depends not just on agents reading the same documents — but on the documents they read being the *same version at the same time*. Synchronization is a distribution problem, not a discipline problem.
 
-> *"La solución no puede depender de que el agente recuerde hacer algo. Debe ser estructural."*
+## Pragmatic value
 
-> *"Una regla en AGENTS.md vale más que diez protocolos en el repo — porque AGENTS.md siempre llega, los protocolos solo llegan si el agente los busca."*
-
-> *"Push requiere abrir puertas. Pull solo necesita que ya haya camino. Siempre preferir pull en arquitecturas con hardening."*
-
-**Lección de infraestructura (añadida por el equipo de infra, 2026-04-07):**
-Antes de proponer cualquier solución que implique conexiones entrantes al servidor, verificar el modelo de red: ¿está SSH abierto al público o solo a Tailscale? La respuesta cambia completamente la arquitectura válida.
+Eliminates the possibility of ID collisions. Establishes the architectural foundation for scaling the system to new instances in a reproducible and auditable way.
 
 ---
+
+## Key lessons
+
+> *"git pull syncs files. It does not sync your memory."*
+
+> *"The solution cannot depend on the agent remembering to do something. It must be structural."*
+
+> *"A rule in AGENTS.md is worth more than ten protocols in the repo — because AGENTS.md always arrives, protocols only arrive if the agent looks for them."*
+
+> *"Push requires opening doors. Pull only needs a path that already exists. Always prefer pull in hardened architectures."*
+
+---
+
+## Version history
+
+- v1.0.0 (2026-04-07) — Initial creation.
+- v1.1.0 (2026-04-07) — Extended with full architecture analysis.
+- v1.2.0 (2026-04-07) — Translated to English (MIS-056).
 
 *Nimrod 🗡️ — 2026-04-07*

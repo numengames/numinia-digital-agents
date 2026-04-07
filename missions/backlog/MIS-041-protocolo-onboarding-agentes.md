@@ -1,43 +1,51 @@
 ---
 id: "MIS-00041"
-title: "Protocolo de onboarding para nuevos agentes"
+title: "Onboarding protocol for new agents"
 type: mission
 status: backlog
+version: "1.1.0"
 created: "2026-04-04T00:00:00Z"
+updated: "2026-04-07T18:00:00Z"
 area: "CAO"
-guild: "Centinelas"
+guild: "Sentinels"
 tipo: "digital"
 priority: "medium"
 effort: "M"
 license: "CC0-1.0"
 ---
-# MIS-041 — Protocolo de onboarding para nuevos agentes
+# MIS-041 — Onboarding protocol for new agents
 
-> **Resumen:** Misión del sistema NWOS con criterios, valor epistémico y pragmático.
-> **Epistémico:** Qué aprendes leyendo este documento.
-> **Pragmático:** Qué puedes hacer con este documento.
-> **Audiencia:** Agentes · Oráculos
+> **Summary:** NWOS system mission.
+> **Epistemic:** What you learn by reading this document.
+> **Pragmatic:** What you can do with this document.
+> **Audience:** Agents · Oracles
 
 ---
 
+**Area:** CAO · **Guild:** Sentinels · **Type:** 🤖 Digital · **Priority:** 🟡 Medium · **Effort:** M
 
-**Area:** CAO · **Gremio:** Centinelas · **Tipo:** 🤖 Digital · **Prioridad:** 🟡 Media · **Esfuerzo:** M
+## Story
 
-## Historia
+As CAO coordinator, I want a standard protocol for activating new digital agents, so each new agent enters the system without friction.
 
-Como coordinador CAO, quiero un protocolo estándar para activar nuevos agentes digitales, para que cada agente nuevo entre al sistema sin fricciones.
+## Acceptance criteria
 
-## Criterios de aceptación
+- [ ] Activation checklist: SOUL.md, OPERATOR.md, seminal readings
+- [ ] First onboarding session template
+- [ ] Onboarding time < 30 minutes
+- [ ] Documented in protocols/P-002 (Agent Onboarding Protocol)
 
-- [ ] Checklist de activación: SOUL.md, OPERATOR.md, lecturas seminales
-- [ ] Template de primera sesión de onboarding
-- [ ] Tiempo de onboarding < 30 minutos
-- [ ] Documentado en protocols/agent-onboarding.md
+## Epistemic value
 
-## Valor epistémico
+Makes explicit what makes an agent functional from day one.
 
-Hace explícito qué hace que un agente sea funcional desde el primer día.
+## Pragmatic value
 
-## Valor pragmático
+Scale the CAO without setup friction for each new agent.
 
-Escalar la CAO sin fricción de setup para cada agente nuevo.
+---
+
+## Version history
+
+- v1.0.0 (2026-04-04) — Initial creation.
+- v1.1.0 (2026-04-07) — Translated to English (MIS-056).

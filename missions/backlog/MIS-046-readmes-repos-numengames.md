@@ -1,43 +1,51 @@
 ---
 id: "MIS-00046"
-title: "READMEs de repos numengames org"
+title: "READMEs for numengames org repos"
 type: mission
 status: backlog
+version: "1.1.0"
 created: "2026-04-04T00:00:00Z"
-area: "Documentación"
-guild: "Exegetas"
+updated: "2026-04-07T18:00:00Z"
+area: "Documentation"
+guild: "Exegetes"
 tipo: "digital"
 priority: "medium"
 effort: "M"
 license: "CC0-1.0"
 ---
-# MIS-046 — READMEs de repos numengames org
+# MIS-046 — READMEs for numengames org repos
 
-> **Resumen:** Misión del sistema NWOS con criterios, valor epistémico y pragmático.
-> **Epistémico:** Qué aprendes leyendo este documento.
-> **Pragmático:** Qué puedes hacer con este documento.
-> **Audiencia:** Agentes · Oráculos
+> **Summary:** NWOS system mission.
+> **Epistemic:** What you learn by reading this document.
+> **Pragmatic:** What you can do with this document.
+> **Audience:** Agents · Oracles
 
 ---
 
+**Area:** Documentation · **Guild:** Exegetes · **Type:** 🤖 Digital · **Priority:** 🟡 Medium · **Effort:** M
 
-**Area:** Documentación · **Gremio:** Exegetas · **Tipo:** 🤖 Digital · **Prioridad:** 🟡 Media · **Esfuerzo:** M
+## Story
 
-## Historia
+As a visitor to the numengames org on GitHub, I want to understand what each repo does, to navigate the code without asking.
 
-Como visitante de la org numengames en GitHub, quiero entender qué hace cada repo, para navegar el código sin preguntar.
+## Acceptance criteria
 
-## Criterios de aceptación
+- [ ] README updated in: numengames-web, numinia-oncyber, alchemists-tower
+- [ ] OS→Model→Narrative triad in each README
+- [ ] CC0/MIT license explicitly declared
+- [ ] Links between related repos
 
-- [ ] README actualizado en: numengames-web, numinia-oncyber, alchemists-tower
-- [ ] Tríada OS→Modelo→Narrativa en cada README
-- [ ] Licencia CC0/MIT declarada explícitamente
-- [ ] Links entre repos relacionados
+## Epistemic value
 
-## Valor epistémico
+Empty or outdated READMEs are active documentation debt.
 
-Los READMEs vacíos o desactualizados son deuda de documentación activa.
+## Pragmatic value
 
-## Valor pragmático
+Any external collaborator can orient themselves in minutes.
 
-Cualquier colaborador externo puede orientarse en minutos.
+---
+
+## Version history
+
+- v1.0.0 (2026-04-04) — Initial creation.
+- v1.1.0 (2026-04-07) — Translated to English (MIS-056).

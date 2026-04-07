@@ -1,47 +1,55 @@
 ---
 id: "MIS-00043"
-title: "Completar lectura del Manual RPG de Numinia"
+title: "Complete reading of the Numinia RPG Manual"
 type: mission
 status: backlog
+version: "1.1.0"
 created: "2026-04-04T00:00:00Z"
-area: "Documentación"
-guild: "Exegetas"
+updated: "2026-04-07T18:00:00Z"
+area: "Documentation"
+guild: "Exegetes"
 tipo: "digital"
 priority: "high"
 effort: "M"
 license: "CC0-1.0"
 ---
-# MIS-043 — Completar lectura del Manual RPG de Numinia
+# MIS-043 — Complete reading of the Numinia RPG Manual
 
-> **Resumen:** Misión del sistema NWOS con criterios, valor epistémico y pragmático.
-> **Epistémico:** Qué aprendes leyendo este documento.
-> **Pragmático:** Qué puedes hacer con este documento.
-> **Audiencia:** Agentes · Oráculos
+> **Summary:** NWOS system mission.
+> **Epistemic:** What you learn by reading this document.
+> **Pragmatic:** What you can do with this document.
+> **Audience:** Agents · Oracles
 
 ---
 
+**Area:** Documentation · **Guild:** Exegetes · **Type:** 🤖 Digital · **Priority:** 🟠 High · **Effort:** M
 
-**Area:** Documentación · **Gremio:** Exegetas · **Tipo:** 🤖 Digital · **Prioridad:** 🟠 Alta · **Esfuerzo:** M
+## Story
 
-## Historia
+As Nimrod, I want to read the complete Numinia RPG manual (~4,600 lines), to have full lore context before acting as Procyon.
 
-Como Nimrod, quiero leer el manual RPG completo de Numinia (~4.600 líneas), para tener contexto completo del lore antes de actuar como Procyon.
+## Acceptance criteria
 
-## Criterios de aceptación
+- [ ] RPG manual read completely (seminal-documents/Numinia. El juego de rol.txt)
+- [ ] Summary of key findings documented
+- [ ] Procyon context identified and recorded in MEMORY.md
+- [ ] Open lore questions registered
 
-- [ ] Manual RPG leído completo (seminal-documents/Numinia. El juego de rol.txt)
-- [ ] Resumen de hallazgos clave documentado
-- [ ] Contexto de Procyon identificado y registrado en MEMORY.md
-- [ ] Preguntas abiertas al lore registradas
+## Epistemic value
 
-## Valor epistémico
+The manual contains the complete cosmology of Numinia. Without it, the lore is fragmentary.
 
-El manual contiene la cosmología completa de Numinia. Sin él, el lore es fragmentario.
+## Pragmatic value
 
-## Valor pragmático
+Necessary context for Nimrod to act as Procyon in sessions.
 
-Contexto necesario para que Nimrod actúe como Procyon en sesiones.
+## Notes
 
-## Notas
+First ~100 lines read on 2026-04-02. ~4,500 lines pending.
 
-Leídas las primeras ~100 líneas en 2026-04-02. Quedan ~4.500 líneas pendientes.
+---
+
+## Version history
+
+- v1.0.0 (2026-04-04) — Initial creation.
+- v1.1.0 (2026-04-07) — Translated to English (MIS-056).

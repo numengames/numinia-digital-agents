@@ -1,43 +1,51 @@
 ---
 id: "MIS-00045"
-title: "Documentar arquitectura de la CAO"
+title: "Document CAO architecture"
 type: mission
 status: backlog
+version: "1.1.0"
 created: "2026-04-04T00:00:00Z"
-area: "Documentación"
-guild: "Centinelas"
+updated: "2026-04-07T18:00:00Z"
+area: "Documentation"
+guild: "Sentinels"
 tipo: "digital"
 priority: "high"
 effort: "S"
 license: "CC0-1.0"
 ---
-# MIS-045 — Documentar arquitectura de la CAO
+# MIS-045 — Document CAO architecture
 
-> **Resumen:** Misión del sistema NWOS con criterios, valor epistémico y pragmático.
-> **Epistémico:** Qué aprendes leyendo este documento.
-> **Pragmático:** Qué puedes hacer con este documento.
-> **Audiencia:** Agentes · Oráculos
+> **Summary:** NWOS system mission.
+> **Epistemic:** What you learn by reading this document.
+> **Pragmatic:** What you can do with this document.
+> **Audience:** Agents · Oracles
 
 ---
 
+**Area:** Documentation · **Guild:** Sentinels · **Type:** 🤖 Digital · **Priority:** 🟠 High · **Effort:** S
 
-**Area:** Documentación · **Gremio:** Centinelas · **Tipo:** 🤖 Digital · **Prioridad:** 🟠 Alta · **Esfuerzo:** S
+## Story
 
-## Historia
+As a new agent or collaborator, I want to understand how the CAO is organized, to know where I fit and how it works.
 
-Como nuevo agente o colaborador, quiero entender cómo está organizada la CAO, para saber dónde encajo y cómo funciona.
+## Acceptance criteria
 
-## Criterios de aceptación
+- [ ] Agent architecture diagram (roles, relationships, flows)
+- [ ] CAO-ARCHITECTURE.md document in the repo
+- [ ] Inter-agent coordination protocols documented
+- [ ] Updated every time the architecture changes
 
-- [ ] Diagrama de arquitectura de agentes (roles, relaciones, flujos)
-- [ ] Documento CAO-ARCHITECTURE.md en el repo
-- [ ] Protocolos de coordinación entre agentes documentados
-- [ ] Actualizado cada vez que la arquitectura cambie
+## Epistemic value
 
-## Valor epistémico
+Undocumented architecture lives only in the founder's head. That is a risk.
 
-La arquitectura no documentada vive solo en la cabeza del fundador. Eso es un riesgo.
+## Pragmatic value
 
-## Valor pragmático
+Instant onboarding for any new agent or Oracle.
 
-Onboarding instantáneo para cualquier nuevo agente o Oráculo.
+---
+
+## Version history
+
+- v1.0.0 (2026-04-04) — Initial creation.
+- v1.1.0 (2026-04-07) — Translated to English (MIS-056).

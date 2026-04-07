@@ -1,26 +1,32 @@
 ---
-id: "roster-procuradores"
-title: "Roster — Procuradores"
+id: "roster-procurators"
+title: "Roster — Procurators"
 type: roster
 status: active
-version: "1.0.0"
+version: "1.1.0"
 created: "2026-04-07T12:59:00Z"
-updated: "2026-04-07T12:59:00Z"
+updated: "2026-04-07T18:00:00Z"
 author: "nimrod"
 license: "CC0-1.0"
 ---
-# Roster — Procuradores
+# Roster — Procurators
 
-> **Resumen:** Lista de agentes activos en este gremio.
-> **Epistémico:** Qué agentes operan en este gremio y su estado actual.
-> **Pragmático:** Ver qué agentes están disponibles en este gremio.
-> **Audiencia:** Agentes · Oráculos
+> **Summary:** List of active agents in this guild.
+> **Epistemic:** Which agents operate in this guild and their current state.
+> **Pragmatic:** See which agents are available in this guild.
+> **Audience:** Agents · Oracles
 
 ---
 
+*"Without structure, chaos. Without flexibility, rigidity."*
 
-*"Sin estructura, el caos. Sin flexibilidad, la rigidez."*
+| Agent | Branch | Status | Planned activation | Files |
+|-------|--------|--------|--------------------|-------|
+| [Procurador-01](../../agents/procurador-01/SOUL.md) | Syndics | 📐 Designed | 2027 | [→](../../agents/procurador-01/) |
 
-| Agente | Rama | Estado | Activación prevista | Archivos |
-|--------|------|--------|---------------------|---------|
-| [Procurador-01](../../agents/procurador-01/SOUL.md) | Síndicos | 📅 Diseñado | 2027 | [→](../../agents/procurador-01/) |
+---
+
+## Version history
+
+- v1.0.0 (2026-04-07) — Initial creation.
+- v1.1.0 (2026-04-07) — Translated to English (MIS-056).

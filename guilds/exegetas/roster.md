@@ -1,27 +1,33 @@
 ---
-id: "roster-exegetas"
-title: "Roster — Exégetas"
+id: "roster-exegetes"
+title: "Roster — Exegetes"
 type: roster
 status: active
-version: "1.0.0"
+version: "1.1.0"
 created: "2026-04-07T12:59:00Z"
-updated: "2026-04-07T12:59:00Z"
+updated: "2026-04-07T18:00:00Z"
 author: "nimrod"
 license: "CC0-1.0"
 ---
-# Roster — Exégetas
+# Roster — Exegetes
 
-> **Resumen:** Lista de agentes activos en este gremio.
-> **Epistémico:** Qué agentes operan en este gremio y su estado actual.
-> **Pragmático:** Ver qué agentes están disponibles en este gremio.
-> **Audiencia:** Agentes · Oráculos
+> **Summary:** List of active agents in this guild.
+> **Epistemic:** Which agents operate in this guild and their current state.
+> **Pragmatic:** See which agents are available in this guild.
+> **Audience:** Agents · Oracles
 
 ---
 
+*"Knowledge that is not written did not exist."*
 
-*"El conocimiento que no se escribe, no existió."*
+| Agent | Branch | Status | Activated | Files |
+|-------|--------|--------|-----------|-------|
+| [Adonaz](../../agents/adonaz/SOUL.md) | Chroniclers | ✅ Active | 2026-04-06 | [→](../../agents/adonaz/) |
+| [Senet (Maestro de Juego)](../../agents/senet/SOUL.md) | Scholars | 📐 Designed | 2026 | [→](../../agents/senet/) |
 
-| Agente | Rama | Estado | Activado | Archivos |
-|--------|------|--------|----------|---------|
-| [Adonaz](../../agents/adonaz/SOUL.md) | Cronistas | ✅ Activo | 2026-04-06T00:00:00Z | [→](../../agents/adonaz/) |
-| [Exégeta-01](../../agents/exegeta-01/SOUL.md) | Eruditos | 📅 Diseñado | 2027 | [→](../../agents/exegeta-01/) |
+---
+
+## Version history
+
+- v1.0.0 (2026-04-07) — Initial creation.
+- v1.1.0 (2026-04-07) — Translated to English. Updated to Senet (MIS-056).

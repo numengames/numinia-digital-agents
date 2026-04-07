@@ -1,47 +1,55 @@
 ---
 id: "MIS-00048"
-title: "Sistema de costes por agente"
+title: "Cost tracking system per agent"
 type: mission
 status: backlog
+version: "1.1.0"
 created: "2026-04-04T00:00:00Z"
-area: "Operaciones"
-guild: "Centinelas"
+updated: "2026-04-07T18:00:00Z"
+area: "Operations"
+guild: "Sentinels"
 tipo: "digital"
 priority: "critical"
 effort: "M"
 license: "CC0-1.0"
 ---
-# MIS-048 — Sistema de costes por agente
+# MIS-048 — Cost tracking system per agent
 
-> **Resumen:** Misión del sistema NWOS con criterios, valor epistémico y pragmático.
-> **Epistémico:** Qué aprendes leyendo este documento.
-> **Pragmático:** Qué puedes hacer con este documento.
-> **Audiencia:** Agentes · Oráculos
+> **Summary:** NWOS system mission.
+> **Epistemic:** What you learn by reading this document.
+> **Pragmatic:** What you can do with this document.
+> **Audience:** Agents · Oracles
 
 ---
 
+**Area:** Operations · **Guild:** Sentinels · **Type:** 🤖 Digital · **Priority:** 🔴 Critical · **Effort:** M
 
-**Area:** Operaciones · **Gremio:** Centinelas · **Tipo:** 🤖 Digital · **Prioridad:** 🔴 Crítica · **Esfuerzo:** M
+## Story
 
-## Historia
+As Pablo, I want to know exactly how much each agent spends per day and per mission, to optimize costs and justify the investment.
 
-Como Pablo, quiero saber exactamente cuánto gasta cada agente por día y por misión, para optimizar costes y justificar la inversión.
+## Acceptance criteria
 
-## Criterios de aceptación
+- [ ] Anthropic API connected for real usage data
+- [ ] Cost per mission recorded in logs
+- [ ] Daily cost visible in 8am report
+- [ ] /cao dashboard updated with real cost
 
-- [ ] API de Anthropic conectada para datos de uso real
-- [ ] Coste por misión registrado en logs
-- [ ] Coste diario visible en reporte de las 8am
-- [ ] Dashboard /cao actualizado con coste real
+## Epistemic value
 
-## Valor epistémico
+Without real cost data, you cannot optimize.
 
-Sin datos de coste reales, no se puede optimizar.
+## Pragmatic value
 
-## Valor pragmático
+Difference between controlled spending and opaque spending.
 
-Diferencia entre gasto controlado y gasto opaco.
+## Notes
 
-## Notas
+Blocked by: Anthropic API key with usage permissions (configured via SSH, never via chat).
 
-Bloqueado por: API key Anthropic con usage permissions (se configura por SSH, nunca por chat).
+---
+
+## Version history
+
+- v1.0.0 (2026-04-04) — Initial creation.
+- v1.1.0 (2026-04-07) — Translated to English (MIS-056).

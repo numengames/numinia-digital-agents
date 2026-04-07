@@ -1,43 +1,51 @@
 ---
 id: "MIS-00050"
-title: "Ritual de revisión del backlog (Dark Council)"
+title: "Backlog review ritual (Dark Council)"
 type: mission
 status: backlog
+version: "1.1.0"
 created: "2026-04-04T00:00:00Z"
-area: "Operaciones"
-guild: "Procuradores"
+updated: "2026-04-07T18:00:00Z"
+area: "Operations"
+guild: "Procurators"
 tipo: "híbrido"
 priority: "high"
 effort: "XS"
 license: "CC0-1.0"
 ---
-# MIS-050 — Ritual de revisión del backlog (Dark Council)
+# MIS-050 — Backlog review ritual (Dark Council)
 
-> **Resumen:** Misión del sistema NWOS con criterios, valor epistémico y pragmático.
-> **Epistémico:** Qué aprendes leyendo este documento.
-> **Pragmático:** Qué puedes hacer con este documento.
-> **Audiencia:** Agentes · Oráculos
+> **Summary:** NWOS system mission.
+> **Epistemic:** What you learn by reading this document.
+> **Pragmatic:** What you can do with this document.
+> **Audience:** Agents · Oracles
 
 ---
 
+**Area:** Operations · **Guild:** Procurators · **Type:** 🔀 Hybrid · **Priority:** 🟠 High · **Effort:** XS
 
-**Area:** Operaciones · **Gremio:** Procuradores · **Tipo:** 🔀 Híbrido · **Prioridad:** 🟠 Alta · **Esfuerzo:** XS
+## Story
 
-## Historia
+As a team, I want to review and prioritize the backlog every week at the Dark Council, so work is always aligned with current priorities.
 
-Como equipo, quiero revisar y priorizar el backlog cada semana en el Dark Council, para que el trabajo siempre esté alineado con las prioridades actuales.
+## Acceptance criteria
 
-## Criterios de aceptación
+- [ ] Ritual defined: duration, format, responsible parties
+- [ ] Standard agenda: review done → update in-progress → prioritize backlog
+- [ ] Nimrod prepares backlog state before the Dark Council
+- [ ] Ritual decisions recorded in decisions/
 
-- [ ] Ritual definido: duración, formato, responsables
-- [ ] Agenda tipo: review done → actualizar en-curso → priorizar backlog
-- [ ] Nimrod prepara el estado del backlog antes del Dark Council
-- [ ] Decisiones del ritual registradas en decisions/
+## Epistemic value
 
-## Valor epistémico
+Without periodic review, the backlog becomes a graveyard of ideas.
 
-Sin revisión periódica, el backlog se convierte en cementerio de ideas.
+## Pragmatic value
 
-## Valor pragmático
+Monday's Dark Council has a structured and actionable agenda.
 
-El Dark Council de los lunes tiene agenda estructurada y ejecutable.
+---
+
+## Version history
+
+- v1.0.0 (2026-04-04) — Initial creation.
+- v1.1.0 (2026-04-07) — Translated to English (MIS-056).
