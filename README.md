@@ -1,67 +1,109 @@
-# Numinia Digital Agents — Archive Summa
+---
+id: "readme-main"
+title: "numinia-digital-agents"
+type: documentation
+version: "1.0.0"
+created: "2026-04-07T00:00:00Z"
+updated: "2026-04-07T22:30:00Z"
+author: "nimrod"
+license: "CC0-1.0"
+---
 
-> This repository does not document the Numen Games agent system.
-> **It is the place where the system happens.**
+# numinia-digital-agents
 
-`git pull` = alignment with the canon.
-`commit` = inscription in history.
-`merge` = integration into the system's reality.
+> The canonical archive of the Numen Games Digital Agent Operations system (NWOS).
+
+This repository is the **single source of truth** for all digital agents, missions, protocols, and operational decisions of [Numen Games](https://numengames.com).
 
 ---
 
-## For digital agents
+## What is the NWOS?
 
-At the start of every session:
+The **Narrative Work OS** (NWOS) is the operational system of Numen Games — a framework that turns work into a meaningful narrative. Digital agents are first-class participants: they hold roles, execute missions, follow protocols, and accumulate institutional memory.
 
-```bash
-git pull origin main
+```
+Numen Games (OS) → Functional Model → Numinia (Narrative)
 ```
 
-Then read in this order:
-1. `agents/{your-name}/SOUL.md` — who you are
-2. `agents/{your-name}/OPERATOR.md` — your laws
-3. `agents/{your-name}/STATUS.md` — your current state
-4. `operations/security-policy.md` — always, every session
-5. `protocols/P-001-briefing-agente-v1.md` — startup protocol
-6. Your assigned mission in `missions/active/`
+---
 
-Documents in `canon/` are read-only. Do not modify them.
+## Active Agents
+
+| Agent | Guild | Branch | Role | Status |
+|-------|-------|--------|------|--------|
+| [Nimrod](agents/nimrod/) | Sentinels | Archangel | Guardian of the Gates | ✅ Active |
+| [Adonaz](agents/adonaz/) | Exegetes | Chronicler | General Archivist | ✅ Active |
+| [Ursa](agents/ursa/) | Alchemists | Engineer | Machine Whisperer | 📐 Designed |
+| [Senet](agents/senet/) | Exegetes | Chronicler | Game Master | 📐 Designed |
+| Procurador-01 | Procurators | Syndic | Business Lead | 📐 Designed |
+| Procyon | — | — | World Model / Coordinator | 📅 2028 |
 
 ---
 
-## For Oracles (humans)
+## Repository Structure
 
-This repository contains the source of truth for all operations of the Numinia system.
-
-| Fund | Path | Content |
-|------|------|---------|
-| 📜 Canon | `canon/` | 9 foundational documents. Immutable. |
-| 🤖 Agents | `agents/` | Operational profiles of each digital agent. |
-| ⚡ Missions | `missions/` | Active, completed, and backlog missions. |
-| 📋 Protocols | `protocols/` | Standard operating procedures. |
-| 🗿 Decisions | `decisions/` | Architectural decision records (ADR). |
-| 🔮 Blueprints | `blueprints/` | Designs and future architectures. |
-| ⚙️ Operations | `operations/` | Governance, security, credential-map. |
-| 📊 Reports | `reports/` | Daily and weekly reports. |
-
----
-
-## System status
-
-- **Active agents:** Nimrod (Sentinel), Adonaz (Exegete), Ursa (Alchemist — designed)
-- **Phase:** Alpha
-- **Oracle:** Pablo FM
-- **Repo:** [github.com/numengames/numinia-digital-agents](https://github.com/numengames/numinia-digital-agents)
-
----
-
-## One rule that orders everything
-
-The canon is not questioned in daily work. It is consulted.
-If daily work reveals that the canon is wrong, the discrepancy is documented and an explicit decision is made.
-**Changing the canon is a major act that requires consensus.**
+```
+numinia-digital-agents/
+├── agents/              # Agent files (SOUL, OPERATOR, STATUS, MEMORY)
+│   ├── INDEX.md         # Agent registry
+│   ├── nimrod/
+│   ├── adonaz/
+│   └── ...
+├── missions/            # Mission system (P-003)
+│   ├── queue/           # To Do
+│   ├── active/          # In Progress
+│   ├── review/          # In Review
+│   ├── done/            # Completed (immutable)
+│   └── freeze/          # Paused
+├── missions-index.json  # Machine-readable mission index (consumed by pablofm.com)
+├── protocols/           # Operational protocols (P-001 to P-008)
+├── operations/          # Security policy, credential map
+├── blueprints/          # System design documents
+├── decisions/           # Architectural Decision Records (ADR)
+└── canon/               # Seminal philosophical documents
+```
 
 ---
 
-*License: CC0 1.0 Universal — we build in public.*
-*Nimrod 🗡️ — Guardian of the Gates — Numen Games*
+## Protocols
+
+| Protocol | Purpose |
+|----------|---------|
+| [P-001](protocols/P-001-agent-briefing.md) | Session startup — mandatory for every agent |
+| [P-002](protocols/P-002-agent-onboarding.md) | New agent onboarding |
+| [P-003](protocols/P-003-mission-cycle.md) | Mission lifecycle (create → execute → close) |
+| [P-004](protocols/P-004-inter-agent-comms.md) | Inter-agent communication |
+| [P-005](protocols/P-005-escalation.md) | Escalation to Oracle |
+| [P-006](protocols/P-006-session-close.md) | Session close — mandatory |
+| [P-007](protocols/P-007-context-load.md) | Context load self-monitoring |
+| [P-008](protocols/P-008-approval-brief.md) | Approval request format |
+
+---
+
+## Mission System
+
+Missions follow **P-003 v2.0.0**:
+
+- **IDs:** `MIS-NNN` (3 digits) · sub-missions `MIS-NNN.N`
+- **States:** `todo` → `in-progress` → `in-review` → `done` (also `freeze`, `cancelled`)
+- **Types:** `biological` 🧬 · `digital` 🤖 · `hybrid` 🔀
+- **Effort:** XS · S · M · L · XL
+
+Live mission board: [pablofm.com/missions](https://pablofm.com/missions)
+
+---
+
+## Language
+
+This repository is written in **English** (per [DEC-006](decisions/DEC-006-english-as-repo-language.md)). Agent sessions with Pablo may be conducted in Spanish.
+
+---
+
+## Guiding principle
+
+> *"I do not let through what must not pass. I do not hold back what must flow."*
+> — Nimrod, Guardian of the Gates
+
+---
+
+*Numen Games — Narrative Work OS · CC0-1.0*
