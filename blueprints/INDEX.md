@@ -34,6 +34,7 @@ Blueprints are architectural designs and frameworks — not decisions (those liv
 | ID | Title | Status | Version | Area |
 |----|-------|--------|---------|------|
 | [BP-business-metrics](BP-business-metrics.md) | Business Metrics Framework | 📝 draft | 0.1.0 | CAO / Business |
+| [BP-mission-system-v2](BP-mission-system-v2.md) | Mission System v2 — Kanban, Sub-missions, States, IDs | 📝 draft | 0.1.0 | CAO / Product |
 
 ## How to create a blueprint
 
