@@ -3,9 +3,9 @@ id: "STANDARDS"
 title: "Standards — Narrative Work OS"
 type: meta
 status: active
-version: "1.2.0"
+version: "1.3.0"
 created: "2026-04-07T12:56:00Z"
-updated: "2026-04-07T19:50:00Z"
+updated: "2026-04-08T05:44:00Z"
 author: "nimrod"
 owner: "oracle"
 tags: [standards, conventions, meta, nwos]
@@ -356,17 +356,34 @@ The epistemic value of the mission is the "Measure". The Real Execution is the "
 
 **Reference:** [semver.org](https://semver.org)
 
-### ⚠️ Authorization policy by version level
+### ⚠️ NWOS versioning policy — Lifecycle stages
 
-| Level | Example | Can execute | Requires |
-|-------|---------|-------------|----------|
-| PATCH | 1.0.0 → 1.0.1 | Digital agent | Alone |
-| MINOR | 1.0.0 → 1.1.0 | Digital agent | Alone |
-| **MAJOR** | **1.0.0 → 2.0.0** | **Biological agent (Oracle)** | **Mandatory explicit approval** |
+All NWOS artifacts follow a **two-stage lifecycle**:
 
-**Rule:** The first digit of any version (MAJOR) can never be incremented without explicit authorization from an Oracle (biological agent). Approval score 9/10.
+| Stage | Version range | Description | Who controls |
+|-------|--------------|-------------|---------------|
+| **Development** | `v0.1.0` → `v0.X.0` | Work in progress. Start always at `v0.1.0`. Digital agents increment `MINOR` freely. | Digital agents |
+| **Stable** | `v1.0.0` and above | Production-grade. Promotion from v0.X.0 → v1.0.0 is a deliberate oracle decision. | **Biological agent (Oracle) only** |
 
-*Established by Pablo FM — 2026-04-07*
+**Rules:**
+- Every new artifact starts at **`v0.1.0`** — no exceptions
+- Digital agents increment `v0.X.0` with each meaningful iteration
+- **Only Oracle can promote to `v1.0.0`** — this signals the artifact is stable and production-ready
+- After `v1.0.0`, MAJOR increments (v1→v2) also require Oracle approval (score 9/10)
+
+*Established by Pablo FM — 2026-04-08*
+
+### ⚠️ Authorization policy by version transition
+
+| Transition | Example | Who authorizes |
+|------------|---------|----------------|
+| New artifact | — → v0.1.0 | Digital agent |
+| Development iteration | v0.1.0 → v0.2.0 | Digital agent |
+| **Stable promotion** | **v0.X.0 → v1.0.0** | **Oracle (biological) — mandatory** |
+| Stable iteration | v1.0.0 → v1.1.0 | Digital agent |
+| **Major breaking** | **v1.0.0 → v2.0.0** | **Oracle (biological) — score 9/10** |
+
+*Established by Pablo FM — 2026-04-07 (MAJOR rule) / 2026-04-08 (lifecycle stages)*
 
 ---
 
@@ -440,6 +457,7 @@ The context card is a **free energy reduction** for the reader:
 | 1.0.0 | 2026-04-07T12:56:00Z | Initial creation — ISO 8601 timestamps, UUID v7, agent architecture, languages, frontmatter, commits, frameworks (BDD/Cucumber, ADR, Wardley, DORA, SemVer) |
 | 1.1.0 | 2026-04-07T14:07:00Z | §7G Active Inference & Free Energy Principle + §7H OODA + §7I Build-Measure-Learn + §8 Document convention (context card) |
 | 1.2.0 | 2026-04-07T18:00:00Z | Translated to English (MIS-056). Language policy updated: English-only repo. |
+| 1.3.0 | 2026-04-08T05:44:00Z | §7F versioning policy updated: two-stage lifecycle (v0.X.0 development → v1.0.0 stable). Oracle-only promotion rule. Established by Pablo FM. |
 
 ---
 
