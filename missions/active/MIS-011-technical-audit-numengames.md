@@ -1,0 +1,54 @@
+---
+id: "MIS-011"
+uid: "018ef820-0011-7000-8000-000000000011"
+title: "Technical audit of numengames.com"
+type: mission
+status: in-progress
+version: "0.1.0"
+created: "2026-04-07T00:00:00Z"
+updated: "2026-04-08T05:46:00Z"
+author: "pablo-fm"
+owner: "oracle"
+tags: [infrastructure, audit, numengames, web, sentinels]
+license: "CC0-1.0"
+area: "Infrastructure"
+guild: "Sentinels"
+mission_id: "MIS-011"
+priority: "critical"
+effort: "S"
+type_execution: "hybrid"
+assigned_to: "nimrod"
+requested_by: "oracle"
+started: "2026-04-08T05:46:00Z"
+completed: null
+---
+# MIS-011 — Technical audit of numengames.com
+
+> **Summary:** Full technical audit of numengames.com — performance, SEO, accessibility, security, stack analysis, and improvement recommendations.
+> **Epistemic:** Without a baseline audit, we don't know what the site's real weaknesses are.
+> **Pragmatic:** The audit output becomes the input for MIS-027 (numengames.com improvement).
+> **Audience:** Agents · Oracles
+
+---
+
+**Area:** Infrastructure · **Guild:** Sentinels · **Type:** 🔀 Hybrid · **Priority:** 🔴 Critical · **Effort:** S
+
+---
+
+## Story
+
+As Pablo, I want a complete technical audit of numengames.com so I know exactly what to fix, in what order, with what priority.
+
+---
+
+## Acceptance criteria
+
+- [ ] Audit document created in `blueprints/AUDIT-numengames-YYYY-MM-DD.md`
+- [ ] Covers: performance, SEO, accessibility, security headers, mobile, tech stack
+- [ ] Critical issues identified and prioritized
+- [ ] Feeds into MIS-027 (improvement roadmap)
+- [ ] missions-index.json updated
+
+---
+
+*Nimrod 🗡️ — started 2026-04-08*
