@@ -3,9 +3,9 @@ id: "STANDARDS"
 title: "Standards — Narrative Work OS"
 type: meta
 status: active
-version: "1.3.0"
+version: "1.4.0"
 created: "2026-04-07T12:56:00Z"
-updated: "2026-04-08T05:44:00Z"
+updated: "2026-04-08T06:00:00Z"
 author: "nimrod"
 owner: "oracle"
 tags: [standards, conventions, meta, nwos]
@@ -458,6 +458,83 @@ The context card is a **free energy reduction** for the reader:
 | 1.1.0 | 2026-04-07T14:07:00Z | §7G Active Inference & Free Energy Principle + §7H OODA + §7I Build-Measure-Learn + §8 Document convention (context card) |
 | 1.2.0 | 2026-04-07T18:00:00Z | Translated to English (MIS-056). Language policy updated: English-only repo. |
 | 1.3.0 | 2026-04-08T05:44:00Z | §7F versioning policy updated: two-stage lifecycle (v0.X.0 development → v1.0.0 stable). Oracle-only promotion rule. Established by Pablo FM. |
+| 1.4.0 | 2026-04-08T06:00:00Z | §10 Agent log system standard added (MIS-039). |
+
+---
+
+---
+
+## 10. Agent log system
+
+**Purpose:** Every significant agent action must be auditable. Logs are the memory of what happened, when, and why.
+
+### Log entry format
+
+```json
+{
+  "ts": "2026-04-08T06:00:00Z",
+  "agent": "nimrod",
+  "session": "session-id-or-label",
+  "mission": "MIS-045",
+  "action": "write",
+  "target": "blueprints/BP-cao-architecture.md",
+  "result": "ok",
+  "note": "Created CAO architecture blueprint v0.1.0",
+  "cost_estimate_usd": 0.04
+}
+```
+
+### Required fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `ts` | ISO 8601 UTC | Timestamp of the action |
+| `agent` | string | Agent ID (nimrod, adonaz, ursa...) |
+| `mission` | string \| null | Mission ID if action is part of a mission |
+| `action` | enum | See action types below |
+| `target` | string | What was acted upon (file path, URL, repo, etc.) |
+| `result` | enum | `ok` \| `error` \| `skipped` \| `pending` |
+
+### Optional fields
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `session` | string | OpenClaw session ID or label |
+| `note` | string | Human-readable description |
+| `cost_estimate_usd` | float | Estimated API cost for this action |
+| `error_detail` | string | Error message if result = error |
+
+### Action types
+
+| Action | Description |
+|--------|-------------|
+| `read` | Read a file or URL |
+| `write` | Create or overwrite a file |
+| `edit` | Modify an existing file |
+| `exec` | Run a shell command |
+| `commit` | Git commit |
+| `push` | Git push |
+| `fetch` | HTTP request (web_fetch, API call) |
+| `message` | Send a message (Telegram, etc.) |
+| `spawn` | Spawn a sub-agent |
+| `cron` | Create or modify a cron job |
+| `decision` | Make an autonomous decision |
+
+### Log storage convention
+
+```
+workspace/logs/
+├── YYYY-MM-DD-{agent}.jsonl    ← One file per agent per day
+└── YYYY-MM-DD-summary.md       ← Human-readable daily summary (optional)
+```
+
+**Format:** JSONL (one JSON object per line) — append-only, never modified.
+
+**Retention:** 90 days (enforced by custodian agent, see GOVERNANCE.md)
+
+**Note:** Until MIS-048 (cost tracking) is implemented, `cost_estimate_usd` uses static estimates:
+- claude-haiku-3-5: ~$0.001 per tool call
+- claude-sonnet-4-6: ~$0.02 per tool call
 
 ---
 
