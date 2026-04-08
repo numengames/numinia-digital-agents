@@ -46,7 +46,7 @@
     {"id":"MIS-042","title":"Main README for numinia-agents","area":"Documentation","guild":"Exegetes","type":"digital","priority":"high","effort":"S","status":"done","assignedTo":"nimrod","completed":"2026-04-07","hasDetail":true},
     {"id":"MIS-043","title":"Complete reading of the Numinia RPG Manual","area":"Documentation","guild":"Exegetes","type":"digital","priority":"high","effort":"M","status":"todo"},
     {"id":"MIS-044","title":"GAPS.md — Numen Games capability map","area":"Documentation","guild":"Procurators","type":"hybrid","priority":"critical","effort":"S","status":"todo","assignedTo":"procurador-01"},
-    {"id":"MIS-045","title":"Document CAO architecture","area":"Documentation","guild":"Sentinels","type":"digital","priority":"high","effort":"S","status":"todo"},
+    {"id":"MIS-045","title":"Document CAO architecture","area":"Documentation","guild":"Sentinels","type":"digital","priority":"high","effort":"S","status":"in-review","assignedTo":"nimrod","hasDetail":true},
     {"id":"MIS-046","title":"READMEs for numengames org repos","area":"Documentation","guild":"Exegetes","type":"digital","priority":"medium","effort":"M","status":"todo"},
     {"id":"MIS-047","title":"Configure automatic weekly report","area":"Operations","guild":"Sentinels","type":"digital","priority":"high","effort":"S","status":"done","assignedTo":"nimrod","completed":"2026-04-07","hasDetail":true},
     {"id":"MIS-048","title":"Agent cost tracking system","area":"Operations","guild":"Sentinels","type":"digital","priority":"critical","effort":"M","status":"todo","assignedTo":"nimrod"},
