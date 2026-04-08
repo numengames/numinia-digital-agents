@@ -2,7 +2,7 @@
   "generated": "2026-04-08T12:52:36Z",
   "missions": [
     {
-      "id": "MIS-00052",
+      "id": "MIS-052",
       "title": "On-premises infrastructure — Dedicated PC",
       "status": "in-progress",
       "priority": "high",
@@ -12,7 +12,7 @@
       "type": "mission"
     },
     {
-      "id": "MIS-00054",
+      "id": "MIS-054",
       "title": "Multi-Oracle access to Nimrod via Telegram",
       "status": "in-progress",
       "priority": "high",
@@ -22,7 +22,7 @@
       "type": "mission"
     },
     {
-      "id": "MIS-00055",
+      "id": "MIS-055",
       "title": "Dual Nomenclature System — Narrative Dial + Gamification Dial",
       "status": "in-progress",
       "priority": "critical",
@@ -172,16 +172,6 @@
       "type": "mission"
     },
     {
-      "id": "MIS-027",
-      "title": "numengames.com improvement",
-      "status": "in-review",
-      "priority": "critical",
-      "effort": "M",
-      "guild": "Alchemists",
-      "assignedTo": "nimrod",
-      "type": "mission"
-    },
-    {
       "id": "MIS-038",
       "title": "Design Briefing Protocol v1.0",
       "status": "in-review",
@@ -222,57 +212,7 @@
       "type": "mission"
     },
     {
-      "id": "MIS-00001",
-      "title": "Definir el MVP de Numinia en una página",
-      "status": "backlog",
-      "priority": "critical",
-      "effort": "S",
-      "guild": "Alquimistas",
-      "assignedTo": "",
-      "type": "mission"
-    },
-    {
-      "id": "MIS-00002",
-      "title": "Mapa de usuario: quién paga y por qué",
-      "status": "backlog",
-      "priority": "critical",
-      "effort": "S",
-      "guild": "Exegetas",
-      "assignedTo": "",
-      "type": "mission"
-    },
-    {
-      "id": "MIS-00003",
-      "title": "Prototipo navegable de Numinia",
-      "status": "backlog",
-      "priority": "critical",
-      "effort": "M",
-      "guild": "Alquimistas",
-      "assignedTo": "",
-      "type": "mission"
-    },
-    {
-      "id": "MIS-00004",
-      "title": "Definir el modelo de monetización v1",
-      "status": "backlog",
-      "priority": "critical",
-      "effort": "S",
-      "guild": "Procuradores",
-      "assignedTo": "",
-      "type": "mission"
-    },
-    {
-      "id": "MIS-00005",
-      "title": "Landing page de Numinia con captura de leads",
-      "status": "backlog",
-      "priority": "critical",
-      "effort": "M",
-      "guild": "Alquimistas",
-      "assignedTo": "",
-      "type": "mission"
-    },
-    {
-      "id": "MIS-00006",
+      "id": "MIS-006",
       "title": "Arquitectura de experiencia: sesión Numinia",
       "status": "backlog",
       "priority": "high",
@@ -282,7 +222,7 @@
       "type": "mission"
     },
     {
-      "id": "MIS-00007",
+      "id": "MIS-007",
       "title": "Integrar Cal.com en onboarding de Numinia",
       "status": "backlog",
       "priority": "high",
@@ -292,7 +232,7 @@
       "type": "mission"
     },
     {
-      "id": "MIS-00008",
+      "id": "MIS-008",
       "title": "Definir métricas North Star del producto",
       "status": "backlog",
       "priority": "high",
@@ -302,7 +242,7 @@
       "type": "mission"
     },
     {
-      "id": "MIS-00009",
+      "id": "MIS-009",
       "title": "Piloto cerrado con 5 usuarios beta",
       "status": "backlog",
       "priority": "high",
@@ -312,7 +252,7 @@
       "type": "mission"
     },
     {
-      "id": "MIS-00010",
+      "id": "MIS-010",
       "title": "Roadmap público de Numinia v1.0",
       "status": "backlog",
       "priority": "medium",
@@ -322,7 +262,7 @@
       "type": "mission"
     },
     {
-      "id": "MIS-00012",
+      "id": "MIS-012",
       "title": "Configurar pipeline CI/CD numengames.com",
       "status": "backlog",
       "priority": "high",
@@ -332,7 +272,7 @@
       "type": "mission"
     },
     {
-      "id": "MIS-00013",
+      "id": "MIS-013",
       "title": "Sistema de monitoreo y alertas",
       "status": "backlog",
       "priority": "high",
@@ -342,7 +282,7 @@
       "type": "mission"
     },
     {
-      "id": "MIS-00014",
+      "id": "MIS-014",
       "title": "Instalar Umami en numengames.com",
       "status": "backlog",
       "priority": "high",
@@ -352,7 +292,7 @@
       "type": "mission"
     },
     {
-      "id": "MIS-00015",
+      "id": "MIS-015",
       "title": "Documentar stack tecnológico de Numinia",
       "status": "backlog",
       "priority": "high",
@@ -362,37 +302,7 @@
       "type": "mission"
     },
     {
-      "id": "MIS-00017",
-      "title": "Pipeline de Prospección B2B (50 leads)",
-      "status": "backlog",
-      "priority": "critical",
-      "effort": "M",
-      "guild": "Procuradores",
-      "assignedTo": "",
-      "type": "mission"
-    },
-    {
-      "id": "MIS-00018",
-      "title": "Propuesta de Valor Comercial (One-Pager)",
-      "status": "backlog",
-      "priority": "critical",
-      "effort": "S",
-      "guild": "Exegetas",
-      "assignedTo": "",
-      "type": "mission"
-    },
-    {
-      "id": "MIS-00019",
-      "title": "Outreach secuencial a 20 prospectos",
-      "status": "backlog",
-      "priority": "critical",
-      "effort": "M",
-      "guild": "Procuradores",
-      "assignedTo": "",
-      "type": "mission"
-    },
-    {
-      "id": "MIS-00020",
+      "id": "MIS-020",
       "title": "Demo / Pitch Deck interactivo",
       "status": "backlog",
       "priority": "high",
@@ -402,7 +312,7 @@
       "type": "mission"
     },
     {
-      "id": "MIS-00021",
+      "id": "MIS-021",
       "title": "Definición de Pricing y Paquetes",
       "status": "backlog",
       "priority": "high",
@@ -412,7 +322,7 @@
       "type": "mission"
     },
     {
-      "id": "MIS-00022",
+      "id": "MIS-022",
       "title": "Alianzas con estudios indie y DAOs",
       "status": "backlog",
       "priority": "high",
@@ -422,7 +332,7 @@
       "type": "mission"
     },
     {
-      "id": "MIS-00023",
+      "id": "MIS-023",
       "title": "Case Study inicial",
       "status": "backlog",
       "priority": "medium",
@@ -432,7 +342,7 @@
       "type": "mission"
     },
     {
-      "id": "MIS-00024",
+      "id": "MIS-024",
       "title": "Sistema de seguimiento post-call",
       "status": "backlog",
       "priority": "medium",
@@ -442,7 +352,7 @@
       "type": "mission"
     },
     {
-      "id": "MIS-00025",
+      "id": "MIS-025",
       "title": "Estrategia de contenido 30 días",
       "status": "backlog",
       "priority": "high",
@@ -452,7 +362,7 @@
       "type": "mission"
     },
     {
-      "id": "MIS-00026",
+      "id": "MIS-026",
       "title": "Activación del canal X/Twitter",
       "status": "backlog",
       "priority": "high",
@@ -462,17 +372,7 @@
       "type": "mission"
     },
     {
-      "id": "MIS-00027",
-      "title": "Mejora de numengames.com",
-      "status": "backlog",
-      "priority": "critical",
-      "effort": "M",
-      "guild": "Alquimistas",
-      "assignedTo": "",
-      "type": "mission"
-    },
-    {
-      "id": "MIS-00028",
+      "id": "MIS-028",
       "title": "Newsletter / Lista de correo fundacional",
       "status": "backlog",
       "priority": "medium",
@@ -482,7 +382,7 @@
       "type": "mission"
     },
     {
-      "id": "MIS-00029",
+      "id": "MIS-029",
       "title": "Comunidad en Discord o Telegram",
       "status": "backlog",
       "priority": "medium",
@@ -492,7 +392,7 @@
       "type": "mission"
     },
     {
-      "id": "MIS-00030",
+      "id": "MIS-030",
       "title": "Hilo semanal \\\"Detrás de Numen\\",
       "status": "backlog",
       "priority": "medium",
@@ -502,17 +402,7 @@
       "type": "mission"
     },
     {
-      "id": "MIS-00031",
-      "title": "Revisión final del Grant Arbitrum",
-      "status": "backlog",
-      "priority": "critical",
-      "effort": "M",
-      "guild": "Procuradores",
-      "assignedTo": "",
-      "type": "mission"
-    },
-    {
-      "id": "MIS-00032",
+      "id": "MIS-032",
       "title": "Investigación: Ethereum Foundation ESP",
       "status": "backlog",
       "priority": "high",
@@ -522,7 +412,7 @@
       "type": "mission"
     },
     {
-      "id": "MIS-00033",
+      "id": "MIS-033",
       "title": "Identificar 10 sponsors Web3/Gaming",
       "status": "backlog",
       "priority": "high",
@@ -532,7 +422,7 @@
       "type": "mission"
     },
     {
-      "id": "MIS-00034",
+      "id": "MIS-034",
       "title": "Deck para inversores ángel v1.0",
       "status": "backlog",
       "priority": "high",
@@ -542,7 +432,7 @@
       "type": "mission"
     },
     {
-      "id": "MIS-00035",
+      "id": "MIS-035",
       "title": "CRM de grants y financiación",
       "status": "backlog",
       "priority": "medium",
@@ -552,7 +442,7 @@
       "type": "mission"
     },
     {
-      "id": "MIS-00036",
+      "id": "MIS-036",
       "title": "Memo: Estrategia de financiación Q2 2026",
       "status": "backlog",
       "priority": "medium",
@@ -562,17 +452,7 @@
       "type": "mission"
     },
     {
-      "id": "MIS-00039",
-      "title": "Sistema de logs de agentes",
-      "status": "backlog",
-      "priority": "high",
-      "effort": "S",
-      "guild": "Centinelas",
-      "assignedTo": "",
-      "type": "mission"
-    },
-    {
-      "id": "MIS-00040",
+      "id": "MIS-040",
       "title": "Dashboard CAO: definición de KPIs",
       "status": "backlog",
       "priority": "high",
@@ -582,7 +462,7 @@
       "type": "mission"
     },
     {
-      "id": "MIS-00041",
+      "id": "MIS-041",
       "title": "Onboarding protocol for new agents",
       "status": "backlog",
       "priority": "medium",
@@ -592,7 +472,7 @@
       "type": "mission"
     },
     {
-      "id": "MIS-00043",
+      "id": "MIS-043",
       "title": "Complete reading of the Numinia RPG Manual",
       "status": "backlog",
       "priority": "high",
@@ -602,17 +482,7 @@
       "type": "mission"
     },
     {
-      "id": "MIS-00044",
-      "title": "GAPS.md — Numen Games gaps and weaknesses map",
-      "status": "backlog",
-      "priority": "critical",
-      "effort": "S",
-      "guild": "Procurators",
-      "assignedTo": "",
-      "type": "mission"
-    },
-    {
-      "id": "MIS-00046",
+      "id": "MIS-046",
       "title": "READMEs for numengames org repos",
       "status": "backlog",
       "priority": "medium",
@@ -622,17 +492,7 @@
       "type": "mission"
     },
     {
-      "id": "MIS-00048",
-      "title": "Cost tracking system per agent",
-      "status": "backlog",
-      "priority": "critical",
-      "effort": "M",
-      "guild": "Sentinels",
-      "assignedTo": "",
-      "type": "mission"
-    },
-    {
-      "id": "MIS-00049",
+      "id": "MIS-049",
       "title": "DORA Metrics for numengames-web",
       "status": "backlog",
       "priority": "medium",
@@ -642,7 +502,7 @@
       "type": "mission"
     },
     {
-      "id": "MIS-00050",
+      "id": "MIS-050",
       "title": "Backlog review ritual (Dark Council)",
       "status": "backlog",
       "priority": "high",
@@ -652,7 +512,7 @@
       "type": "mission"
     },
     {
-      "id": "MIS-00056",
+      "id": "MIS-056",
       "title": "Repo Translation to English — NWOS Canon in English Only",
       "status": "backlog",
       "priority": "high",
@@ -662,17 +522,7 @@
       "type": "mission"
     },
     {
-      "id": "MIS-00058",
-      "title": "Sistema de Inspecciones — tipo documental, directorio y primera inspección ISO 15489",
-      "status": "backlog",
-      "priority": "high",
-      "effort": "M",
-      "guild": "Centinelas",
-      "assignedTo": "nimrod",
-      "type": "mission"
-    },
-    {
-      "id": "MIS-00061",
+      "id": "MIS-061",
       "title": "El Sistema — NWOS Web Visualization at pablofm.com/sistema",
       "status": "backlog",
       "priority": "high",
@@ -692,7 +542,7 @@
       "type": "mission"
     },
     {
-      "id": "MIS-00016",
+      "id": "MIS-016",
       "title": "Caddy + SSL for all server services",
       "status": "done",
       "priority": "critical",
@@ -702,7 +552,7 @@
       "type": "mission"
     },
     {
-      "id": "MIS-00037",
+      "id": "MIS-037",
       "title": "Create numinia-digital-agents repository (Archive Summa)",
       "status": "done",
       "priority": "critical",
@@ -712,7 +562,7 @@
       "type": "mission"
     },
     {
-      "id": "MIS-00042",
+      "id": "MIS-042",
       "title": "Main README for numinia-agents",
       "status": "done",
       "priority": "high",
@@ -722,7 +572,7 @@
       "type": "mission"
     },
     {
-      "id": "MIS-00047",
+      "id": "MIS-047",
       "title": "Configure automatic weekly report",
       "status": "done",
       "priority": "high",
@@ -732,7 +582,7 @@
       "type": "mission"
     },
     {
-      "id": "MIS-00051",
+      "id": "MIS-051",
       "title": "Gmail, Calendar and Drive integration with gog",
       "status": "done",
       "priority": "critical",
@@ -742,7 +592,7 @@
       "type": "mission"
     },
     {
-      "id": "MIS-00053",
+      "id": "MIS-053",
       "title": "Khepri — Numen Games email operational",
       "status": "done",
       "priority": "high",
@@ -752,7 +602,7 @@
       "type": "mission"
     },
     {
-      "id": "MIS-00059",
+      "id": "MIS-059",
       "title": "P-007 — Context Load Protocol",
       "status": "done",
       "priority": "high",
@@ -767,16 +617,6 @@
       "status": "done",
       "priority": "critical",
       "effort": "S",
-      "guild": "Sentinels",
-      "assignedTo": "nimrod",
-      "type": "mission"
-    },
-    {
-      "id": "MIS-038",
-      "title": "Design Briefing Protocol v1.0",
-      "status": "done",
-      "priority": "critical",
-      "effort": "M",
       "guild": "Sentinels",
       "assignedTo": "nimrod",
       "type": "mission"
