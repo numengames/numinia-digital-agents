@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-08T05:46:00Z",
+  "generated": "2026-04-08T05:50:00Z",
   "repo": "numengames/numinia-digital-agents",
   "missions": [
     {"id":"MIS-001","title":"Define the Numinia MVP in one page","area":"Product","guild":"Alchemists","type":"biological","priority":"critical","effort":"S","status":"todo"},
@@ -12,7 +12,7 @@
     {"id":"MIS-008","title":"Define product North Star metrics","area":"Product","guild":"Exegetes","type":"biological","priority":"high","effort":"XS","status":"todo"},
     {"id":"MIS-009","title":"Closed pilot with 5 beta users","area":"Product","guild":"Alchemists","type":"hybrid","priority":"high","effort":"L","status":"todo"},
     {"id":"MIS-010","title":"Numinia v1.0 public roadmap","area":"Product","guild":"Exegetes","type":"hybrid","priority":"medium","effort":"S","status":"todo"},
-    {"id":"MIS-011","title":"Technical audit of numengames.com","area":"Infrastructure","guild":"Sentinels","type":"hybrid","priority":"critical","effort":"S","status":"in-progress","assignedTo":"nimrod"},
+    {"id":"MIS-011","title":"Technical audit of numengames.com","area":"Infrastructure","guild":"Sentinels","type":"hybrid","priority":"critical","effort":"S","status":"done","assignedTo":"nimrod","completed":"2026-04-08","hasDetail":true},
     {"id":"MIS-012","title":"Configure CI/CD pipeline numengames.com","area":"Infrastructure","guild":"Sentinels","type":"digital","priority":"high","effort":"M","status":"todo"},
     {"id":"MIS-013","title":"Monitoring and alerts system","area":"Infrastructure","guild":"Sentinels","type":"digital","priority":"high","effort":"S","status":"todo"},
     {"id":"MIS-014","title":"Install Umami on numengames.com","area":"Infrastructure","guild":"Sentinels","type":"digital","priority":"high","effort":"XS","status":"todo"},
@@ -39,7 +39,7 @@
     {"id":"MIS-035","title":"Grants and funding CRM","area":"Funding","guild":"Procurators","type":"digital","priority":"medium","effort":"S","status":"todo"},
     {"id":"MIS-036","title":"Memo: Q2 2026 funding strategy","area":"Funding","guild":"Procurators","type":"digital","priority":"medium","effort":"S","status":"todo"},
     {"id":"MIS-037","title":"Create numinia-agents repository (Archive Summa)","area":"CAO","guild":"Sentinels","type":"digital","priority":"critical","effort":"L","status":"done","assignedTo":"nimrod","completed":"2026-04-06","hasDetail":true},
-    {"id":"MIS-038","title":"Design Briefing Protocol v1.0","area":"CAO","guild":"Sentinels","type":"digital","priority":"critical","effort":"M","status":"in-progress","assignedTo":"nimrod"},
+    {"id":"MIS-038","title":"Design Briefing Protocol v1.0","area":"CAO","guild":"Sentinels","type":"digital","priority":"critical","effort":"M","status":"done","assignedTo":"nimrod","completed":"2026-04-08","hasDetail":true},
     {"id":"MIS-039","title":"Agent log system","area":"CAO","guild":"Sentinels","type":"digital","priority":"high","effort":"S","status":"todo"},
     {"id":"MIS-040","title":"CAO Dashboard: KPI definition","area":"CAO","guild":"Sentinels","type":"hybrid","priority":"high","effort":"M","status":"todo"},
     {"id":"MIS-041","title":"Onboarding protocol for new agents","area":"CAO","guild":"Sentinels","type":"digital","priority":"medium","effort":"M","status":"todo"},

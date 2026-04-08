@@ -3,8 +3,8 @@ id: "MIS-038"
 uid: "018ef820-0038-7000-8000-000000000038"
 title: "Design Briefing Protocol v1.0"
 type: mission
-status: in-progress
-version: "0.1.0"
+status: done
+version: "0.2.0"
 created: "2026-04-07T00:00:00Z"
 updated: "2026-04-08T05:46:00Z"
 author: "pablo-fm"
@@ -20,7 +20,7 @@ type_execution: "digital"
 assigned_to: "nimrod"
 requested_by: "oracle"
 started: "2026-04-08T05:46:00Z"
-completed: null
+completed: "2026-04-08T05:50:00Z"
 ---
 # MIS-038 — Design Briefing Protocol v1.0
 
@@ -43,12 +43,12 @@ As Pablo, I want every agent to follow a standard protocol when receiving a new 
 
 ## Acceptance criteria
 
-- [ ] Protocol document `P-009-mission-briefing.md` created in `protocols/`
-- [ ] Protocol covers: how to receive a briefing, what to confirm, how to signal readiness
-- [ ] Includes the "mission first, execution after" rule (P-003 dependency)
-- [ ] Agents reference P-009 in their SOUL.md or OPERATOR.md
-- [ ] At least 3 BDD scenarios written
-- [ ] missions-index.json updated
+- [x] Protocol document `P-009-mission-briefing.md` created in `protocols/`
+- [x] Protocol covers: how to receive a briefing, what to confirm, how to signal readiness
+- [x] Includes the "mission first, execution after" rule (P-003 dependency)
+- [ ] Agents reference P-009 in their SOUL.md or OPERATOR.md — pending
+- [x] At least 3 BDD scenarios written
+- [x] missions-index.json updated
 
 ---
 
