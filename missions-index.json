@@ -1,6 +1,16 @@
 {
-  "generated": "2026-04-08T12:52:36Z",
+  "generated": "2026-04-09T06:15:00Z",
   "missions": [
+    {
+      "id": "MIS-066",
+      "title": "Mission PM Role — Ongoing Documentation and Status Maintenance",
+      "status": "in-progress",
+      "priority": "high",
+      "effort": "XS",
+      "guild": "Sentinels",
+      "assignedTo": "nimrod",
+      "type": "mission"
+    },
     {
       "id": "MIS-052",
       "title": "On-premises infrastructure — Dedicated PC",
@@ -174,7 +184,7 @@
     {
       "id": "MIS-038",
       "title": "Design Briefing Protocol v1.0",
-      "status": "in-review",
+      "status": "done",
       "priority": "critical",
       "effort": "M",
       "guild": "Sentinels",
