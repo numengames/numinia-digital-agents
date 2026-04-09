@@ -4,9 +4,9 @@ uid: "018ef820-0062-7000-8000-000000000062"
 title: "Mission System v2 — States, Sub-missions, IDs, Kanban"
 type: mission
 status: in-progress
-version: "1.0.0"
+version: "1.1.0"
 created: "2026-04-07T19:43:00Z"
-updated: "2026-04-07T19:43:00Z"
+updated: "2026-04-09T06:10:00Z"
 author: "pablo-fm"
 owner: "oracle"
 tags: [missions, kanban, system-design, architecture, product]
@@ -42,6 +42,10 @@ sub_missions:
     title: "Update P-003 Mission Cycle Protocol to v2"
     status: "todo"
     effort: "S"
+  - id: "MIS-062.6"
+    title: "Full Kanban documentation audit — complete missing fields across all missions"
+    status: "in-progress"
+    effort: "L"
 ---
 # MIS-062 — Mission System v2
 
@@ -86,6 +90,7 @@ As an Oracle, I want a Kanban board at pablofm.com/missions showing all real mis
 | MIS-062.3 | Build Kanban page at pablofm.com/missions | M | todo |
 | MIS-062.4 | Update STANDARDS.md — mission system v2 | S | todo |
 | MIS-062.5 | Update P-003 Mission Cycle Protocol to v2 | S | todo |
+| MIS-062.6 | Full Kanban documentation audit — complete missing fields across all missions | L | in-progress |
 
 ---
 
@@ -98,6 +103,7 @@ As an Oracle, I want a Kanban board at pablofm.com/missions showing all real mis
 - [ ] STANDARDS.md §2 updated: MIS-NNN format (3 digits)
 - [ ] STANDARDS.md — mission states documented
 - [ ] P-003 updated to v2 cycle
+- [ ] All missions have complete documentation per TEMPLATE.md (MIS-062.6)
 - [ ] Oracle validation before merge
 
 ---
@@ -112,13 +118,15 @@ A Kanban board backed by a real repo is the difference between a system that exi
 - Closes the human-in-the-loop gap (In Review state)
 - Enables parallel work on complex missions (sub-missions)
 - Frozen missions are visible instead of lost
+- Complete documentation means any agent can onboard to any mission independently
 
 ---
 
 ## Version history
 
 - v1.0.0 (2026-04-07) — Initial creation. (MIS-057 → MIS-062)
+- v1.1.0 (2026-04-09) — Added MIS-062.6: full documentation audit (Nimrod)
 
 ---
 
-*Nimrod 🗡️ — 2026-04-07*
+*Nimrod 🗡️ — 2026-04-09*
