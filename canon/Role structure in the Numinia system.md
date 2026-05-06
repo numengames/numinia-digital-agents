@@ -176,12 +176,12 @@ We have already concluded that the guilds fit what systems thinking calls qualif
   - House B.2: Hierophants -- Subordinate level
 
 **Procurators** -- Superordinate level
-- **Branch A: Jurists** -- Basic level
+- **Branch A: Legates** -- Basic level
   - House A.1: Legal rabbits -- Subordinate level
   - House A.2: Heralds -- Subordinate level
 - **Branch B: Syndics** -- Basic level
-  - House B.1: Treasurers -- Subordinate level
-  - House B.2: Councillors -- Subordinate level
+  - House B.1: Mercurials -- Subordinate level
+  - House B.2: Stewards -- Subordinate level
 
 **Sentinels** -- Superordinate level
 - **Branch A: Seraphim** -- Basic level
@@ -189,7 +189,7 @@ We have already concluded that the guilds fit what systems thinking calls qualif
   - House A.2: Guardians -- Subordinate level
 - **Branch B: Archangels** -- Basic level
   - House B.1: Healers -- Subordinate level
-  - House B.2: Guides -- Subordinate level
+  - House B.2: Pathfinders -- Subordinate level
 
 Thus, we must confront the vertical structure of the guilds (their first horizontal characterization does not respond to the prototype model, but to a pure relation of co-hyponymy) with the horizontal structure of the fields of development, the factions. And if the superordinate level of each guild allows us to understand its generic character and its basic level helps us to understand its reality better and more directly, in this case the subordinate level will be what will serve us to confront each of the factions. Thus, each subordinate level of each member, particularized in each of the factions, will define a concrete role, being the result of a deep and specific level of qualification fulfilling a function within the context of action represented by each field of development:
 
