@@ -35,10 +35,10 @@ To understand the ecosystem of Numinia, it is essential to grasp the deep relati
 This relationship can be explained on three interconnected levels:
 
 1. **Numen Games**
-   It is the operating system: the set of ideas, principles, and organizational needs that give rise to the model. It represents the seed idea from which everything is built.
+   It is the germinal motive: the set of ideas, principles, and organizational needs that give rise to the model. It represents the seed idea from which everything is built.
    → In Peirce's semiotic model, this is the Object.
 
-2. **Functional Model**
+2. **Regulatory Model**
    It is the organizational structure that responds to the needs of the operating system: a network of roles, spaces, tools, and concepts with pragmatic value.
    → This is where the Ground is located, which gives meaning to the object by defining how it should work.
 
@@ -69,10 +69,10 @@ The factions group together domains of development and purpose. They are arrange
 
 Factions do not define skills, but rather visions and paths within the universe:
 
-- Education: Research and applied knowledge.
-- Gamification: Fantasy and fictional narrative.
-- Organization: Structural and methodological framework.
-- Art: Creativity and symbolic expression.
+- Hermeticists - Education: Research and applied knowledge.
+- Heirs of Eleusis - Gamification: Fantasy and fictional narrative.
+- Stellar Circle - Organization: Structural and methodological framework.
+- Neo-Atlantists - Art: Creativity and symbolic expression.
 
 ---
 
